@@ -507,7 +507,10 @@ function draw_menu()
     local count=menu.item_count()
     local sel=menu.selected_index()
     local structural_header=HEADER_PATH~="" and LAYOUT_MODE=="standard"
-    local banner_h=structural_header and native_height(header_handle,width,76*hud_sy) or 0
+    -- Profiles without a full-width header image still need a real title/logo band.
+    -- Several Stand themes (including Standipity) supply a centered Logo asset instead.
+    local banner_h=LAYOUT_MODE=="standard" and
+        (structural_header and native_height(header_handle,width,76*hud_sy) or 76*hud_sy) or 0
     local page_h=SUBHEADER_PATH~="" and native_height(subheader_handle,width,28*hud_sy)
         or (TABS_ENABLED and 28*hud_sy or 0)
     local desc_h=FOOTER_PATH~="" and native_height(footer_handle,width,31*hud_sy) or 46*hud_sy
@@ -596,11 +599,36 @@ function draw_menu()
                 math.floor(background.r*.55),math.floor(background.g*.55),math.floor(background.b*.55),math.max(alpha,220))
         end
         if TABS_ENABLED then
-            text.draw(font.small,x+10,page_y+(page_h-text.height(font.small))*0.5,
-                249,192,218,255,page_name)
-            local counter=count>0 and tostring(sel+1).." / "..tostring(count) or "0 / 0"
-            text.draw(font.small,x+width-10-text.width(font.small,counter),
-                page_y+(page_h-text.height(font.small))*0.5,249,192,218,255,counter)
+            local tab_count=menu.tab_count()
+            local tab_active=menu.tab_active()
+            if tab_count>0 then
+                -- Stand profiles call this band "Tabs". Use Nenyoo's live tab registry so it is a
+                -- real navigation control, not a decorative page label that silently goes stale.
+                local min_tab_w=64*hud_sx
+                local slots=math.min(tab_count,math.max(1,math.floor(width/min_tab_w)))
+                local first=clamp(tab_active-math.floor(slots/2),0,math.max(0,tab_count-slots))
+                local tab_w=width/slots
+                for slot=0,slots-1 do
+                    local tab=first+slot
+                    local tx=x+slot*tab_w
+                    local active=tab==tab_active
+                    local hovered=hit(tx,page_y,tx+tab_w,page_y+page_h)
+                    if active then
+                        draw.rect(tx,page_y,tx+tab_w,page_y+page_h,accent.r,accent.g,accent.b,math.min(255,accent.a or 255))
+                    elseif hovered then
+                        draw.rect(tx,page_y,tx+tab_w,page_y+page_h,accent.r,accent.g,accent.b,55)
+                    end
+                    local label=menu.tab_name(tab) or ""
+                    text.draw_ellipsis(font.small,tx+6,page_y+(page_h-text.height(font.small))*0.5,
+                        active and 242 or 249,active and 55 or 192,
+                        active and 136 or 218,active and 255 or 255,
+                        label,math.max(1,tab_w-12))
+                    if hovered and input.mouse_clicked(0) and not menu.overlay_active() then menu.switch_tab(tab) end
+                end
+            else
+                text.draw(font.small,x+10,page_y+(page_h-text.height(font.small))*0.5,
+                    249,192,218,255,page_name)
+            end
         end
     end
 
@@ -739,6 +767,12 @@ end
 
 function handle_input()
     if not menu.is_visible() or edit_on then return end
+    local tab_count=menu.tab_count()
+    if tab_count>0 and input.key_just_pressed(VK.TAB) then
+        local dir=input.key_down(VK.SHIFT) and -1 or 1
+        menu.switch_tab((menu.tab_active()+dir+tab_count)%tab_count)
+        return
+    end
     if input.key_pressed(VK.DOWN) then menu.move_selection(1) end
     if input.key_pressed(VK.UP) then menu.move_selection(-1) end
     local item=menu.get_item(menu.selected_index())

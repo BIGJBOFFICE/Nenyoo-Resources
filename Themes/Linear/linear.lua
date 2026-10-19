@@ -262,7 +262,7 @@ local function draw_scrollbar(x, list_y, list_h, content_h)
     local fr = scroll_max > 0 and (scroll / scroll_max) or 0
     local thumb_y = list_y + fr * (list_h - thumb_h)
 
-    if not dragging_sb and input.mouse_clicked(0) and near then
+    if not dragging_sb and (not menu.overlay_active() and input.mouse_clicked(0)) and near then
         if my >= thumb_y and my <= thumb_y + thumb_h then
             dragging_sb = true; sb_grab = my - thumb_y
         else
@@ -439,6 +439,7 @@ function draw_menu()
     local cy = my
     draw_header(mx, cy); cy = cy + l.header_h
     local list_y = cy
+    menu.set_content_rect(mx, list_y, l.menu_w, list_h)
     frame.list_y = list_y
 
     -- scroll bookkeeping
@@ -509,7 +510,7 @@ function draw_menu()
         end
 
         -- mouse interaction
-        if hovered and input.mouse_clicked(0) and menu.popup_mode() == 0 and dragging_slider < 0 then
+        if hovered and (not menu.overlay_active() and input.mouse_clicked(0)) and menu.popup_mode() == 0 and dragging_slider < 0 then
             local handled = false
             local has_toggle = t == item_type.toggle or t == item_type.float_toggle
                 or t == item_type.int_toggle or t == item_type.array_toggle or t == item_type.loop_toggle
@@ -571,6 +572,14 @@ end
 -- Input
 ---------------------------------------------------------------------------
 function handle_input()
+    if menu.is_visible() and menu.popup_mode()==0 and not menu.is_text_editing() and not menu.overlay_active() then
+        local tab_count=menu.tab_count()
+        if tab_count>0 and input.key_just_pressed(VK.TAB) then
+            local dir=input.key_down(VK.SHIFT) and -1 or 1
+            menu.switch_tab((menu.tab_active()+dir+tab_count)%tab_count)
+            return
+        end
+    end
     if not menu.is_visible() then return end
     local pm = menu.popup_mode()
     if pm == 1 then handle_input_popup(); return end
@@ -741,7 +750,7 @@ function handle_array_dropdown()
             menu.set_value_index(sel, array_picker_idx); menu.set_popup_mode(0); return
         end
         local mx, my = input.mouse_x(), input.mouse_y()
-        if input.mouse_clicked(0) and elapsed > 0.15 then
+        if (not menu.overlay_active() and input.mouse_clicked(0)) and elapsed > 0.15 then
             local dw, dh_item = 210, 32
             local dx = frame.menu_x + l.menu_w - dw - l.pad_x
             local dy = (frame.popup_item_y or 300) + 4
@@ -836,7 +845,7 @@ function draw_color_picker()
         local tw = text.width(font.tagline, tabs[i])
         text.draw(font.tagline, tx + (tab_w - tw) / 2, tab_y + (tab_h - text.height(font.tagline)) / 2,
             255, 255, 255, active and 220 or 110, tabs[i])
-        if mx >= tx and mx <= tx + tab_w and my >= tab_y and my <= tab_y + tab_h and input.mouse_clicked(0) then
+        if mx >= tx and mx <= tx + tab_w and my >= tab_y and my <= tab_y + tab_h and (not menu.overlay_active() and input.mouse_clicked(0)) then
             cp_tab = i - 1
         end
     end
@@ -854,7 +863,7 @@ function draw_color_picker()
             if cp_palette_idx == i - 1 then
                 draw.rect_outline(cx - 2, cyy - 2, cx + cell + 2, cyy + cell + 2, 255, 255, 255, 220, 7)
             end
-            if mx >= cx and mx <= cx + cell and my >= cyy and my <= cyy + cell and input.mouse_clicked(0) then
+            if mx >= cx and mx <= cx + cell and my >= cyy and my <= cyy + cell and (not menu.overlay_active() and input.mouse_clicked(0)) then
                 cp_palette_idx = i - 1
             end
         end

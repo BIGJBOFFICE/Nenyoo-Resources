@@ -1,0 +1,2886 @@
+{
+  "source": "https://github.com/stagnate6628/stand-themerepo",
+  "count": 72,
+  "themes": [
+    {
+      "name": "2Take1",
+      "folder": "2Take1",
+      "profile": "Themes/2Take1/Profiles/2Take1.txt",
+      "header": "Themes/2Take1/Header.bmp",
+      "header_frames": 1,
+      "header_overlay": null,
+      "subheader": null,
+      "footer": "Themes/2Take1/Footer.bmp",
+      "badge": null,
+      "background": null,
+      "accent": [
+        255,
+        255,
+        255,
+        255
+      ],
+      "background_colour": [
+        0,
+        0,
+        0,
+        150
+      ],
+      "width": 483,
+      "rows": 12,
+      "row_height": 46,
+      "tab_height": 44,
+      "tab_position": "Top",
+      "tabs_enabled": true,
+      "position": [
+        1266,
+        221
+      ],
+      "toggle_on": "Themes/2Take1/Theme/Toggle On.png",
+      "toggle_off": "Themes/2Take1/Theme/Toggle Off.png",
+      "list_icon": "Themes/2Take1/Theme/List.png",
+      "font_family": "Arial",
+      "ui_assets": 5,
+      "upstream_lua_scripts": 1
+    },
+    {
+      "name": "Anime",
+      "folder": "Anime",
+      "profile": "Themes/Anime/Profiles/Anime.txt",
+      "header": "Themes/Anime/Headers/Custom Header/video_000.jpg",
+      "header_frames": 109,
+      "header_overlay": null,
+      "subheader": null,
+      "footer": null,
+      "badge": null,
+      "background": null,
+      "accent": [
+        59,
+        0,
+        255,
+        255
+      ],
+      "background_colour": [
+        60,
+        62,
+        63,
+        245
+      ],
+      "width": 392,
+      "rows": 16,
+      "row_height": 31,
+      "tab_height": 29,
+      "tab_position": "Top",
+      "tabs_enabled": true,
+      "position": [
+        286,
+        260
+      ],
+      "toggle_on": null,
+      "toggle_off": null,
+      "list_icon": null,
+      "font_family": "Arial",
+      "ui_assets": 0,
+      "upstream_lua_scripts": 0
+    },
+    {
+      "name": "Aya",
+      "folder": "Aya",
+      "profile": "Themes/Aya/Profiles/Aya.txt",
+      "header": "Themes/Aya/Headers/Custom Header/uwu000.png",
+      "header_frames": 330,
+      "header_overlay": null,
+      "subheader": null,
+      "footer": null,
+      "badge": null,
+      "background": null,
+      "accent": [
+        239,
+        194,
+        139,
+        255
+      ],
+      "background_colour": [
+        124,
+        96,
+        72,
+        215
+      ],
+      "width": 350,
+      "rows": 12,
+      "row_height": 30,
+      "tab_height": 28,
+      "tab_position": "Top",
+      "tabs_enabled": true,
+      "position": [
+        1495,
+        175
+      ],
+      "toggle_on": null,
+      "toggle_off": null,
+      "list_icon": null,
+      "font_family": "Arial",
+      "ui_assets": 0,
+      "upstream_lua_scripts": 0
+    },
+    {
+      "name": "BlackNWhite",
+      "folder": "BlackNWhite",
+      "profile": "Themes/BlackNWhite/Profiles/BlackNWhite.txt",
+      "header": "Themes/BlackNWhite/Headers/Custom Header/BlackNWhite.png",
+      "header_frames": 1,
+      "header_overlay": null,
+      "subheader": null,
+      "footer": null,
+      "badge": null,
+      "background": null,
+      "accent": [
+        12,
+        12,
+        12,
+        45
+      ],
+      "background_colour": [
+        0,
+        0,
+        0,
+        100
+      ],
+      "width": 315,
+      "rows": 20,
+      "row_height": 25,
+      "tab_height": 30,
+      "tab_position": "Top",
+      "tabs_enabled": true,
+      "position": [
+        1266,
+        221
+      ],
+      "toggle_on": null,
+      "toggle_off": null,
+      "list_icon": null,
+      "font_family": "Arial",
+      "ui_assets": 0,
+      "upstream_lua_scripts": 0
+    },
+    {
+      "name": "BlackNWhite v2",
+      "folder": "BlackNWhite v2",
+      "profile": "Themes/BlackNWhite v2/Profiles/BlackNWhite v2.txt",
+      "header": "Themes/BlackNWhite v2/Headers/Custom Header/stand_header_wb.png",
+      "header_frames": 1,
+      "header_overlay": null,
+      "subheader": null,
+      "footer": null,
+      "badge": null,
+      "background": null,
+      "accent": [
+        12,
+        12,
+        12,
+        45
+      ],
+      "background_colour": [
+        0,
+        0,
+        0,
+        100
+      ],
+      "width": 315,
+      "rows": 20,
+      "row_height": 25,
+      "tab_height": 30,
+      "tab_position": "Top",
+      "tabs_enabled": true,
+      "position": [
+        1065,
+        174
+      ],
+      "toggle_on": "Themes/BlackNWhite v2/Theme/Toggle On.png",
+      "toggle_off": "Themes/BlackNWhite v2/Theme/Toggle Off.png",
+      "list_icon": "Themes/BlackNWhite v2/Theme/List.png",
+      "font_family": "Arial",
+      "ui_assets": 23,
+      "upstream_lua_scripts": 0
+    },
+    {
+      "name": "Blue Hour",
+      "folder": "Blue Hour",
+      "profile": "Themes/Blue Hour/Profiles/Blue Hour.txt",
+      "header": "Themes/Blue Hour/Headers/Custom Header/Stand Blue Hour00.png",
+      "header_frames": 20,
+      "header_overlay": null,
+      "subheader": null,
+      "footer": null,
+      "badge": null,
+      "background": null,
+      "accent": [
+        85,
+        135,
+        82,
+        255
+      ],
+      "background_colour": [
+        26,
+        26,
+        43,
+        200
+      ],
+      "width": 350,
+      "rows": 12,
+      "row_height": 30,
+      "tab_height": 28,
+      "tab_position": "Top",
+      "tabs_enabled": true,
+      "position": [
+        1427,
+        153
+      ],
+      "toggle_on": null,
+      "toggle_off": null,
+      "list_icon": null,
+      "font_family": "Arial",
+      "ui_assets": 0,
+      "upstream_lua_scripts": 0
+    },
+    {
+      "name": "Capybara",
+      "folder": "Capybara",
+      "profile": "Themes/Capybara/Profiles/Capybara.txt",
+      "header": "Themes/Capybara/Headers/Custom Header/cap.png",
+      "header_frames": 1,
+      "header_overlay": null,
+      "subheader": null,
+      "footer": null,
+      "badge": null,
+      "background": null,
+      "accent": [
+        241,
+        210,
+        163,
+        255
+      ],
+      "background_colour": [
+        255,
+        255,
+        255,
+        255
+      ],
+      "width": 420,
+      "rows": 16,
+      "row_height": 29,
+      "tab_height": 18,
+      "tab_position": "Top",
+      "tabs_enabled": true,
+      "position": [
+        255,
+        264
+      ],
+      "toggle_on": null,
+      "toggle_off": null,
+      "list_icon": null,
+      "font_family": "Arial",
+      "ui_assets": 0,
+      "upstream_lua_scripts": 0
+    },
+    {
+      "name": "Cherax",
+      "folder": "Cherax",
+      "profile": "Themes/Cherax/Profiles/Cherax.txt",
+      "header": "Themes/Cherax/Header.bmp",
+      "header_frames": 1,
+      "header_overlay": null,
+      "subheader": null,
+      "footer": null,
+      "badge": null,
+      "background": null,
+      "accent": [
+        111,
+        35,
+        224,
+        255
+      ],
+      "background_colour": [
+        12,
+        1,
+        20,
+        255
+      ],
+      "width": 484,
+      "rows": 12,
+      "row_height": 35,
+      "tab_height": 35,
+      "tab_position": "Top",
+      "tabs_enabled": true,
+      "position": [
+        783,
+        102
+      ],
+      "toggle_on": null,
+      "toggle_off": null,
+      "list_icon": null,
+      "font_family": "Arial",
+      "ui_assets": 0,
+      "upstream_lua_scripts": 1
+    },
+    {
+      "name": "Circuit",
+      "folder": "Circuit",
+      "profile": "Themes/Circuit/Profiles/Circuit.txt",
+      "header": "Themes/Circuit/Header.bmp",
+      "header_frames": 1,
+      "header_overlay": null,
+      "subheader": "Themes/Circuit/Subheader.bmp",
+      "footer": "Themes/Circuit/Footer.bmp",
+      "badge": null,
+      "background": null,
+      "accent": [
+        94,
+        94,
+        94,
+        255
+      ],
+      "background_colour": [
+        0,
+        0,
+        0,
+        200
+      ],
+      "width": 408,
+      "rows": 13,
+      "row_height": 31,
+      "tab_height": 18,
+      "tab_position": "Top",
+      "tabs_enabled": false,
+      "position": [
+        32,
+        165
+      ],
+      "toggle_on": "Themes/Circuit/Theme/Toggle On.png",
+      "toggle_off": "Themes/Circuit/Theme/Toggle Off.png",
+      "list_icon": "Themes/Circuit/Theme/List.png",
+      "font_family": "Arial",
+      "ui_assets": 5,
+      "upstream_lua_scripts": 1
+    },
+    {
+      "name": "Delusion",
+      "folder": "Delusion",
+      "profile": "Themes/Delusion/Profiles/Delusion.txt",
+      "header": "Themes/Delusion/Headers/Custom Header/Delusion.png",
+      "header_frames": 1,
+      "header_overlay": null,
+      "subheader": null,
+      "footer": null,
+      "badge": null,
+      "background": null,
+      "accent": [
+        50,
+        49,
+        51,
+        255
+      ],
+      "background_colour": [
+        22,
+        23,
+        25,
+        240
+      ],
+      "width": 490,
+      "rows": 12,
+      "row_height": 40,
+      "tab_height": 28,
+      "tab_position": "Top",
+      "tabs_enabled": true,
+      "position": [
+        1426,
+        268
+      ],
+      "toggle_on": "Themes/Delusion/Theme/Toggle On.png",
+      "toggle_off": "Themes/Delusion/Theme/Toggle Off.png",
+      "list_icon": "Themes/Delusion/Theme/List.png",
+      "font_family": "Arial",
+      "ui_assets": 53,
+      "upstream_lua_scripts": 1
+    },
+    {
+      "name": "Discord",
+      "folder": "Discord",
+      "profile": "Themes/Discord/Profiles/Discord.txt",
+      "header": "Themes/Discord/Headers/Custom Header/Discord.png",
+      "header_frames": 1,
+      "header_overlay": null,
+      "subheader": null,
+      "footer": null,
+      "badge": null,
+      "background": null,
+      "accent": [
+        66,
+        70,
+        77,
+        255
+      ],
+      "background_colour": [
+        47,
+        49,
+        54,
+        255
+      ],
+      "width": 420,
+      "rows": 12,
+      "row_height": 33,
+      "tab_height": 33,
+      "tab_position": "Top",
+      "tabs_enabled": true,
+      "position": [
+        27,
+        66
+      ],
+      "toggle_on": "Themes/Discord/Theme/Toggle On.png",
+      "toggle_off": "Themes/Discord/Theme/Toggle Off.png",
+      "list_icon": "Themes/Discord/Theme/List.png",
+      "font_family": "Arial",
+      "ui_assets": 43,
+      "upstream_lua_scripts": 0
+    },
+    {
+      "name": "Discord v2",
+      "folder": "Discord v2",
+      "profile": "Themes/Discord v2/Profiles/Discord v2.txt",
+      "header": "Themes/Discord v2/Headers/Custom Header/Discord.png",
+      "header_frames": 1,
+      "header_overlay": null,
+      "subheader": null,
+      "footer": null,
+      "badge": null,
+      "background": null,
+      "accent": [
+        71,
+        88,
+        239,
+        255
+      ],
+      "background_colour": [
+        88,
+        101,
+        242,
+        175
+      ],
+      "width": 380,
+      "rows": 12,
+      "row_height": 31,
+      "tab_height": 46,
+      "tab_position": "Top",
+      "tabs_enabled": true,
+      "position": [
+        1430,
+        210
+      ],
+      "toggle_on": "Themes/Discord v2/Theme/Toggle On.png",
+      "toggle_off": "Themes/Discord v2/Theme/Toggle Off.png",
+      "list_icon": "Themes/Discord v2/Theme/List.png",
+      "font_family": "Arial",
+      "ui_assets": 23,
+      "upstream_lua_scripts": 0
+    },
+    {
+      "name": "Epsilon",
+      "folder": "Epsilon",
+      "profile": "Themes/Epsilon/Profiles/Epsilon.txt",
+      "header": "Themes/Epsilon/Interaction Header/Header1.bmp",
+      "header_frames": 18,
+      "header_overlay": "Themes/Epsilon/Header.bmp",
+      "subheader": "Themes/Epsilon/Subheader.bmp",
+      "footer": "Themes/Epsilon/Footer.bmp",
+      "badge": null,
+      "background": null,
+      "accent": [
+        255,
+        255,
+        255,
+        255
+      ],
+      "background_colour": [
+        0,
+        0,
+        0,
+        150
+      ],
+      "width": 432,
+      "rows": 15,
+      "row_height": 30,
+      "tab_height": 18,
+      "tab_position": "Top",
+      "tabs_enabled": false,
+      "position": [
+        1360,
+        195
+      ],
+      "toggle_on": "Themes/Epsilon/Theme/Toggle On.png",
+      "toggle_off": "Themes/Epsilon/Theme/Toggle Off.png",
+      "list_icon": "Themes/Epsilon/Theme/List.png",
+      "font_family": "Arial",
+      "ui_assets": 3,
+      "upstream_lua_scripts": 1
+    },
+    {
+      "name": "Fragment",
+      "folder": "Fragment",
+      "profile": "Themes/Fragment/Profiles/Fragment.txt",
+      "header": "Themes/Fragment/Header.bmp",
+      "header_frames": 1,
+      "header_overlay": null,
+      "subheader": "Themes/Fragment/Subheader.bmp",
+      "footer": "Themes/Fragment/Footer.bmp",
+      "badge": null,
+      "background": null,
+      "accent": [
+        255,
+        255,
+        255,
+        255
+      ],
+      "background_colour": [
+        2,
+        0,
+        2,
+        210
+      ],
+      "width": 384,
+      "rows": 13,
+      "row_height": 28,
+      "tab_height": 18,
+      "tab_position": "Top",
+      "tabs_enabled": false,
+      "position": [
+        320,
+        440
+      ],
+      "toggle_on": "Themes/Fragment/Theme/Toggle On.png",
+      "toggle_off": "Themes/Fragment/Theme/Toggle Off.png",
+      "list_icon": "Themes/Fragment/Theme/List.png",
+      "font_family": "Arial",
+      "ui_assets": 5,
+      "upstream_lua_scripts": 1
+    },
+    {
+      "name": "Gradient Pulsive",
+      "folder": "Gradient Pulsive",
+      "profile": "Themes/Gradient Pulsive/Profiles/Gradient Pulsive.txt",
+      "header": "Themes/Gradient Pulsive/Headers/Custom Header/Gradient Pulsive.png",
+      "header_frames": 1,
+      "header_overlay": null,
+      "subheader": null,
+      "footer": null,
+      "badge": null,
+      "background": null,
+      "accent": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "background_colour": [
+        40,
+        40,
+        40,
+        255
+      ],
+      "width": 392,
+      "rows": 16,
+      "row_height": 31,
+      "tab_height": 28,
+      "tab_position": "Top",
+      "tabs_enabled": true,
+      "position": [
+        1331,
+        271
+      ],
+      "toggle_on": null,
+      "toggle_off": null,
+      "list_icon": null,
+      "font_family": "Arial",
+      "ui_assets": 0,
+      "upstream_lua_scripts": 1
+    },
+    {
+      "name": "Hexy",
+      "folder": "Hexy",
+      "profile": "Themes/Hexy/Profiles/Hexy.txt",
+      "header": "Themes/Hexy/Headers/Custom Header/frame_00_delay-0.03s.gif",
+      "header_frames": 45,
+      "header_overlay": null,
+      "subheader": null,
+      "footer": null,
+      "badge": null,
+      "background": null,
+      "accent": [
+        0,
+        0,
+        0,
+        255
+      ],
+      "background_colour": [
+        165,
+        165,
+        165,
+        94
+      ],
+      "width": 448,
+      "rows": 15,
+      "row_height": 30,
+      "tab_height": 30,
+      "tab_position": "Top",
+      "tabs_enabled": true,
+      "position": [
+        18,
+        130
+      ],
+      "toggle_on": "Themes/Hexy/Theme/Toggle On.png",
+      "toggle_off": "Themes/Hexy/Theme/Toggle Off.png",
+      "list_icon": "Themes/Hexy/Theme/List.png",
+      "font_family": "Arial",
+      "ui_assets": 53,
+      "upstream_lua_scripts": 0
+    },
+    {
+      "name": "Impulse",
+      "folder": "Impulse",
+      "profile": "Themes/Impulse/Profiles/Impulse.txt",
+      "header": "Themes/Impulse/Header1.bmp",
+      "header_frames": 50,
+      "header_overlay": null,
+      "subheader": "Themes/Impulse/Subheader.bmp",
+      "footer": "Themes/Impulse/Footer.bmp",
+      "badge": null,
+      "background": null,
+      "accent": [
+        29,
+        161,
+        165,
+        255
+      ],
+      "background_colour": [
+        6,
+        10,
+        20,
+        200
+      ],
+      "width": 380,
+      "rows": 15,
+      "row_height": 33,
+      "tab_height": 18,
+      "tab_position": "Top",
+      "tabs_enabled": false,
+      "position": [
+        80,
+        200
+      ],
+      "toggle_on": "Themes/Impulse/Theme/Toggle On.png",
+      "toggle_off": "Themes/Impulse/Theme/Toggle Off.png",
+      "list_icon": "Themes/Impulse/Theme/List.png",
+      "font_family": "Arial",
+      "ui_assets": 5,
+      "upstream_lua_scripts": 1
+    },
+    {
+      "name": "Japanese Chill",
+      "folder": "Japanese Chill",
+      "profile": "Themes/Japanese Chill/Profiles/Japanese Chill.txt",
+      "header": "Themes/Japanese Chill/Headers/Custom Header/Banner2.png",
+      "header_frames": 1,
+      "header_overlay": null,
+      "subheader": null,
+      "footer": null,
+      "badge": null,
+      "background": null,
+      "accent": [
+        28,
+        28,
+        51,
+        255
+      ],
+      "background_colour": [
+        2,
+        0,
+        0,
+        180
+      ],
+      "width": 369,
+      "rows": 13,
+      "row_height": 31,
+      "tab_height": 34,
+      "tab_position": "Top",
+      "tabs_enabled": true,
+      "position": [
+        1520,
+        498
+      ],
+      "toggle_on": null,
+      "toggle_off": null,
+      "list_icon": null,
+      "font_family": "Arial",
+      "ui_assets": 32,
+      "upstream_lua_scripts": 0
+    },
+    {
+      "name": "JinxOnTop",
+      "folder": "JinxOnTop",
+      "profile": "Themes/JinxOnTop/Profiles/JinxOnTop.txt",
+      "header": "Themes/JinxOnTop/Headers/Custom Header/JinxStandHeader3_100.gif",
+      "header_frames": 75,
+      "header_overlay": null,
+      "subheader": null,
+      "footer": null,
+      "badge": null,
+      "background": null,
+      "accent": [
+        233,
+        237,
+        165,
+        255
+      ],
+      "background_colour": [
+        0,
+        0,
+        0,
+        200
+      ],
+      "width": 406,
+      "rows": 14,
+      "row_height": 31,
+      "tab_height": 28,
+      "tab_position": "Top",
+      "tabs_enabled": true,
+      "position": [
+        50,
+        209
+      ],
+      "toggle_on": null,
+      "toggle_off": null,
+      "list_icon": null,
+      "font_family": "Arial",
+      "ui_assets": 0,
+      "upstream_lua_scripts": 0
+    },
+    {
+      "name": "Kiddions",
+      "folder": "Kiddions",
+      "profile": "Themes/Kiddions/Profiles/Kiddions.txt",
+      "header": null,
+      "header_frames": 0,
+      "header_overlay": null,
+      "subheader": null,
+      "footer": null,
+      "badge": null,
+      "background": null,
+      "accent": [
+        168,
+        146,
+        69,
+        172
+      ],
+      "background_colour": [
+        3,
+        30,
+        43,
+        167
+      ],
+      "width": 330,
+      "rows": 12,
+      "row_height": 24,
+      "tab_height": 28,
+      "tab_position": "Top",
+      "tabs_enabled": false,
+      "position": [
+        229,
+        58
+      ],
+      "toggle_on": "Themes/Kiddions/Theme/Toggle On.png",
+      "toggle_off": "Themes/Kiddions/Theme/Toggle Off.png",
+      "list_icon": "Themes/Kiddions/Theme/List.png",
+      "font_family": "Arial",
+      "ui_assets": 56,
+      "upstream_lua_scripts": 1
+    },
+    {
+      "name": "Kokushibo",
+      "folder": "Kokushibo",
+      "profile": "Themes/Kokushibo/Profiles/Kokushibo.txt",
+      "header": "Themes/Kokushibo/Headers/Custom Header/Kokushibo.png",
+      "header_frames": 1,
+      "header_overlay": null,
+      "subheader": null,
+      "footer": null,
+      "badge": null,
+      "background": null,
+      "accent": [
+        54,
+        44,
+        71,
+        255
+      ],
+      "background_colour": [
+        0,
+        0,
+        0,
+        100
+      ],
+      "width": 442,
+      "rows": 12,
+      "row_height": 31,
+      "tab_height": 28,
+      "tab_position": "Top",
+      "tabs_enabled": false,
+      "position": [
+        1468,
+        311
+      ],
+      "toggle_on": null,
+      "toggle_off": null,
+      "list_icon": null,
+      "font_family": "Arial",
+      "ui_assets": 0,
+      "upstream_lua_scripts": 0
+    },
+    {
+      "name": "Legacy Menu Beta",
+      "folder": "Legacy Menu Beta",
+      "profile": "Themes/Legacy Menu Beta/Profiles/Legacy Menu Beta.txt",
+      "header": "Themes/Legacy Menu Beta/Headers/Custom Header/16.png",
+      "header_frames": 45,
+      "header_overlay": null,
+      "subheader": null,
+      "footer": null,
+      "badge": null,
+      "background": null,
+      "accent": [
+        209,
+        209,
+        209,
+        255
+      ],
+      "background_colour": [
+        0,
+        0,
+        0,
+        145
+      ],
+      "width": 329,
+      "rows": 12,
+      "row_height": 33,
+      "tab_height": 18,
+      "tab_position": "Top",
+      "tabs_enabled": false,
+      "position": [
+        1471,
+        136
+      ],
+      "toggle_on": null,
+      "toggle_off": null,
+      "list_icon": null,
+      "font_family": "Arial",
+      "ui_assets": 28,
+      "upstream_lua_scripts": 0
+    },
+    {
+      "name": "Lewdsex",
+      "folder": "Lewdsex",
+      "profile": "Themes/Lewdsex/Profiles/Lewdsex.txt",
+      "header": "Themes/Lewdsex/Headers/Custom Header/STAND HEADER_00000.jpg",
+      "header_frames": 30,
+      "header_overlay": null,
+      "subheader": null,
+      "footer": null,
+      "badge": null,
+      "background": null,
+      "accent": [
+        89,
+        12,
+        13,
+        250
+      ],
+      "background_colour": [
+        25,
+        0,
+        9,
+        75
+      ],
+      "width": 435,
+      "rows": 12,
+      "row_height": 46,
+      "tab_height": 40,
+      "tab_position": "Top",
+      "tabs_enabled": false,
+      "position": [
+        1430,
+        189
+      ],
+      "toggle_on": "Themes/Lewdsex/Theme/Toggle On.png",
+      "toggle_off": "Themes/Lewdsex/Theme/Toggle Off.png",
+      "list_icon": "Themes/Lewdsex/Theme/List.png",
+      "font_family": "Arial",
+      "ui_assets": 53,
+      "upstream_lua_scripts": 0
+    },
+    {
+      "name": "Luna",
+      "folder": "Luna",
+      "profile": "Themes/Luna/Profiles/Luna.txt",
+      "header": "Themes/Luna/Header.bmp",
+      "header_frames": 1,
+      "header_overlay": null,
+      "subheader": "Themes/Luna/Subheader.bmp",
+      "footer": "Themes/Luna/Footer.bmp",
+      "badge": null,
+      "background": null,
+      "accent": [
+        255,
+        255,
+        255,
+        255
+      ],
+      "background_colour": [
+        0,
+        0,
+        0,
+        200
+      ],
+      "width": 440,
+      "rows": 12,
+      "row_height": 31,
+      "tab_height": 18,
+      "tab_position": "Top",
+      "tabs_enabled": false,
+      "position": [
+        180,
+        220
+      ],
+      "toggle_on": "Themes/Luna/Theme/Toggle On.png",
+      "toggle_off": "Themes/Luna/Theme/Toggle Off.png",
+      "list_icon": "Themes/Luna/Theme/List.png",
+      "font_family": "Arial",
+      "ui_assets": 5,
+      "upstream_lua_scripts": 1
+    },
+    {
+      "name": "Luna-Impulse",
+      "folder": "Luna-Impulse",
+      "profile": "Themes/Luna-Impulse/Profiles/Luna-Impulse.txt",
+      "header": "Themes/Luna-Impulse/Headers/Custom Header/frame_00_delay-0.06s.gif",
+      "header_frames": 36,
+      "header_overlay": null,
+      "subheader": null,
+      "footer": null,
+      "badge": null,
+      "background": null,
+      "accent": [
+        178,
+        28,
+        151,
+        255
+      ],
+      "background_colour": [
+        8,
+        10,
+        7,
+        255
+      ],
+      "width": 462,
+      "rows": 12,
+      "row_height": 31,
+      "tab_height": 30,
+      "tab_position": "Top",
+      "tabs_enabled": true,
+      "position": [
+        1118,
+        261
+      ],
+      "toggle_on": "Themes/Luna-Impulse/Theme/Toggle On.png",
+      "toggle_off": "Themes/Luna-Impulse/Theme/Toggle Off.png",
+      "list_icon": "Themes/Luna-Impulse/Theme/List.png",
+      "font_family": "Arial",
+      "ui_assets": 4,
+      "upstream_lua_scripts": 1
+    },
+    {
+      "name": "Marin",
+      "folder": "Marin",
+      "profile": "Themes/Marin/Profiles/Marin.txt",
+      "header": "Themes/Marin/Headers/Custom Header/Marin.png",
+      "header_frames": 1,
+      "header_overlay": null,
+      "subheader": null,
+      "footer": null,
+      "badge": null,
+      "background": null,
+      "accent": [
+        255,
+        119,
+        218,
+        255
+      ],
+      "background_colour": [
+        255,
+        229,
+        255,
+        255
+      ],
+      "width": 427,
+      "rows": 13,
+      "row_height": 30,
+      "tab_height": 25,
+      "tab_position": "Top",
+      "tabs_enabled": true,
+      "position": [
+        1479,
+        337
+      ],
+      "toggle_on": null,
+      "toggle_off": null,
+      "list_icon": null,
+      "font_family": "Arial",
+      "ui_assets": 0,
+      "upstream_lua_scripts": 0
+    },
+    {
+      "name": "Matrix",
+      "folder": "Matrix",
+      "profile": "Themes/Matrix/Profiles/Matrix.txt",
+      "header": "Themes/Matrix/Headers/Custom Header/Scene01000.png",
+      "header_frames": 129,
+      "header_overlay": null,
+      "subheader": null,
+      "footer": null,
+      "badge": null,
+      "background": null,
+      "accent": [
+        0,
+        0,
+        0,
+        255
+      ],
+      "background_colour": [
+        0,
+        0,
+        0,
+        211
+      ],
+      "width": 469,
+      "rows": 13,
+      "row_height": 41,
+      "tab_height": 33,
+      "tab_position": "Top",
+      "tabs_enabled": true,
+      "position": [
+        30,
+        148
+      ],
+      "toggle_on": "Themes/Matrix/Theme/Toggle On.png",
+      "toggle_off": "Themes/Matrix/Theme/Toggle Off.png",
+      "list_icon": "Themes/Matrix/Theme/List.png",
+      "font_family": "Arial",
+      "ui_assets": 15,
+      "upstream_lua_scripts": 0
+    },
+    {
+      "name": "Menyoo",
+      "folder": "Menyoo",
+      "profile": "Themes/Menyoo/Profiles/Menyoo.txt",
+      "header": "Themes/Menyoo/Headers/Custom Header/Comp 1_00022.png",
+      "header_frames": 195,
+      "header_overlay": null,
+      "subheader": null,
+      "footer": null,
+      "badge": null,
+      "background": null,
+      "accent": [
+        211,
+        211,
+        211,
+        255
+      ],
+      "background_colour": [
+        0,
+        0,
+        0,
+        145
+      ],
+      "width": 329,
+      "rows": 12,
+      "row_height": 33,
+      "tab_height": 18,
+      "tab_position": "Top",
+      "tabs_enabled": true,
+      "position": [
+        1168,
+        678
+      ],
+      "toggle_on": "Themes/Menyoo/Theme/Toggle On.png",
+      "toggle_off": "Themes/Menyoo/Theme/Toggle Off.png",
+      "list_icon": "Themes/Menyoo/Theme/List.png",
+      "font_family": "Arial",
+      "ui_assets": 42,
+      "upstream_lua_scripts": 0
+    },
+    {
+      "name": "Mercyyy",
+      "folder": "Mercyyy",
+      "profile": "Themes/Mercyyy/Profiles/Mercyyy.txt",
+      "header": "Themes/Mercyyy/Headers/Custom Header/Mercyyy.png",
+      "header_frames": 1,
+      "header_overlay": null,
+      "subheader": null,
+      "footer": null,
+      "badge": null,
+      "background": null,
+      "accent": [
+        0,
+        0,
+        0,
+        222
+      ],
+      "background_colour": [
+        0,
+        0,
+        0,
+        222
+      ],
+      "width": 441,
+      "rows": 20,
+      "row_height": 28,
+      "tab_height": 28,
+      "tab_position": "Top",
+      "tabs_enabled": true,
+      "position": [
+        1240,
+        130
+      ],
+      "toggle_on": "Themes/Mercyyy/Theme/Toggle On.png",
+      "toggle_off": "Themes/Mercyyy/Theme/Toggle Off.png",
+      "list_icon": "Themes/Mercyyy/Theme/List.png",
+      "font_family": "Arial",
+      "ui_assets": 53,
+      "upstream_lua_scripts": 0
+    },
+    {
+      "name": "Midari Ikishima",
+      "folder": "Midari Ikishima",
+      "profile": "Themes/Midari Ikishima/Profiles/Midari Ikishima.txt",
+      "header": "Themes/Midari Ikishima/Headers/Custom Header/\u751f\u5fd7\u6469 \u5984-1-0.png",
+      "header_frames": 60,
+      "header_overlay": null,
+      "subheader": null,
+      "footer": null,
+      "badge": null,
+      "background": null,
+      "accent": [
+        94,
+        21,
+        53,
+        255
+      ],
+      "background_colour": [
+        0,
+        0,
+        0,
+        210
+      ],
+      "width": 448,
+      "rows": 12,
+      "row_height": 31,
+      "tab_height": 28,
+      "tab_position": "Top",
+      "tabs_enabled": true,
+      "position": [
+        1458,
+        196
+      ],
+      "toggle_on": "Themes/Midari Ikishima/Theme/Toggle On.png",
+      "toggle_off": "Themes/Midari Ikishima/Theme/Toggle Off.png",
+      "list_icon": "Themes/Midari Ikishima/Theme/List.png",
+      "font_family": "Arial",
+      "ui_assets": 55,
+      "upstream_lua_scripts": 0
+    },
+    {
+      "name": "Midnight Violet",
+      "folder": "Midnight Violet",
+      "profile": "Themes/Midnight Violet/Profiles/Midnight Violet.txt",
+      "header": "Themes/Midnight Violet/Headers/Custom Header/Midnight Violet.png",
+      "header_frames": 1,
+      "header_overlay": null,
+      "subheader": null,
+      "footer": null,
+      "badge": null,
+      "background": null,
+      "accent": [
+        38,
+        38,
+        38,
+        255
+      ],
+      "background_colour": [
+        12,
+        12,
+        12,
+        223
+      ],
+      "width": 545,
+      "rows": 20,
+      "row_height": 31,
+      "tab_height": 40,
+      "tab_position": "Top",
+      "tabs_enabled": true,
+      "position": [
+        1120,
+        285
+      ],
+      "toggle_on": "Themes/Midnight Violet/Theme/Toggle On.png",
+      "toggle_off": "Themes/Midnight Violet/Theme/Toggle Off.png",
+      "list_icon": "Themes/Midnight Violet/Theme/List.png",
+      "font_family": "Arial",
+      "ui_assets": 55,
+      "upstream_lua_scripts": 0
+    },
+    {
+      "name": "Minimalistic",
+      "folder": "Minimalistic",
+      "profile": "Themes/Minimalistic/Profiles/Minimalistic.txt",
+      "header": "Themes/Minimalistic/Headers/Custom Header/Header.png",
+      "header_frames": 1,
+      "header_overlay": null,
+      "subheader": null,
+      "footer": null,
+      "badge": null,
+      "background": null,
+      "accent": [
+        15,
+        15,
+        15,
+        150
+      ],
+      "background_colour": [
+        18,
+        18,
+        18,
+        255
+      ],
+      "width": 430,
+      "rows": 12,
+      "row_height": 31,
+      "tab_height": 28,
+      "tab_position": "Top",
+      "tabs_enabled": false,
+      "position": [
+        1477,
+        561
+      ],
+      "toggle_on": "Themes/Minimalistic/Theme/Toggle On.png",
+      "toggle_off": "Themes/Minimalistic/Theme/Toggle Off.png",
+      "list_icon": "Themes/Minimalistic/Theme/List.png",
+      "font_family": "Arial",
+      "ui_assets": 13,
+      "upstream_lua_scripts": 1
+    },
+    {
+      "name": "Minimalistic Black & White",
+      "folder": "Minimalistic Black & White",
+      "profile": "Themes/Minimalistic Black & White/Profiles/Minimalistic Black & White.txt",
+      "header": "Themes/Minimalistic Black & White/Headers/Custom Header/frame_00_delay-0.1s.gif",
+      "header_frames": 35,
+      "header_overlay": null,
+      "subheader": null,
+      "footer": null,
+      "badge": null,
+      "background": null,
+      "accent": [
+        255,
+        255,
+        255,
+        255
+      ],
+      "background_colour": [
+        0,
+        0,
+        0,
+        210
+      ],
+      "width": 380,
+      "rows": 17,
+      "row_height": 31,
+      "tab_height": 28,
+      "tab_position": "Top",
+      "tabs_enabled": true,
+      "position": [
+        1300,
+        465
+      ],
+      "toggle_on": null,
+      "toggle_off": null,
+      "list_icon": null,
+      "font_family": "Arial",
+      "ui_assets": 0,
+      "upstream_lua_scripts": 0
+    },
+    {
+      "name": "Minimalistic v2",
+      "folder": "Minimalistic v2",
+      "profile": "Themes/Minimalistic v2/Profiles/Minimalistic v2.txt",
+      "header": "Themes/Minimalistic v2/Headers/Custom Header/White.png",
+      "header_frames": 1,
+      "header_overlay": null,
+      "subheader": null,
+      "footer": null,
+      "badge": null,
+      "background": null,
+      "accent": [
+        10,
+        10,
+        10,
+        150
+      ],
+      "background_colour": [
+        18,
+        18,
+        18,
+        255
+      ],
+      "width": 430,
+      "rows": 12,
+      "row_height": 31,
+      "tab_height": 28,
+      "tab_position": "Top",
+      "tabs_enabled": false,
+      "position": [
+        1477,
+        561
+      ],
+      "toggle_on": "Themes/Minimalistic v2/Theme/Toggle On.png",
+      "toggle_off": "Themes/Minimalistic v2/Theme/Toggle Off.png",
+      "list_icon": "Themes/Minimalistic v2/Theme/List.png",
+      "font_family": "Arial",
+      "ui_assets": 55,
+      "upstream_lua_scripts": 1
+    },
+    {
+      "name": "Netflix",
+      "folder": "Netflix",
+      "profile": "Themes/Netflix/Profiles/Netflix.txt",
+      "header": "Themes/Netflix/Headers/Custom Header/frame_000_delay-0.04s.gif",
+      "header_frames": 102,
+      "header_overlay": null,
+      "subheader": null,
+      "footer": null,
+      "badge": null,
+      "background": null,
+      "accent": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "background_colour": [
+        0,
+        0,
+        0,
+        255
+      ],
+      "width": 423,
+      "rows": 13,
+      "row_height": 31,
+      "tab_height": 44,
+      "tab_position": "Top",
+      "tabs_enabled": true,
+      "position": [
+        1339,
+        385
+      ],
+      "toggle_on": null,
+      "toggle_off": null,
+      "list_icon": null,
+      "font_family": "Arial",
+      "ui_assets": 0,
+      "upstream_lua_scripts": 1
+    },
+    {
+      "name": "Nocturnal",
+      "folder": "Nocturnal",
+      "profile": "Themes/Nocturnal/Profiles/Nocturnal.txt",
+      "header": "Themes/Nocturnal/Headers/Custom Header/0.png",
+      "header_frames": 1,
+      "header_overlay": null,
+      "subheader": null,
+      "footer": null,
+      "badge": null,
+      "background": null,
+      "accent": [
+        16,
+        21,
+        26,
+        255
+      ],
+      "background_colour": [
+        18,
+        23,
+        29,
+        245
+      ],
+      "width": 448,
+      "rows": 12,
+      "row_height": 31,
+      "tab_height": 28,
+      "tab_position": "Top",
+      "tabs_enabled": true,
+      "position": [
+        1460,
+        666
+      ],
+      "toggle_on": "Themes/Nocturnal/Theme/Toggle On.png",
+      "toggle_off": "Themes/Nocturnal/Theme/Toggle Off.png",
+      "list_icon": "Themes/Nocturnal/Theme/List.png",
+      "font_family": "Arial",
+      "ui_assets": 23,
+      "upstream_lua_scripts": 0
+    },
+    {
+      "name": "Nordic Dark",
+      "folder": "Nordic Dark",
+      "profile": "Themes/Nordic Dark/Profiles/Nordic Dark.txt",
+      "header": null,
+      "header_frames": 0,
+      "header_overlay": null,
+      "subheader": null,
+      "footer": null,
+      "badge": null,
+      "background": null,
+      "accent": [
+        58,
+        65,
+        81,
+        255
+      ],
+      "background_colour": [
+        45,
+        51,
+        63,
+        255
+      ],
+      "width": 406,
+      "rows": 12,
+      "row_height": 31,
+      "tab_height": 28,
+      "tab_position": "Top",
+      "tabs_enabled": true,
+      "position": [
+        1485,
+        297
+      ],
+      "toggle_on": null,
+      "toggle_off": null,
+      "list_icon": null,
+      "font_family": "Arial",
+      "ui_assets": 0,
+      "upstream_lua_scripts": 0
+    },
+    {
+      "name": "NowiryPulsive",
+      "folder": "NowiryPulsive",
+      "profile": "Themes/NowiryPulsive/Profiles/NowiryPulsive.txt",
+      "header": "Themes/NowiryPulsive/Headers/Custom Header/StandBasic.png",
+      "header_frames": 1,
+      "header_overlay": null,
+      "subheader": null,
+      "footer": null,
+      "badge": null,
+      "background": null,
+      "accent": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "background_colour": [
+        25,
+        25,
+        25,
+        255
+      ],
+      "width": 427,
+      "rows": 16,
+      "row_height": 31,
+      "tab_height": 28,
+      "tab_position": "Top",
+      "tabs_enabled": true,
+      "position": [
+        1331,
+        271
+      ],
+      "toggle_on": "Themes/NowiryPulsive/Theme/Toggle On.png",
+      "toggle_off": "Themes/NowiryPulsive/Theme/Toggle Off.png",
+      "list_icon": "Themes/NowiryPulsive/Theme/List.png",
+      "font_family": "Arial",
+      "ui_assets": 46,
+      "upstream_lua_scripts": 1
+    },
+    {
+      "name": "Off-White",
+      "folder": "Off-White",
+      "profile": "Themes/Off-White/Profiles/Off-White.txt",
+      "header": "Themes/Off-White/Header.bmp",
+      "header_frames": 1,
+      "header_overlay": null,
+      "subheader": null,
+      "footer": null,
+      "badge": null,
+      "background": null,
+      "accent": [
+        0,
+        0,
+        0,
+        255
+      ],
+      "background_colour": [
+        255,
+        255,
+        255,
+        255
+      ],
+      "width": 476,
+      "rows": 14,
+      "row_height": 30,
+      "tab_height": 18,
+      "tab_position": "Top",
+      "tabs_enabled": true,
+      "position": [
+        191,
+        43
+      ],
+      "toggle_on": null,
+      "toggle_off": null,
+      "list_icon": null,
+      "font_family": "Arial",
+      "ui_assets": 0,
+      "upstream_lua_scripts": 1
+    },
+    {
+      "name": "Old UI",
+      "folder": "Old UI",
+      "profile": "Themes/Old UI/Profiles/Old UI.txt",
+      "header": null,
+      "header_frames": 0,
+      "header_overlay": null,
+      "subheader": null,
+      "footer": null,
+      "badge": null,
+      "background": null,
+      "accent": [
+        255,
+        255,
+        255,
+        255
+      ],
+      "background_colour": [
+        0,
+        0,
+        0,
+        255
+      ],
+      "width": 430,
+      "rows": 20,
+      "row_height": 30,
+      "tab_height": 28,
+      "tab_position": "Top",
+      "tabs_enabled": false,
+      "position": [
+        1250,
+        56
+      ],
+      "toggle_on": null,
+      "toggle_off": null,
+      "list_icon": null,
+      "font_family": "Arial",
+      "ui_assets": 0,
+      "upstream_lua_scripts": 0
+    },
+    {
+      "name": "Onyx",
+      "folder": "Onyx",
+      "profile": "Themes/Onyx/Profiles/Onyx.txt",
+      "header": "Themes/Onyx/Headers/Custom Header/Header.png",
+      "header_frames": 1,
+      "header_overlay": null,
+      "subheader": null,
+      "footer": null,
+      "badge": null,
+      "background": null,
+      "accent": [
+        0,
+        0,
+        0,
+        255
+      ],
+      "background_colour": [
+        0,
+        0,
+        0,
+        200
+      ],
+      "width": 350,
+      "rows": 12,
+      "row_height": 30,
+      "tab_height": 28,
+      "tab_position": "Top",
+      "tabs_enabled": true,
+      "position": [
+        1367,
+        143
+      ],
+      "toggle_on": null,
+      "toggle_off": null,
+      "list_icon": null,
+      "font_family": "Arial",
+      "ui_assets": 32,
+      "upstream_lua_scripts": 0
+    },
+    {
+      "name": "Optimum",
+      "folder": "Optimum",
+      "profile": "Themes/Optimum/Profiles/Optimum.txt",
+      "header": "Themes/Optimum/Headers/Custom Header/0.png",
+      "header_frames": 1,
+      "header_overlay": null,
+      "subheader": null,
+      "footer": null,
+      "badge": null,
+      "background": null,
+      "accent": [
+        239,
+        244,
+        239,
+        255
+      ],
+      "background_colour": [
+        32,
+        33,
+        33,
+        255
+      ],
+      "width": 490,
+      "rows": 12,
+      "row_height": 33,
+      "tab_height": 28,
+      "tab_position": "Top",
+      "tabs_enabled": true,
+      "position": [
+        160,
+        120
+      ],
+      "toggle_on": "Themes/Optimum/Theme/Toggle On.png",
+      "toggle_off": "Themes/Optimum/Theme/Toggle Off.png",
+      "list_icon": "Themes/Optimum/Theme/List.png",
+      "font_family": "Arial",
+      "ui_assets": 41,
+      "upstream_lua_scripts": 0
+    },
+    {
+      "name": "Orange Minimalistic",
+      "folder": "Orange Minimalistic",
+      "profile": "Themes/Orange Minimalistic/Profiles/Orange Minimalistic.txt",
+      "header": null,
+      "header_frames": 0,
+      "header_overlay": null,
+      "subheader": null,
+      "footer": null,
+      "badge": null,
+      "background": null,
+      "accent": [
+        255,
+        120,
+        58,
+        255
+      ],
+      "background_colour": [
+        17,
+        17,
+        17,
+        255
+      ],
+      "width": 433,
+      "rows": 20,
+      "row_height": 25,
+      "tab_height": 28,
+      "tab_position": "Top",
+      "tabs_enabled": true,
+      "position": [
+        1402,
+        60
+      ],
+      "toggle_on": "Themes/Orange Minimalistic/Theme/Toggle On.png",
+      "toggle_off": "Themes/Orange Minimalistic/Theme/Toggle Off.png",
+      "list_icon": "Themes/Orange Minimalistic/Theme/List.png",
+      "font_family": "Arial",
+      "ui_assets": 23,
+      "upstream_lua_scripts": 0
+    },
+    {
+      "name": "OrangeGray",
+      "folder": "OrangeGray",
+      "profile": "Themes/OrangeGray/Profiles/OrangeGray.txt",
+      "header": "Themes/OrangeGray/Headers/Custom Header/6.png",
+      "header_frames": 1,
+      "header_overlay": null,
+      "subheader": null,
+      "footer": null,
+      "badge": null,
+      "background": null,
+      "accent": [
+        20,
+        20,
+        20,
+        255
+      ],
+      "background_colour": [
+        20,
+        20,
+        20,
+        255
+      ],
+      "width": 399,
+      "rows": 12,
+      "row_height": 33,
+      "tab_height": 29,
+      "tab_position": "Top",
+      "tabs_enabled": true,
+      "position": [
+        22,
+        35
+      ],
+      "toggle_on": "Themes/OrangeGray/Theme/Toggle On.png",
+      "toggle_off": "Themes/OrangeGray/Theme/Toggle Off.png",
+      "list_icon": "Themes/OrangeGray/Theme/List.png",
+      "font_family": "Arial",
+      "ui_assets": 43,
+      "upstream_lua_scripts": 0
+    },
+    {
+      "name": "Ozark",
+      "folder": "Ozark",
+      "profile": "Themes/Ozark/Profiles/Ozark.txt",
+      "header": "Themes/Ozark/Interaction Header/Header1.bmp",
+      "header_frames": 18,
+      "header_overlay": "Themes/Ozark/Header.bmp",
+      "subheader": "Themes/Ozark/Subheader.bmp",
+      "footer": null,
+      "badge": null,
+      "background": null,
+      "accent": [
+        255,
+        255,
+        255,
+        255
+      ],
+      "background_colour": [
+        0,
+        0,
+        0,
+        180
+      ],
+      "width": 432,
+      "rows": 12,
+      "row_height": 38,
+      "tab_height": 18,
+      "tab_position": "Top",
+      "tabs_enabled": false,
+      "position": [
+        215,
+        315
+      ],
+      "toggle_on": "Themes/Ozark/Theme/Toggle On.png",
+      "toggle_off": "Themes/Ozark/Theme/Toggle Off.png",
+      "list_icon": "Themes/Ozark/Theme/List.png",
+      "font_family": "Arial",
+      "ui_assets": 5,
+      "upstream_lua_scripts": 1
+    },
+    {
+      "name": "Paragon",
+      "folder": "Paragon",
+      "profile": "Themes/Paragon/Profiles/Paragon.txt",
+      "header": "Themes/Paragon/Header.bmp",
+      "header_frames": 1,
+      "header_overlay": null,
+      "subheader": "Themes/Paragon/Subheader.bmp",
+      "footer": "Themes/Paragon/Footer.bmp",
+      "badge": null,
+      "background": null,
+      "accent": [
+        84,
+        87,
+        89,
+        255
+      ],
+      "background_colour": [
+        28,
+        28,
+        30,
+        255
+      ],
+      "width": 508,
+      "rows": 16,
+      "row_height": 38,
+      "tab_height": 18,
+      "tab_position": "Top",
+      "tabs_enabled": false,
+      "position": [
+        60,
+        226
+      ],
+      "toggle_on": "Themes/Paragon/Theme/Toggle On.png",
+      "toggle_off": "Themes/Paragon/Theme/Toggle Off.png",
+      "list_icon": "Themes/Paragon/Theme/List.png",
+      "font_family": "Arial",
+      "ui_assets": 5,
+      "upstream_lua_scripts": 1
+    },
+    {
+      "name": "Paragone",
+      "folder": "Paragone",
+      "profile": "Themes/Paragone/Profiles/Paragone.txt",
+      "header": null,
+      "header_frames": 0,
+      "header_overlay": null,
+      "subheader": null,
+      "footer": null,
+      "badge": null,
+      "background": null,
+      "accent": [
+        30,
+        103,
+        147,
+        255
+      ],
+      "background_colour": [
+        0,
+        0,
+        0,
+        255
+      ],
+      "width": 380,
+      "rows": 12,
+      "row_height": 31,
+      "tab_height": 28,
+      "tab_position": "Top",
+      "tabs_enabled": true,
+      "position": [
+        160,
+        120
+      ],
+      "toggle_on": null,
+      "toggle_off": null,
+      "list_icon": null,
+      "font_family": "Arial",
+      "ui_assets": 0,
+      "upstream_lua_scripts": 0
+    },
+    {
+      "name": "Phantom X",
+      "folder": "Phantom X",
+      "profile": "Themes/Phantom X/Profiles/Phantom X.txt",
+      "header": "Themes/Phantom X/Header.bmp",
+      "header_frames": 1,
+      "header_overlay": null,
+      "subheader": "Themes/Phantom X/Subheader.bmp",
+      "footer": "Themes/Phantom X/Footer.bmp",
+      "badge": null,
+      "background": null,
+      "accent": [
+        105,
+        98,
+        127,
+        255
+      ],
+      "background_colour": [
+        0,
+        0,
+        0,
+        200
+      ],
+      "width": 458,
+      "rows": 15,
+      "row_height": 34,
+      "tab_height": 18,
+      "tab_position": "Top",
+      "tabs_enabled": false,
+      "position": [
+        190,
+        290
+      ],
+      "toggle_on": "Themes/Phantom X/Theme/Toggle On.png",
+      "toggle_off": "Themes/Phantom X/Theme/Toggle Off.png",
+      "list_icon": "Themes/Phantom X/Theme/List.png",
+      "font_family": "Arial",
+      "ui_assets": 5,
+      "upstream_lua_scripts": 1
+    },
+    {
+      "name": "Pink Animated",
+      "folder": "Pink Animated",
+      "profile": "Themes/Pink Animated/Profiles/Pink Animated.txt",
+      "header": "Themes/Pink Animated/Headers/Custom Header/frame_000_delay-0.03s.gif",
+      "header_frames": 150,
+      "header_overlay": null,
+      "subheader": null,
+      "footer": null,
+      "badge": null,
+      "background": null,
+      "accent": [
+        240,
+        73,
+        179,
+        255
+      ],
+      "background_colour": [
+        10,
+        10,
+        10,
+        255
+      ],
+      "width": 426,
+      "rows": 16,
+      "row_height": 30,
+      "tab_height": 18,
+      "tab_position": "Top",
+      "tabs_enabled": true,
+      "position": [
+        255,
+        264
+      ],
+      "toggle_on": null,
+      "toggle_off": null,
+      "list_icon": null,
+      "font_family": "Arial",
+      "ui_assets": 0,
+      "upstream_lua_scripts": 0
+    },
+    {
+      "name": "Rebound",
+      "folder": "Rebound",
+      "profile": "Themes/Rebound/Profiles/Rebound.txt",
+      "header": "Themes/Rebound/Header.bmp",
+      "header_frames": 1,
+      "header_overlay": null,
+      "subheader": "Themes/Rebound/Subheader.bmp",
+      "footer": "Themes/Rebound/Footer.bmp",
+      "badge": null,
+      "background": null,
+      "accent": [
+        255,
+        117,
+        58,
+        255
+      ],
+      "background_colour": [
+        0,
+        0,
+        0,
+        150
+      ],
+      "width": 460,
+      "rows": 12,
+      "row_height": 35,
+      "tab_height": 18,
+      "tab_position": "Top",
+      "tabs_enabled": false,
+      "position": [
+        150,
+        230
+      ],
+      "toggle_on": "Themes/Rebound/Theme/Toggle On.png",
+      "toggle_off": "Themes/Rebound/Theme/Toggle Off.png",
+      "list_icon": "Themes/Rebound/Theme/List.png",
+      "font_family": "Arial",
+      "ui_assets": 3,
+      "upstream_lua_scripts": 1
+    },
+    {
+      "name": "Rockstar Admin Tool",
+      "folder": "Rockstar Admin Tool",
+      "profile": "Themes/Rockstar Admin Tool/Profiles/Rockstar Admin Tool.txt",
+      "header": "Themes/Rockstar Admin Tool/Headers/Custom Header/frame_000_delay-0.04s.gif",
+      "header_frames": 166,
+      "header_overlay": null,
+      "subheader": null,
+      "footer": null,
+      "badge": null,
+      "background": null,
+      "accent": [
+        7,
+        7,
+        7,
+        255
+      ],
+      "background_colour": [
+        10,
+        10,
+        10,
+        200
+      ],
+      "width": 462,
+      "rows": 15,
+      "row_height": 35,
+      "tab_height": 35,
+      "tab_position": "Top",
+      "tabs_enabled": false,
+      "position": [
+        1420,
+        195
+      ],
+      "toggle_on": null,
+      "toggle_off": null,
+      "list_icon": null,
+      "font_family": "Arial",
+      "ui_assets": 0,
+      "upstream_lua_scripts": 0
+    },
+    {
+      "name": "Rockstar Admin Tools",
+      "folder": "Rockstar Admin Tools",
+      "profile": "Themes/Rockstar Admin Tools/Profiles/Rockstar Admin Tools.txt",
+      "header": "Themes/Rockstar Admin Tools/Headers/Custom Header/Rockstar Admin Tools.png",
+      "header_frames": 1,
+      "header_overlay": null,
+      "subheader": null,
+      "footer": null,
+      "badge": null,
+      "background": null,
+      "accent": [
+        255,
+        170,
+        0,
+        255
+      ],
+      "background_colour": [
+        0,
+        0,
+        0,
+        120
+      ],
+      "width": 380,
+      "rows": 15,
+      "row_height": 35,
+      "tab_height": 35,
+      "tab_position": "Top",
+      "tabs_enabled": true,
+      "position": [
+        1315,
+        241
+      ],
+      "toggle_on": null,
+      "toggle_off": null,
+      "list_icon": null,
+      "font_family": "Arial",
+      "ui_assets": 21,
+      "upstream_lua_scripts": 0
+    },
+    {
+      "name": "Roses",
+      "folder": "Roses",
+      "profile": "Themes/Roses/Profiles/Roses.txt",
+      "header": "Themes/Roses/Headers/Custom Header/frame_000_delay-0.02s.gif",
+      "header_frames": 391,
+      "header_overlay": null,
+      "subheader": null,
+      "footer": null,
+      "badge": null,
+      "background": null,
+      "accent": [
+        255,
+        0,
+        68,
+        255
+      ],
+      "background_colour": [
+        7,
+        7,
+        7,
+        250
+      ],
+      "width": 378,
+      "rows": 16,
+      "row_height": 26,
+      "tab_height": 27,
+      "tab_position": "Top",
+      "tabs_enabled": true,
+      "position": [
+        277,
+        300
+      ],
+      "toggle_on": "Themes/Roses/Theme/Toggle On.png",
+      "toggle_off": "Themes/Roses/Theme/Toggle Off.png",
+      "list_icon": "Themes/Roses/Theme/List.png",
+      "font_family": "Arial",
+      "ui_assets": 53,
+      "upstream_lua_scripts": 0
+    },
+    {
+      "name": "Sensitive Content",
+      "folder": "Sensitive Content",
+      "profile": "Themes/Sensitive Content/Profiles/Sensitive Content.txt",
+      "header": "Themes/Sensitive Content/Headers/Custom Header/Sensitive Content.png",
+      "header_frames": 1,
+      "header_overlay": null,
+      "subheader": null,
+      "footer": null,
+      "badge": null,
+      "background": null,
+      "accent": [
+        0,
+        0,
+        0,
+        255
+      ],
+      "background_colour": [
+        0,
+        0,
+        0,
+        210
+      ],
+      "width": 448,
+      "rows": 12,
+      "row_height": 31,
+      "tab_height": 28,
+      "tab_position": "Top",
+      "tabs_enabled": true,
+      "position": [
+        1370,
+        276
+      ],
+      "toggle_on": null,
+      "toggle_off": null,
+      "list_icon": null,
+      "font_family": "Arial",
+      "ui_assets": 0,
+      "upstream_lua_scripts": 0
+    },
+    {
+      "name": "Space",
+      "folder": "Space",
+      "profile": "Themes/Space/Profiles/Space.txt",
+      "header": "Themes/Space/Headers/Custom Header/Space.png",
+      "header_frames": 1,
+      "header_overlay": null,
+      "subheader": null,
+      "footer": null,
+      "badge": null,
+      "background": null,
+      "accent": [
+        22,
+        22,
+        22,
+        255
+      ],
+      "background_colour": [
+        22,
+        22,
+        22,
+        222
+      ],
+      "width": 369,
+      "rows": 13,
+      "row_height": 31,
+      "tab_height": 28,
+      "tab_position": "Top",
+      "tabs_enabled": true,
+      "position": [
+        1090,
+        345
+      ],
+      "toggle_on": null,
+      "toggle_off": null,
+      "list_icon": null,
+      "font_family": "Arial",
+      "ui_assets": 0,
+      "upstream_lua_scripts": 0
+    },
+    {
+      "name": "Spotify",
+      "folder": "Spotify",
+      "profile": "Themes/Spotify/Profiles/Spotify.txt",
+      "header": "Themes/Spotify/Headers/Custom Header/frame_000_delay-0.03s.gif",
+      "header_frames": 152,
+      "header_overlay": null,
+      "subheader": null,
+      "footer": null,
+      "badge": null,
+      "background": null,
+      "accent": [
+        0,
+        150,
+        0,
+        0
+      ],
+      "background_colour": [
+        0,
+        0,
+        0,
+        255
+      ],
+      "width": 423,
+      "rows": 13,
+      "row_height": 31,
+      "tab_height": 44,
+      "tab_position": "Top",
+      "tabs_enabled": true,
+      "position": [
+        1339,
+        385
+      ],
+      "toggle_on": null,
+      "toggle_off": null,
+      "list_icon": null,
+      "font_family": "Arial",
+      "ui_assets": 0,
+      "upstream_lua_scripts": 1
+    },
+    {
+      "name": "SPXC3",
+      "folder": "SPXC3",
+      "profile": "Themes/SPXC3/Profiles/SPXC3.txt",
+      "header": "Themes/SPXC3/Headers/Custom Header/SPXC3.png",
+      "header_frames": 1,
+      "header_overlay": null,
+      "subheader": null,
+      "footer": null,
+      "badge": null,
+      "background": null,
+      "accent": [
+        0,
+        0,
+        0,
+        170
+      ],
+      "background_colour": [
+        0,
+        0,
+        0,
+        180
+      ],
+      "width": 399,
+      "rows": 20,
+      "row_height": 24,
+      "tab_height": 27,
+      "tab_position": "Top",
+      "tabs_enabled": true,
+      "position": [
+        1252,
+        119
+      ],
+      "toggle_on": null,
+      "toggle_off": null,
+      "list_icon": null,
+      "font_family": "Arial",
+      "ui_assets": 0,
+      "upstream_lua_scripts": 1
+    },
+    {
+      "name": "Standsense",
+      "folder": "Standsense",
+      "profile": "Themes/Standsense/Profiles/Standsense.txt",
+      "header": "Themes/Standsense/Headers/Custom Header/gamesense.png",
+      "header_frames": 1,
+      "header_overlay": null,
+      "subheader": null,
+      "footer": null,
+      "badge": null,
+      "background": null,
+      "accent": [
+        19,
+        19,
+        19,
+        255
+      ],
+      "background_colour": [
+        15,
+        15,
+        15,
+        255
+      ],
+      "width": 500,
+      "rows": 12,
+      "row_height": 30,
+      "tab_height": 46,
+      "tab_position": "Top",
+      "tabs_enabled": true,
+      "position": [
+        1355,
+        406
+      ],
+      "toggle_on": "Themes/Standsense/Theme/Toggle On.png",
+      "toggle_off": "Themes/Standsense/Theme/Toggle Off.png",
+      "list_icon": "Themes/Standsense/Theme/List.png",
+      "font_family": "Arial",
+      "ui_assets": 17,
+      "upstream_lua_scripts": 0
+    },
+    {
+      "name": "Standxo",
+      "folder": "Standxo",
+      "profile": "Themes/Standxo/Profiles/standxo.txt",
+      "header": "Themes/Standxo/Headers/Custom Header/standxo.png",
+      "header_frames": 1,
+      "header_overlay": null,
+      "subheader": null,
+      "footer": null,
+      "badge": null,
+      "background": null,
+      "accent": [
+        40,
+        40,
+        40,
+        200
+      ],
+      "background_colour": [
+        0,
+        0,
+        0,
+        200
+      ],
+      "width": 380,
+      "rows": 12,
+      "row_height": 31,
+      "tab_height": 46,
+      "tab_position": "Top",
+      "tabs_enabled": true,
+      "position": [
+        1412,
+        570
+      ],
+      "toggle_on": "Themes/Standxo/Theme/Toggle On.png",
+      "toggle_off": "Themes/Standxo/Theme/Toggle Off.png",
+      "list_icon": "Themes/Standxo/Theme/List.png",
+      "font_family": "Arial",
+      "ui_assets": 16,
+      "upstream_lua_scripts": 0
+    },
+    {
+      "name": "Stoners",
+      "folder": "Stoners",
+      "profile": "Themes/Stoners/Profiles/Stoners.txt",
+      "header": "Themes/Stoners/Headers/Custom Header/1.png",
+      "header_frames": 28,
+      "header_overlay": null,
+      "subheader": null,
+      "footer": null,
+      "badge": null,
+      "background": null,
+      "accent": [
+        168,
+        230,
+        163,
+        255
+      ],
+      "background_colour": [
+        99,
+        154,
+        82,
+        255
+      ],
+      "width": 406,
+      "rows": 12,
+      "row_height": 31,
+      "tab_height": 28,
+      "tab_position": "Top",
+      "tabs_enabled": true,
+      "position": [
+        1490,
+        635
+      ],
+      "toggle_on": "Themes/Stoners/Theme/Toggle On.png",
+      "toggle_off": "Themes/Stoners/Theme/Toggle Off.png",
+      "list_icon": "Themes/Stoners/Theme/List.png",
+      "font_family": "Arial",
+      "ui_assets": 17,
+      "upstream_lua_scripts": 0
+    },
+    {
+      "name": "Sunset",
+      "folder": "Sunset",
+      "profile": "Themes/Sunset/Profiles/Sunset.txt",
+      "header": "Themes/Sunset/Headers/Custom Header/sunsetmom_40_1.jpg",
+      "header_frames": 49,
+      "header_overlay": null,
+      "subheader": null,
+      "footer": null,
+      "badge": null,
+      "background": null,
+      "accent": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "background_colour": [
+        25,
+        22,
+        22,
+        255
+      ],
+      "width": 380,
+      "rows": 12,
+      "row_height": 34,
+      "tab_height": 36,
+      "tab_position": "Top",
+      "tabs_enabled": true,
+      "position": [
+        1395,
+        520
+      ],
+      "toggle_on": null,
+      "toggle_off": null,
+      "list_icon": null,
+      "font_family": "Arial",
+      "ui_assets": 0,
+      "upstream_lua_scripts": 1
+    },
+    {
+      "name": "Superior V",
+      "folder": "Superior V",
+      "profile": "Themes/Superior V/Profiles/Superior V.txt",
+      "header": "Themes/Superior V/Header.png",
+      "header_frames": 1,
+      "header_overlay": null,
+      "subheader": null,
+      "footer": "Themes/Superior V/Footer.png",
+      "badge": null,
+      "background": null,
+      "accent": [
+        186,
+        186,
+        186,
+        255
+      ],
+      "background_colour": [
+        1,
+        2,
+        1,
+        200
+      ],
+      "width": 343,
+      "rows": 12,
+      "row_height": 34,
+      "tab_height": 18,
+      "tab_position": "Top",
+      "tabs_enabled": false,
+      "position": [
+        1429,
+        172
+      ],
+      "toggle_on": "Themes/Superior V/Theme/Toggle On.png",
+      "toggle_off": "Themes/Superior V/Theme/Toggle Off.png",
+      "list_icon": "Themes/Superior V/Theme/List.png",
+      "font_family": "Arial",
+      "ui_assets": 44,
+      "upstream_lua_scripts": 1
+    },
+    {
+      "name": "The Purge",
+      "folder": "The Purge",
+      "profile": "Themes/The Purge/Profiles/The Purge.txt",
+      "header": "Themes/The Purge/Headers/Custom Header/Header.bmp",
+      "header_frames": 1,
+      "header_overlay": null,
+      "subheader": null,
+      "footer": null,
+      "badge": null,
+      "background": null,
+      "accent": [
+        255,
+        0,
+        0,
+        255
+      ],
+      "background_colour": [
+        28,
+        28,
+        28,
+        255
+      ],
+      "width": 441,
+      "rows": 17,
+      "row_height": 35,
+      "tab_height": 18,
+      "tab_position": "Top",
+      "tabs_enabled": false,
+      "position": [
+        1300,
+        335
+      ],
+      "toggle_on": "Themes/The Purge/Theme/Toggle On.png",
+      "toggle_off": "Themes/The Purge/Theme/Toggle Off.png",
+      "list_icon": "Themes/The Purge/Theme/List.png",
+      "font_family": "Arial",
+      "ui_assets": 5,
+      "upstream_lua_scripts": 0
+    },
+    {
+      "name": "Trooper",
+      "folder": "Trooper",
+      "profile": "Themes/Trooper/Profiles/Trooper.txt",
+      "header": "Themes/Trooper/Headers/Custom Header/0_blank.png",
+      "header_frames": 1,
+      "header_overlay": null,
+      "subheader": null,
+      "footer": null,
+      "badge": null,
+      "background": null,
+      "accent": [
+        33,
+        33,
+        37,
+        255
+      ],
+      "background_colour": [
+        40,
+        40,
+        45,
+        250
+      ],
+      "width": 448,
+      "rows": 12,
+      "row_height": 31,
+      "tab_height": 28,
+      "tab_position": "Top",
+      "tabs_enabled": true,
+      "position": [
+        1460,
+        666
+      ],
+      "toggle_on": "Themes/Trooper/Theme/Toggle On.png",
+      "toggle_off": "Themes/Trooper/Theme/Toggle Off.png",
+      "list_icon": "Themes/Trooper/Theme/List.png",
+      "font_family": "Arial",
+      "ui_assets": 22,
+      "upstream_lua_scripts": 0
+    },
+    {
+      "name": "Windows11",
+      "folder": "Windows11",
+      "profile": "Themes/Windows11/Profiles/Windows11.txt",
+      "header": null,
+      "header_frames": 0,
+      "header_overlay": null,
+      "subheader": null,
+      "footer": null,
+      "badge": "Themes/Windows11/Profile.png",
+      "background": "Themes/Windows11/Background.png",
+      "accent": [
+        255,
+        255,
+        255,
+        255
+      ],
+      "background_colour": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "width": 480,
+      "rows": 12,
+      "row_height": 31,
+      "tab_height": 28,
+      "tab_position": "Top",
+      "tabs_enabled": true,
+      "position": [
+        1291,
+        562
+      ],
+      "toggle_on": "Themes/Windows11/Theme/Toggle On.png",
+      "toggle_off": "Themes/Windows11/Theme/Toggle Off.png",
+      "list_icon": "Themes/Windows11/Theme/List.png",
+      "font_family": "Segoe UI",
+      "ui_assets": 7,
+      "upstream_lua_scripts": 1
+    },
+    {
+      "name": "Windows98",
+      "folder": "Windows98",
+      "profile": "Themes/Windows98/Profiles/Windows98.txt",
+      "header": "Themes/Windows98/Headers/Custom Header/windows 98.jpeg",
+      "header_frames": 1,
+      "header_overlay": null,
+      "subheader": null,
+      "footer": null,
+      "badge": null,
+      "background": null,
+      "accent": [
+        1,
+        0,
+        129,
+        255
+      ],
+      "background_colour": [
+        0,
+        128,
+        128,
+        255
+      ],
+      "width": 437,
+      "rows": 12,
+      "row_height": 31,
+      "tab_height": 28,
+      "tab_position": "Top",
+      "tabs_enabled": true,
+      "position": [
+        160,
+        120
+      ],
+      "toggle_on": "Themes/Windows98/Theme/Toggle On.png",
+      "toggle_off": "Themes/Windows98/Theme/Toggle Off.png",
+      "list_icon": "Themes/Windows98/Theme/List.png",
+      "font_family": "Segoe UI",
+      "ui_assets": 24,
+      "upstream_lua_scripts": 0
+    },
+    {
+      "name": "X-Force",
+      "folder": "X-Force",
+      "profile": "Themes/X-Force/Profiles/X-Force.txt",
+      "header": "Themes/X-Force/Header.bmp",
+      "header_frames": 1,
+      "header_overlay": null,
+      "subheader": "Themes/X-Force/Subheader.bmp",
+      "footer": "Themes/X-Force/Footer.bmp",
+      "badge": null,
+      "background": null,
+      "accent": [
+        52,
+        135,
+        106,
+        255
+      ],
+      "background_colour": [
+        0,
+        0,
+        0,
+        150
+      ],
+      "width": 504,
+      "rows": 14,
+      "row_height": 31,
+      "tab_height": 18,
+      "tab_position": "Top",
+      "tabs_enabled": false,
+      "position": [
+        1240,
+        350
+      ],
+      "toggle_on": "Themes/X-Force/Theme/Toggle On.png",
+      "toggle_off": "Themes/X-Force/Theme/Toggle Off.png",
+      "list_icon": "Themes/X-Force/Theme/List.png",
+      "font_family": "Arial",
+      "ui_assets": 3,
+      "upstream_lua_scripts": 1
+    },
+    {
+      "name": "XCheats",
+      "folder": "XCheats",
+      "profile": "Themes/XCheats/Profiles/XCheats.txt",
+      "header": "Themes/XCheats/Header.bmp",
+      "header_frames": 1,
+      "header_overlay": null,
+      "subheader": "Themes/XCheats/Subheader.bmp",
+      "footer": "Themes/XCheats/Footer.bmp",
+      "badge": null,
+      "background": null,
+      "accent": [
+        109,
+        112,
+        114,
+        255
+      ],
+      "background_colour": [
+        0,
+        0,
+        0,
+        225
+      ],
+      "width": 365,
+      "rows": 12,
+      "row_height": 36,
+      "tab_height": 18,
+      "tab_position": "Top",
+      "tabs_enabled": false,
+      "position": [
+        1430,
+        160
+      ],
+      "toggle_on": "Themes/XCheats/Theme/Toggle On.png",
+      "toggle_off": "Themes/XCheats/Theme/Toggle Off.png",
+      "list_icon": "Themes/XCheats/Theme/List.png",
+      "font_family": "Arial",
+      "ui_assets": 5,
+      "upstream_lua_scripts": 1
+    },
+    {
+      "name": "Youtube",
+      "folder": "Youtube",
+      "profile": "Themes/Youtube/Profiles/Youtube.txt",
+      "header": "Themes/Youtube/Headers/Custom Header/Youtube.png",
+      "header_frames": 1,
+      "header_overlay": null,
+      "subheader": null,
+      "footer": null,
+      "badge": null,
+      "background": null,
+      "accent": [
+        56,
+        56,
+        56,
+        255
+      ],
+      "background_colour": [
+        33,
+        33,
+        33,
+        255
+      ],
+      "width": 420,
+      "rows": 12,
+      "row_height": 33,
+      "tab_height": 33,
+      "tab_position": "Top",
+      "tabs_enabled": true,
+      "position": [
+        25,
+        65
+      ],
+      "toggle_on": "Themes/Youtube/Theme/Toggle On.png",
+      "toggle_off": "Themes/Youtube/Theme/Toggle Off.png",
+      "list_icon": "Themes/Youtube/Theme/List.png",
+      "font_family": "Arial",
+      "ui_assets": 43,
+      "upstream_lua_scripts": 0
+    },
+    {
+      "name": "Zanium",
+      "folder": "Zanium",
+      "profile": "Themes/Zanium/Profiles/Zanium.txt",
+      "header": null,
+      "header_frames": 0,
+      "header_overlay": null,
+      "subheader": null,
+      "footer": null,
+      "badge": "Themes/Zanium/Logo.png",
+      "background": "Themes/Zanium/Background.png",
+      "accent": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "background_colour": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "width": 300,
+      "rows": 12,
+      "row_height": 33,
+      "tab_height": 33,
+      "tab_position": "Top",
+      "tabs_enabled": true,
+      "position": [
+        1308,
+        255
+      ],
+      "toggle_on": null,
+      "toggle_off": null,
+      "list_icon": null,
+      "font_family": "Arial",
+      "ui_assets": 0,
+      "upstream_lua_scripts": 1
+    },
+    {
+      "name": "Zenitsu",
+      "folder": "Zenitsu",
+      "profile": "Themes/Zenitsu/Profiles/Zenitsu.txt",
+      "header": "Themes/Zenitsu/Headers/Custom Header/Zenitsu.png",
+      "header_frames": 1,
+      "header_overlay": null,
+      "subheader": null,
+      "footer": null,
+      "badge": null,
+      "background": null,
+      "accent": [
+        255,
+        162,
+        55,
+        255
+      ],
+      "background_colour": [
+        0,
+        0,
+        0,
+        255
+      ],
+      "width": 448,
+      "rows": 12,
+      "row_height": 31,
+      "tab_height": 28,
+      "tab_position": "Top",
+      "tabs_enabled": true,
+      "position": [
+        1462,
+        560
+      ],
+      "toggle_on": null,
+      "toggle_off": null,
+      "list_icon": null,
+      "font_family": "Arial",
+      "ui_assets": 0,
+      "upstream_lua_scripts": 0
+    },
+    {
+      "name": "Zeus",
+      "folder": "Zeus",
+      "profile": "Themes/Zeus/Profiles/Zeus.txt",
+      "header": "Themes/Zeus/Headers/Custom Header/0001.jpg",
+      "header_frames": 225,
+      "header_overlay": null,
+      "subheader": null,
+      "footer": null,
+      "badge": null,
+      "background": null,
+      "accent": [
+        0,
+        0,
+        0,
+        255
+      ],
+      "background_colour": [
+        0,
+        0,
+        0,
+        200
+      ],
+      "width": 595,
+      "rows": 20,
+      "row_height": 31,
+      "tab_height": 56,
+      "tab_position": "Top",
+      "tabs_enabled": true,
+      "position": [
+        1261,
+        344
+      ],
+      "toggle_on": "Themes/Zeus/Theme/Toggle On.png",
+      "toggle_off": "Themes/Zeus/Theme/Toggle Off.png",
+      "list_icon": "Themes/Zeus/Theme/List.png",
+      "font_family": "Arial",
+      "ui_assets": 43,
+      "upstream_lua_scripts": 0
+    }
+  ]
+}

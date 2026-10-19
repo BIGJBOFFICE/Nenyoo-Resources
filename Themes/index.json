@@ -2,12 +2,37 @@
   "version": 1,
   "themes": [
     {
+      "id": "2Stand1",
+      "name": "2Stand1",
+      "entry": "theme.lua",
+      "preview": "preview.png",
+      "bytes": 147918,
+      "hash": "1f6be9e8",
+      "files": [
+        {
+          "path": "preview.png",
+          "bytes": 74101,
+          "hash": "3547873014e329b6"
+        },
+        {
+          "path": "textures/header.png",
+          "bytes": 33109,
+          "hash": "4b531fa2b238c25a"
+        },
+        {
+          "path": "theme.lua",
+          "bytes": 40708,
+          "hash": "ec227810a7d3776d"
+        }
+      ]
+    },
+    {
       "id": "2Take1",
       "name": "2Take1",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 773179,
-      "hash": "ae4875e3",
+      "bytes": 775068,
+      "hash": "45664623",
       "files": [
         {
           "path": "preview.png",
@@ -66,8 +91,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 31528,
-          "hash": "b8b8b4a336cabed0"
+          "bytes": 33417,
+          "hash": "2d56b543bb2429e2"
         }
       ]
     },
@@ -76,8 +101,8 @@
       "name": "AKAI ONI",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 13361224,
-      "hash": "f79fb44b",
+      "bytes": 13361839,
+      "hash": "34d4e3fa",
       "files": [
         {
           "path": "preview.png",
@@ -96,8 +121,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 67896,
-          "hash": "5376895eb3baeccd"
+          "bytes": 68511,
+          "hash": "5f6f2e622ae3d1e4"
         }
       ]
     },
@@ -106,8 +131,8 @@
       "name": "ARENA LIVE",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 315913,
-      "hash": "65756476",
+      "bytes": 316528,
+      "hash": "9c8a1cc3",
       "files": [
         {
           "path": "preview.png",
@@ -116,8 +141,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 64919,
-          "hash": "5b6fe6ca15683fec"
+          "bytes": 65534,
+          "hash": "e889ac4db0edb1d1"
         }
       ]
     },
@@ -126,8 +151,8 @@
       "name": "Anime",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 2545137,
-      "hash": "9c2bd9af",
+      "bytes": 2547032,
+      "hash": "dda18675",
       "files": [
         {
           "path": "preview.png",
@@ -141,8 +166,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 30574,
-          "hash": "7bc509c922647644"
+          "bytes": 32469,
+          "hash": "b38e015b2d6d322c"
         }
       ]
     },
@@ -151,8 +176,8 @@
       "name": "Anime Neon",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 14188700,
-      "hash": "7560cf51",
+      "bytes": 14191360,
+      "hash": "f20c5379",
       "files": [
         {
           "path": "preview.png",
@@ -181,8 +206,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 70322,
-          "hash": "da62ee4edad1036a"
+          "bytes": 72982,
+          "hash": "00add6a8d076d496"
         }
       ]
     },
@@ -191,8 +216,8 @@
       "name": "ArabicGuy",
       "entry": "arabicguy.lua",
       "preview": "Preview.png",
-      "bytes": 1098232,
-      "hash": "f02c52d4",
+      "bytes": 1098743,
+      "hash": "709db86b",
       "files": [
         {
           "path": "Preview.png",
@@ -201,8 +226,8 @@
         },
         {
           "path": "arabicguy.lua",
-          "bytes": 21603,
-          "hash": "28ad8e44c02fdbaf"
+          "bytes": 22114,
+          "hash": "d902ea38c5b39848"
         },
         {
           "path": "fonts/Chalet London.ttf",
@@ -236,8 +261,8 @@
       "name": "Aya",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 8473651,
-      "hash": "80247e49",
+      "bytes": 8475544,
+      "hash": "60e5e222",
       "files": [
         {
           "path": "preview.png",
@@ -251,8 +276,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 30579,
-          "hash": "34096a61e2364693"
+          "bytes": 32472,
+          "hash": "97877022c6a53284"
         }
       ]
     },
@@ -261,8 +286,8 @@
       "name": "BlackNWhite",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 134973,
-      "hash": "538c80c2",
+      "bytes": 136868,
+      "hash": "91f2f70d",
       "files": [
         {
           "path": "preview.png",
@@ -276,8 +301,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 30593,
-          "hash": "5e9fb7ec3c582072"
+          "bytes": 32488,
+          "hash": "d9f470e555a7217d"
         }
       ]
     },
@@ -286,8 +311,8 @@
       "name": "BlackNWhite v2",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 440351,
-      "hash": "7141c1ec",
+      "bytes": 442246,
+      "hash": "83301f6f",
       "files": [
         {
           "path": "preview.png",
@@ -431,8 +456,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 35482,
-          "hash": "bfbbc9f272bb8fb1"
+          "bytes": 37377,
+          "hash": "26f0b8762720b7ac"
         }
       ]
     },
@@ -441,8 +466,8 @@
       "name": "Blue Hour",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 785312,
-      "hash": "c169a7e9",
+      "bytes": 787207,
+      "hash": "3f3372cb",
       "files": [
         {
           "path": "preview.png",
@@ -456,8 +481,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 30605,
-          "hash": "df3bf77bcec876a4"
+          "bytes": 32500,
+          "hash": "24a0b11de8b9410c"
         }
       ]
     },
@@ -466,8 +491,8 @@
       "name": "Capybara",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 144714,
-      "hash": "f3c05af3",
+      "bytes": 146603,
+      "hash": "e26daae9",
       "files": [
         {
           "path": "preview.png",
@@ -481,8 +506,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 30532,
-          "hash": "4fd8e4ee76360f08"
+          "bytes": 32421,
+          "hash": "9d33f6a542bf127c"
         }
       ]
     },
@@ -491,8 +516,8 @@
       "name": "Cherax",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 319827,
-      "hash": "8e7be2c1",
+      "bytes": 321722,
+      "hash": "c3919467",
       "files": [
         {
           "path": "preview.png",
@@ -506,8 +531,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 30545,
-          "hash": "124117b56676ed33"
+          "bytes": 32440,
+          "hash": "2fab558687a16a8d"
         }
       ]
     },
@@ -516,8 +541,8 @@
       "name": "Cherax Panel",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 3086927,
-      "hash": "f8417033",
+      "bytes": 3087394,
+      "hash": "439a4d6d",
       "files": [
         {
           "path": "cherax.lua",
@@ -571,8 +596,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 39881,
-          "hash": "429e6b52cabc8e2c"
+          "bytes": 40348,
+          "hash": "ffb1c1e77a9af530"
         }
       ]
     },
@@ -581,8 +606,8 @@
       "name": "Circuit",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 297612,
-      "hash": "7332ab83",
+      "bytes": 299501,
+      "hash": "fd91c4c1",
       "files": [
         {
           "path": "preview.png",
@@ -646,8 +671,93 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 31606,
-          "hash": "ad143927eda25c69"
+          "bytes": 33495,
+          "hash": "a66e529c4f5ced4f"
+        }
+      ]
+    },
+    {
+      "id": "DS Lite",
+      "name": "DS Lite",
+      "entry": "theme.lua",
+      "preview": "preview.png",
+      "bytes": 336755,
+      "hash": "c992bb56",
+      "files": [
+        {
+          "path": "preview.png",
+          "bytes": 138513,
+          "hash": "987cbeace7d9d5c0"
+        },
+        {
+          "path": "textures/background.png",
+          "bytes": 87590,
+          "hash": "b1d370630956405c"
+        },
+        {
+          "path": "textures/frame.png",
+          "bytes": 69853,
+          "hash": "def85e5c9eaea1ff"
+        },
+        {
+          "path": "theme.lua",
+          "bytes": 40799,
+          "hash": "bd0c8d706053a925"
+        }
+      ]
+    },
+    {
+      "id": "DSi",
+      "name": "DSi",
+      "entry": "theme.lua",
+      "preview": "preview.png",
+      "bytes": 396748,
+      "hash": "550a095a",
+      "files": [
+        {
+          "path": "preview.png",
+          "bytes": 128673,
+          "hash": "785b67408f3cb933"
+        },
+        {
+          "path": "textures/background.jpg",
+          "bytes": 22183,
+          "hash": "66ee26cba63a39ff"
+        },
+        {
+          "path": "textures/frame.png",
+          "bytes": 205117,
+          "hash": "9e704d320b121c15"
+        },
+        {
+          "path": "theme.lua",
+          "bytes": 40775,
+          "hash": "94c905917caec183"
+        }
+      ]
+    },
+    {
+      "id": "Death Rider",
+      "name": "Death Rider",
+      "entry": "theme.lua",
+      "preview": "preview.png",
+      "bytes": 588300,
+      "hash": "a4c0c9ba",
+      "files": [
+        {
+          "path": "preview.png",
+          "bytes": 290789,
+          "hash": "4a588863a65e79be"
+        },
+        {
+          "path": "textures/background.png",
+          "bytes": 256787,
+          "hash": "f2a390c2dc5fdd90"
+        },
+        {
+          "path": "theme.lua",
+          "bytes": 40724,
+          "hash": "694b0f9a6253af80"
         }
       ]
     },
@@ -656,8 +766,8 @@
       "name": "Delusion",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 798882,
-      "hash": "55dc62aa",
+      "bytes": 800777,
+      "hash": "b79027c7",
       "files": [
         {
           "path": "preview.png",
@@ -951,8 +1061,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 43557,
-          "hash": "2aa65075f4d90c67"
+          "bytes": 45452,
+          "hash": "d081c97448067920"
         }
       ]
     },
@@ -961,8 +1071,8 @@
       "name": "Discord",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 652785,
-      "hash": "23a785a8",
+      "bytes": 654680,
+      "hash": "a34bf842",
       "files": [
         {
           "path": "preview.png",
@@ -1206,8 +1316,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 40383,
-          "hash": "13c10381f0ec04a8"
+          "bytes": 42278,
+          "hash": "fb3971cc086d6962"
         }
       ]
     },
@@ -1216,8 +1326,8 @@
       "name": "Discord v2",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 1227384,
-      "hash": "c0159938",
+      "bytes": 1229279,
+      "hash": "a0a025ba",
       "files": [
         {
           "path": "preview.png",
@@ -1361,8 +1471,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 35230,
-          "hash": "87ddeb492f2bf723"
+          "bytes": 37125,
+          "hash": "ae7a0318f15c5c37"
         }
       ]
     },
@@ -1371,8 +1481,8 @@
       "name": "Endeavour",
       "entry": "endeavour.lua",
       "preview": "Preview.png",
-      "bytes": 270178,
-      "hash": "d2988b75",
+      "bytes": 270689,
+      "hash": "29bd0ef0",
       "files": [
         {
           "path": "Preview.png",
@@ -1381,8 +1491,8 @@
         },
         {
           "path": "endeavour.lua",
-          "bytes": 22583,
-          "hash": "ce90715b1efc23b9"
+          "bytes": 23094,
+          "hash": "132c6df611962caa"
         },
         {
           "path": "fonts/Chalet London.ttf",
@@ -1401,8 +1511,8 @@
       "name": "Epsilon",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 397786,
-      "hash": "45e94085",
+      "bytes": 399675,
+      "hash": "86964f9d",
       "files": [
         {
           "path": "preview.png",
@@ -1461,8 +1571,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 31404,
-          "hash": "4fdae660dcfd249a"
+          "bytes": 33293,
+          "hash": "b224580567e2ef6c"
         }
       ]
     },
@@ -1471,8 +1581,8 @@
       "name": "Extortion",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 1132674,
-      "hash": "e182a116",
+      "bytes": 1133065,
+      "hash": "68aab563",
       "files": [
         {
           "path": "fonts/fa-solid-900.ttf",
@@ -1491,8 +1601,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 14967,
-          "hash": "e569ddd693132783"
+          "bytes": 15358,
+          "hash": "4f13b8fca923eec4"
         }
       ]
     },
@@ -1501,8 +1611,8 @@
       "name": "Feline OS",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 7083911,
-      "hash": "3face7be",
+      "bytes": 7084302,
+      "hash": "56affccb",
       "files": [
         {
           "path": "fonts/fa-solid-900.ttf",
@@ -1526,8 +1636,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 17403,
-          "hash": "948c12c8628f188a"
+          "bytes": 17794,
+          "hash": "4621b90b329fc4bf"
         }
       ]
     },
@@ -1536,8 +1646,8 @@
       "name": "Force Hax",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 1337773,
-      "hash": "da5c253f",
+      "bytes": 1338249,
+      "hash": "c9d9ce5c",
       "files": [
         {
           "path": "fonts/force-title-anton.ttf",
@@ -1556,8 +1666,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 15175,
-          "hash": "e47b7ede68d74ec3"
+          "bytes": 15651,
+          "hash": "59d16cfa461e8ae8"
         }
       ]
     },
@@ -1566,8 +1676,8 @@
       "name": "Fragment",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 497574,
-      "hash": "b264726e",
+      "bytes": 499463,
+      "hash": "b1156820",
       "files": [
         {
           "path": "preview.png",
@@ -1631,8 +1741,93 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 31647,
-          "hash": "9591b9f34528d718"
+          "bytes": 33536,
+          "hash": "0b211fc2f4f388fa"
+        }
+      ]
+    },
+    {
+      "id": "Futur",
+      "name": "Futur",
+      "entry": "theme.lua",
+      "preview": "preview.png",
+      "bytes": 109541,
+      "hash": "12c33cac",
+      "files": [
+        {
+          "path": "preview.png",
+          "bytes": 50021,
+          "hash": "1e4cf3b079840c2c"
+        },
+        {
+          "path": "textures/frame.png",
+          "bytes": 18806,
+          "hash": "a3fd93339e2587e2"
+        },
+        {
+          "path": "theme.lua",
+          "bytes": 40714,
+          "hash": "bcabe3c057aa738d"
+        }
+      ]
+    },
+    {
+      "id": "Galaxy Fold",
+      "name": "Galaxy Fold",
+      "entry": "theme.lua",
+      "preview": "preview.png",
+      "bytes": 4555524,
+      "hash": "a299f859",
+      "files": [
+        {
+          "path": "preview.png",
+          "bytes": 233696,
+          "hash": "ecc84e433eb79694"
+        },
+        {
+          "path": "textures/background.png",
+          "bytes": 4239390,
+          "hash": "eb4d4e2b8eacf4dc"
+        },
+        {
+          "path": "textures/frame.png",
+          "bytes": 41617,
+          "hash": "1ff8663c61f8c54d"
+        },
+        {
+          "path": "theme.lua",
+          "bytes": 40821,
+          "hash": "898a45eeef5d62d6"
+        }
+      ]
+    },
+    {
+      "id": "Galaxy S20",
+      "name": "Galaxy S20",
+      "entry": "theme.lua",
+      "preview": "preview.png",
+      "bytes": 227349,
+      "hash": "5155b535",
+      "files": [
+        {
+          "path": "preview.png",
+          "bytes": 117960,
+          "hash": "f2b9d6fc063916bf"
+        },
+        {
+          "path": "textures/background.jpg",
+          "bytes": 38287,
+          "hash": "516b4728b3b08d35"
+        },
+        {
+          "path": "textures/frame.png",
+          "bytes": 30288,
+          "hash": "62e55ee679866ca9"
+        },
+        {
+          "path": "theme.lua",
+          "bytes": 40814,
+          "hash": "2bad367edd28b1f2"
         }
       ]
     },
@@ -1641,8 +1836,8 @@
       "name": "Gradient Pulsive",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 58083,
-      "hash": "0595936d",
+      "bytes": 59978,
+      "hash": "ce9bc609",
       "files": [
         {
           "path": "preview.png",
@@ -1656,8 +1851,33 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 30603,
-          "hash": "eebdaacadc5069c5"
+          "bytes": 32498,
+          "hash": "0b7e7181dc3d2e81"
+        }
+      ]
+    },
+    {
+      "id": "Guilded",
+      "name": "Guilded",
+      "entry": "theme.lua",
+      "preview": "preview.png",
+      "bytes": 3747039,
+      "hash": "55d2796e",
+      "files": [
+        {
+          "path": "preview.png",
+          "bytes": 55364,
+          "hash": "dda9b4fe59618bb9"
+        },
+        {
+          "path": "textures/frame.bmp",
+          "bytes": 3650954,
+          "hash": "73a301013ef7b75a"
+        },
+        {
+          "path": "theme.lua",
+          "bytes": 40721,
+          "hash": "7fb63fd43259ea02"
         }
       ]
     },
@@ -1666,8 +1886,8 @@
       "name": "HEIST CONTROL",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 397493,
-      "hash": "ac88b471",
+      "bytes": 398108,
+      "hash": "c4f1d96e",
       "files": [
         {
           "path": "preview.png",
@@ -1676,8 +1896,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 64919,
-          "hash": "60e9e8d0d1f0af42"
+          "bytes": 65534,
+          "hash": "e60498d373ceb28f"
         }
       ]
     },
@@ -1686,8 +1906,8 @@
       "name": "Hexy",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 1144919,
-      "hash": "582ed766",
+      "bytes": 1146814,
+      "hash": "479caa81",
       "files": [
         {
           "path": "preview.png",
@@ -1981,8 +2201,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 42718,
-          "hash": "f8c17d12b5f623e2"
+          "bytes": 44613,
+          "hash": "d1a7bd2df0dba63d"
         }
       ]
     },
@@ -1991,8 +2211,8 @@
       "name": "Impulse",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 1526289,
-      "hash": "54dbea05",
+      "bytes": 1528178,
+      "hash": "f371e41d",
       "files": [
         {
           "path": "preview.png",
@@ -2056,8 +2276,133 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 31598,
-          "hash": "5a876f8b7de9a783"
+          "bytes": 33487,
+          "hash": "a6aa2468a6b7831b"
+        }
+      ]
+    },
+    {
+      "id": "Impulse Essential Theme",
+      "name": "Impulse Essential Theme",
+      "entry": "theme.lua",
+      "preview": "preview.png",
+      "bytes": 189403,
+      "hash": "e0982ccd",
+      "files": [
+        {
+          "path": "preview.png",
+          "bytes": 82322,
+          "hash": "bde187a310247f13"
+        },
+        {
+          "path": "textures/badge.png",
+          "bytes": 10757,
+          "hash": "84f3e2eeb636f9de"
+        },
+        {
+          "path": "textures/header.png",
+          "bytes": 18488,
+          "hash": "ce4744b0815f5bed"
+        },
+        {
+          "path": "textures/list_icon.png",
+          "bytes": 2337,
+          "hash": "38b04f7d064e6724"
+        },
+        {
+          "path": "textures/toggle_off.png",
+          "bytes": 2080,
+          "hash": "5727e1f74222c92a"
+        },
+        {
+          "path": "textures/toggle_on.png",
+          "bytes": 2402,
+          "hash": "0e2124128925de3c"
+        },
+        {
+          "path": "textures/ui_theme_debug.png",
+          "bytes": 5853,
+          "hash": "e111fcd4d4d58f3d"
+        },
+        {
+          "path": "textures/ui_theme_keyboard.png",
+          "bytes": 1992,
+          "hash": "301df3b65c7dc296"
+        },
+        {
+          "path": "textures/ui_theme_list.png",
+          "bytes": 2337,
+          "hash": "38b04f7d064e6724"
+        },
+        {
+          "path": "textures/ui_theme_online.png",
+          "bytes": 2554,
+          "hash": "a4165e1e0e16a015"
+        },
+        {
+          "path": "textures/ui_theme_protection.png",
+          "bytes": 1846,
+          "hash": "4b127576adb2acb5"
+        },
+        {
+          "path": "textures/ui_theme_recovery.png",
+          "bytes": 1846,
+          "hash": "1a43e9854aaeb159"
+        },
+        {
+          "path": "textures/ui_theme_scripts.png",
+          "bytes": 1846,
+          "hash": "a0836167c81d1c9d"
+        },
+        {
+          "path": "textures/ui_theme_search.png",
+          "bytes": 1846,
+          "hash": "2b022e59b1be9405"
+        },
+        {
+          "path": "textures/ui_theme_self.png",
+          "bytes": 1840,
+          "hash": "b6df104d19da992c"
+        },
+        {
+          "path": "textures/ui_theme_settings.png",
+          "bytes": 1840,
+          "hash": "b6df104d19da992c"
+        },
+        {
+          "path": "textures/ui_theme_teleport.png",
+          "bytes": 1840,
+          "hash": "b6df104d19da992c"
+        },
+        {
+          "path": "textures/ui_theme_toggle_off.png",
+          "bytes": 2080,
+          "hash": "5727e1f74222c92a"
+        },
+        {
+          "path": "textures/ui_theme_toggle_on.png",
+          "bytes": 2402,
+          "hash": "0e2124128925de3c"
+        },
+        {
+          "path": "textures/ui_theme_vehicle.png",
+          "bytes": 1846,
+          "hash": "c3e6a1b2de12df76"
+        },
+        {
+          "path": "textures/ui_theme_weapon.png",
+          "bytes": 1846,
+          "hash": "e2679933ff2acba0"
+        },
+        {
+          "path": "textures/ui_theme_world.png",
+          "bytes": 1846,
+          "hash": "e2679933ff2acba0"
+        },
+        {
+          "path": "theme.lua",
+          "bytes": 35357,
+          "hash": "968526768cadba8c"
         }
       ]
     },
@@ -2066,13 +2411,13 @@
       "name": "Interaction",
       "entry": "interaction.lua",
       "preview": "preview.png",
-      "bytes": 210879,
-      "hash": "f1cf4f02",
+      "bytes": 211486,
+      "hash": "8c1dea75",
       "files": [
         {
           "path": "interaction.lua",
-          "bytes": 47032,
-          "hash": "2b726e95d20f12fd"
+          "bytes": 47639,
+          "hash": "be714f90faecc3a2"
         },
         {
           "path": "preview.png",
@@ -2091,8 +2436,8 @@
       "name": "Japanese Chill",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 3740017,
-      "hash": "9cacbd18",
+      "bytes": 3741910,
+      "hash": "0ea424db",
       "files": [
         {
           "path": "preview.png",
@@ -2266,8 +2611,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 40152,
-          "hash": "fd159f6db838d2b7"
+          "bytes": 42045,
+          "hash": "2177d98c1560324e"
         }
       ]
     },
@@ -2276,8 +2621,8 @@
       "name": "JinxOnTop",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 996535,
-      "hash": "4d5482bc",
+      "bytes": 998424,
+      "hash": "fd0120a6",
       "files": [
         {
           "path": "preview.png",
@@ -2291,8 +2636,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 30537,
-          "hash": "15bb7635d17fdfa8"
+          "bytes": 32426,
+          "hash": "e9021c76848c1bc2"
         }
       ]
     },
@@ -2301,13 +2646,13 @@
       "name": "Kiddion",
       "entry": "kiddion.lua",
       "preview": "preview.png",
-      "bytes": 177297,
-      "hash": "46518a2b",
+      "bytes": 177771,
+      "hash": "807180d7",
       "files": [
         {
           "path": "kiddion.lua",
-          "bytes": 21064,
-          "hash": "3767a01de1a6c3b1"
+          "bytes": 21538,
+          "hash": "439439b6f421d7c5"
         },
         {
           "path": "preview.png",
@@ -2321,8 +2666,8 @@
       "name": "Kiddions",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 446540,
-      "hash": "57788031",
+      "bytes": 448432,
+      "hash": "aba46bf8",
       "files": [
         {
           "path": "preview.png",
@@ -2626,8 +2971,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 43941,
-          "hash": "db3c24d0162f9448"
+          "bytes": 45833,
+          "hash": "76018f64910dd87d"
         }
       ]
     },
@@ -2636,8 +2981,8 @@
       "name": "Kokushibo",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 435917,
-      "hash": "1c529bb8",
+      "bytes": 437812,
+      "hash": "fc537fe8",
       "files": [
         {
           "path": "preview.png",
@@ -2651,8 +2996,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 30584,
-          "hash": "d308ffd539065b9d"
+          "bytes": 32479,
+          "hash": "175541b7227dbc37"
         }
       ]
     },
@@ -2661,8 +3006,8 @@
       "name": "LS CASINO ROYALE",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 5090932,
-      "hash": "2a310998",
+      "bytes": 5091547,
+      "hash": "23953431",
       "files": [
         {
           "path": "preview.png",
@@ -2686,8 +3031,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 68053,
-          "hash": "885f2dcb4118c0c0"
+          "bytes": 68668,
+          "hash": "75402087a75c1889"
         }
       ]
     },
@@ -2696,8 +3041,8 @@
       "name": "LS EXECUTIVE",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 255659,
-      "hash": "2ef29d8b",
+      "bytes": 256274,
+      "hash": "c1faf5fc",
       "files": [
         {
           "path": "preview.png",
@@ -2706,8 +3051,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 66121,
-          "hash": "41ef23ca095732f9"
+          "bytes": 66736,
+          "hash": "c60616a41ca424ca"
         }
       ]
     },
@@ -2716,8 +3061,8 @@
       "name": "LS FREEMODE",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 372079,
-      "hash": "5f4b3316",
+      "bytes": 372694,
+      "hash": "adef0e83",
       "files": [
         {
           "path": "preview.png",
@@ -2726,8 +3071,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 66120,
-          "hash": "7d44b87d257b1494"
+          "bytes": 66735,
+          "hash": "3d0271d2c247f909"
         }
       ]
     },
@@ -2736,8 +3081,8 @@
       "name": "LS NIGHT OPS",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 4647281,
-      "hash": "2ebb11d0",
+      "bytes": 4647896,
+      "hash": "a65f7db9",
       "files": [
         {
           "path": "preview.png",
@@ -2761,8 +3106,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 68038,
-          "hash": "a400dd3425fed978"
+          "bytes": 68653,
+          "hash": "a17bd54bd1d29e51"
         }
       ]
     },
@@ -2771,8 +3116,8 @@
       "name": "LS NIGHTLIFE",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 284680,
-      "hash": "a27efc33",
+      "bytes": 285295,
+      "hash": "72be6ac0",
       "files": [
         {
           "path": "preview.png",
@@ -2781,8 +3126,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 66116,
-          "hash": "ed1525a6874a8a68"
+          "bytes": 66731,
+          "hash": "67d19b9371948a55"
         }
       ]
     },
@@ -2791,8 +3136,8 @@
       "name": "LS TOKYO DRIFT",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 5000561,
-      "hash": "29c16c22",
+      "bytes": 5001176,
+      "hash": "b8d3b11b",
       "files": [
         {
           "path": "preview.png",
@@ -2816,8 +3161,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 68052,
-          "hash": "a501ac5e55f87658"
+          "bytes": 68667,
+          "hash": "02135240dab4b831"
         }
       ]
     },
@@ -2826,8 +3171,8 @@
       "name": "LS UNDERGROUND",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 301840,
-      "hash": "28f4f683",
+      "bytes": 302455,
+      "hash": "96cadcb4",
       "files": [
         {
           "path": "preview.png",
@@ -2836,8 +3181,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 66125,
-          "hash": "f47fed555f520f21"
+          "bytes": 66740,
+          "hash": "8f85a8e02decfe42"
         }
       ]
     },
@@ -2846,8 +3191,8 @@
       "name": "LTS",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 1139489,
-      "hash": "4bb7aa67",
+      "bytes": 1139967,
+      "hash": "7d8c4384",
       "files": [
         {
           "path": "preview.png",
@@ -2861,8 +3206,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 12220,
-          "hash": "7649118744a638e6"
+          "bytes": 12698,
+          "hash": "814839e1c7a3431d"
         }
       ]
     },
@@ -2871,8 +3216,8 @@
       "name": "Legacy Menu Beta",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 229699,
-      "hash": "5d5767a2",
+      "bytes": 231588,
+      "hash": "1141db28",
       "files": [
         {
           "path": "preview.png",
@@ -3026,8 +3371,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 39171,
-          "hash": "df7d05bbfc16a881"
+          "bytes": 41060,
+          "hash": "7ae83968c35cda05"
         }
       ]
     },
@@ -3036,8 +3381,8 @@
       "name": "Lewdsex",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 1712895,
-      "hash": "2251b454",
+      "bytes": 1714790,
+      "hash": "ac949dc8",
       "files": [
         {
           "path": "preview.png",
@@ -3331,8 +3676,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 43351,
-          "hash": "de7a25030fd32d9d"
+          "bytes": 45246,
+          "hash": "1943fbf68e72ee93"
         }
       ]
     },
@@ -3341,8 +3686,8 @@
       "name": "Lexis",
       "entry": "lexis.lua",
       "preview": "Preview.png",
-      "bytes": 497279,
-      "hash": "160e8337",
+      "bytes": 497790,
+      "hash": "0c47faba",
       "files": [
         {
           "path": "Preview.png",
@@ -3376,8 +3721,8 @@
         },
         {
           "path": "lexis.lua",
-          "bytes": 34041,
-          "hash": "924b28fe0afb5c69"
+          "bytes": 34552,
+          "hash": "8091e6c8e5661c94"
         },
         {
           "path": "scripts/cursor.lua",
@@ -3396,13 +3741,13 @@
       "name": "Linear",
       "entry": "linear.lua",
       "preview": "preview.png",
-      "bytes": 244088,
-      "hash": "9ef37214",
+      "bytes": 244695,
+      "hash": "6ce09e8d",
       "files": [
         {
           "path": "linear.lua",
-          "bytes": 44812,
-          "hash": "4a8b4c02866b1e84"
+          "bytes": 45419,
+          "hash": "22f5e9f736e923cd"
         },
         {
           "path": "preview.png",
@@ -3421,8 +3766,8 @@
       "name": "Lotus",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 160696,
-      "hash": "4d523753",
+      "bytes": 161087,
+      "hash": "bbe3de14",
       "files": [
         {
           "path": "install.ps1",
@@ -3436,8 +3781,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 17770,
-          "hash": "c001045e0d102765"
+          "bytes": 18161,
+          "hash": "e0261b519fdeb77a"
         }
       ]
     },
@@ -3446,8 +3791,8 @@
       "name": "Luna",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 412603,
-      "hash": "2454c6b9",
+      "bytes": 414492,
+      "hash": "0f3ce441",
       "files": [
         {
           "path": "preview.png",
@@ -3511,8 +3856,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 31551,
-          "hash": "3f6743000ea4d0dd"
+          "bytes": 33440,
+          "hash": "aef71b51912c9275"
         }
       ]
     },
@@ -3521,8 +3866,8 @@
       "name": "Luna-Impulse",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 3216261,
-      "hash": "94d50b19",
+      "bytes": 3218155,
+      "hash": "e977e185",
       "files": [
         {
           "path": "preview.png",
@@ -3571,8 +3916,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 31416,
-          "hash": "22651006a861a75e"
+          "bytes": 33310,
+          "hash": "bce04cbecb26eeb6"
         }
       ]
     },
@@ -3581,8 +3926,8 @@
       "name": "MIDNIGHT APEX",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 13965514,
-      "hash": "b2e9969a",
+      "bytes": 13966129,
+      "hash": "c49114fb",
       "files": [
         {
           "path": "preview.png",
@@ -3601,8 +3946,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 67897,
-          "hash": "f0db1fabfd3b00f3"
+          "bytes": 68512,
+          "hash": "80b90fa1c3b132a4"
         }
       ]
     },
@@ -3611,8 +3956,8 @@
       "name": "Marin",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 2112357,
-      "hash": "3eff9da0",
+      "bytes": 2114252,
+      "hash": "fed99456",
       "files": [
         {
           "path": "preview.png",
@@ -3626,8 +3971,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 30582,
-          "hash": "8567cc50d250554e"
+          "bytes": 32477,
+          "hash": "1c2947b6bcd126b8"
         }
       ]
     },
@@ -3636,8 +3981,8 @@
       "name": "Matrix",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 2258575,
-      "hash": "4e2b7f84",
+      "bytes": 2260470,
+      "hash": "8d7e69fc",
       "files": [
         {
           "path": "preview.png",
@@ -3741,8 +4086,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 32793,
-          "hash": "701f860b6a97ceec"
+          "bytes": 34688,
+          "hash": "3f5939bf041ee984"
         }
       ]
     },
@@ -3751,8 +4096,8 @@
       "name": "Menyoo",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 1310318,
-      "hash": "e535a844",
+      "bytes": 1312207,
+      "hash": "0dc61590",
       "files": [
         {
           "path": "preview.png",
@@ -3991,8 +4336,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 40184,
-          "hash": "b2255884d4c37853"
+          "bytes": 42073,
+          "hash": "72ed47285e4ebaad"
         }
       ]
     },
@@ -4001,8 +4346,8 @@
       "name": "Mercyyy",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 581543,
-      "hash": "086bbe1b",
+      "bytes": 583438,
+      "hash": "0c6ec209",
       "files": [
         {
           "path": "preview.png",
@@ -4296,8 +4641,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 43345,
-          "hash": "bdf256f749f09a26"
+          "bytes": 45240,
+          "hash": "67d87295a28cc29a"
         }
       ]
     },
@@ -4306,8 +4651,8 @@
       "name": "Midari Ikishima",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 3519823,
-      "hash": "6ea8fe28",
+      "bytes": 3521717,
+      "hash": "e53af3bc",
       "files": [
         {
           "path": "preview.png",
@@ -4611,8 +4956,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 45233,
-          "hash": "96fb824f8aeaaa2f"
+          "bytes": 47127,
+          "hash": "3ca731dd157753cb"
         }
       ]
     },
@@ -4621,8 +4966,8 @@
       "name": "Midnight Violet",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 887520,
-      "hash": "02962e47",
+      "bytes": 889415,
+      "hash": "94aafd5a",
       "files": [
         {
           "path": "preview.png",
@@ -4926,8 +5271,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 45436,
-          "hash": "363b83663629feb7"
+          "bytes": 47331,
+          "hash": "610c86b1ec73b9aa"
         }
       ]
     },
@@ -4936,8 +5281,8 @@
       "name": "Minimalistic",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 79369,
-      "hash": "83f87a14",
+      "bytes": 81264,
+      "hash": "d41df73a",
       "files": [
         {
           "path": "preview.png",
@@ -5031,8 +5376,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 32747,
-          "hash": "6518810d8ea195a9"
+          "bytes": 34642,
+          "hash": "db07b290d3d66905"
         }
       ]
     },
@@ -5041,8 +5386,8 @@
       "name": "Minimalistic Black & White",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 279571,
-      "hash": "07193137",
+      "bytes": 281460,
+      "hash": "6e2d7caf",
       "files": [
         {
           "path": "preview.png",
@@ -5056,8 +5401,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 30613,
-          "hash": "c012d4735e8a53aa"
+          "bytes": 32502,
+          "hash": "ae1197cffae65a24"
         }
       ]
     },
@@ -5066,8 +5411,8 @@
       "name": "Minimalistic v2",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 387753,
-      "hash": "e734443c",
+      "bytes": 389648,
+      "hash": "1edcd7e2",
       "files": [
         {
           "path": "preview.png",
@@ -5371,8 +5716,28 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 45259,
-          "hash": "1ed28aaed959297b"
+          "bytes": 47154,
+          "hash": "b1cff9dfb6dc3a13"
+        }
+      ]
+    },
+    {
+      "id": "Modern",
+      "name": "Modern",
+      "entry": "theme.lua",
+      "preview": "preview.png",
+      "bytes": 66515,
+      "hash": "356a0219",
+      "files": [
+        {
+          "path": "preview.png",
+          "bytes": 25878,
+          "hash": "f10cebec0267e09d"
+        },
+        {
+          "path": "theme.lua",
+          "bytes": 40637,
+          "hash": "bebc8f6b53c87ab3"
         }
       ]
     },
@@ -5381,8 +5746,8 @@
       "name": "N3NY000",
       "entry": "n3nyooo.lua",
       "preview": "preview.png",
-      "bytes": 7929663,
-      "hash": "19906e09",
+      "bytes": 7930206,
+      "hash": "b2be5db6",
       "files": [
         {
           "path": "fonts/Chalet London.ttf",
@@ -5436,8 +5801,8 @@
         },
         {
           "path": "n3nyooo.lua",
-          "bytes": 30934,
-          "hash": "e856c47cd4bb5387"
+          "bytes": 31477,
+          "hash": "bed2bda1d9d1eee4"
         },
         {
           "path": "preview.png",
@@ -5466,8 +5831,8 @@
       "name": "NEON VICE",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 14974540,
-      "hash": "36fbb531",
+      "bytes": 14975155,
+      "hash": "5a51cdf8",
       "files": [
         {
           "path": "preview.png",
@@ -5486,8 +5851,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 67897,
-          "hash": "a288f5871245aba0"
+          "bytes": 68512,
+          "hash": "12a7a83cb0884e83"
         }
       ]
     },
@@ -5496,8 +5861,8 @@
       "name": "Netflix",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 1119690,
-      "hash": "46e5f089",
+      "bytes": 1121585,
+      "hash": "1fb00b29",
       "files": [
         {
           "path": "preview.png",
@@ -5511,8 +5876,38 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 30553,
-          "hash": "3e61c9cf8c596ee2"
+          "bytes": 32448,
+          "hash": "8da4f985369b0140"
+        }
+      ]
+    },
+    {
+      "id": "Nintendo Switch",
+      "name": "Nintendo Switch",
+      "entry": "theme.lua",
+      "preview": "preview.png",
+      "bytes": 615651,
+      "hash": "90289154",
+      "files": [
+        {
+          "path": "preview.png",
+          "bytes": 146513,
+          "hash": "fdb3c70ffeca0176"
+        },
+        {
+          "path": "textures/background.jpg",
+          "bytes": 23386,
+          "hash": "58ba3a02b1129f26"
+        },
+        {
+          "path": "textures/frame.png",
+          "bytes": 404910,
+          "hash": "171a77b98b03f7df"
+        },
+        {
+          "path": "theme.lua",
+          "bytes": 40842,
+          "hash": "b854ba9c81d8c441"
         }
       ]
     },
@@ -5521,8 +5916,8 @@
       "name": "Nocturnal",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 254588,
-      "hash": "aecb3c68",
+      "bytes": 256483,
+      "hash": "a8e93a50",
       "files": [
         {
           "path": "preview.png",
@@ -5661,8 +6056,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 35119,
-          "hash": "dda785f8e4290155"
+          "bytes": 37014,
+          "hash": "05cca20ac9864db7"
         }
       ]
     },
@@ -5671,8 +6066,8 @@
       "name": "Nordic Dark",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 58473,
-      "hash": "add7d8c0",
+      "bytes": 60367,
+      "hash": "0782ae01",
       "files": [
         {
           "path": "preview.png",
@@ -5681,8 +6076,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 30517,
-          "hash": "9348ff46a0bcc278"
+          "bytes": 32411,
+          "hash": "699997e17f286e49"
         }
       ]
     },
@@ -5691,8 +6086,8 @@
       "name": "NowiryPulsive",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 350624,
-      "hash": "657e62d4",
+      "bytes": 352518,
+      "hash": "17bf9ae1",
       "files": [
         {
           "path": "preview.png",
@@ -5951,8 +6346,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 42361,
-          "hash": "53b383b1ef332cc1"
+          "bytes": 44255,
+          "hash": "7f7cf04e9f6be37c"
         }
       ]
     },
@@ -5961,8 +6356,8 @@
       "name": "Off-White",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 962655,
-      "hash": "197e0ba1",
+      "bytes": 964550,
+      "hash": "a1887a09",
       "files": [
         {
           "path": "preview.png",
@@ -5976,8 +6371,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 30529,
-          "hash": "396b8653e4bf267a"
+          "bytes": 32424,
+          "hash": "73d187287367f200"
         }
       ]
     },
@@ -5986,8 +6381,8 @@
       "name": "Old UI",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 52091,
-      "hash": "6989da64",
+      "bytes": 53980,
+      "hash": "7a3f63b6",
       "files": [
         {
           "path": "preview.png",
@@ -5996,8 +6391,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 30454,
-          "hash": "8f49109fe3d84c97"
+          "bytes": 32343,
+          "hash": "329bb747dd9c99d7"
         }
       ]
     },
@@ -6006,8 +6401,8 @@
       "name": "Onyx",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 239200,
-      "hash": "8201ece9",
+      "bytes": 241095,
+      "hash": "3987a887",
       "files": [
         {
           "path": "preview.png",
@@ -6181,8 +6576,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 38844,
-          "hash": "c882be82b4820bb1"
+          "bytes": 40739,
+          "hash": "2a5c129e83d6b9cf"
         }
       ]
     },
@@ -6191,8 +6586,8 @@
       "name": "Optimum",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 649672,
-      "hash": "b4bfe8eb",
+      "bytes": 651564,
+      "hash": "522adb6a",
       "files": [
         {
           "path": "preview.png",
@@ -6426,8 +6821,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 40214,
-          "hash": "6881da2076922151"
+          "bytes": 42106,
+          "hash": "d4c069a77488e684"
         }
       ]
     },
@@ -6436,8 +6831,8 @@
       "name": "Orange Minimalistic",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 848132,
-      "hash": "32a118ee",
+      "bytes": 850027,
+      "hash": "cd4fd120",
       "files": [
         {
           "path": "preview.png",
@@ -6576,8 +6971,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 35740,
-          "hash": "d793ca687d410899"
+          "bytes": 37635,
+          "hash": "9e780a0da48d8789"
         }
       ]
     },
@@ -6586,8 +6981,8 @@
       "name": "OrangeGray",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 378838,
-      "hash": "61620f82",
+      "bytes": 380730,
+      "hash": "15ebf728",
       "files": [
         {
           "path": "preview.png",
@@ -6831,8 +7226,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 40836,
-          "hash": "7049f017a67ef3d4"
+          "bytes": 42728,
+          "hash": "53aeb91b8de4361a"
         }
       ]
     },
@@ -6841,8 +7236,8 @@
       "name": "Ozark",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 390164,
-      "hash": "329ad37c",
+      "bytes": 392053,
+      "hash": "1b4bf13e",
       "files": [
         {
           "path": "preview.png",
@@ -6906,8 +7301,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 31591,
-          "hash": "4c9345d5b6ebaacd"
+          "bytes": 33480,
+          "hash": "32041ac8f8656125"
         }
       ]
     },
@@ -6916,8 +7311,8 @@
       "name": "Paragon",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 500957,
-      "hash": "4fc546c2",
+      "bytes": 502846,
+      "hash": "53f18354",
       "files": [
         {
           "path": "preview.png",
@@ -6981,8 +7376,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 31618,
-          "hash": "14f468ad8066dc25"
+          "bytes": 33507,
+          "hash": "00b47667cc70ce1d"
         }
       ]
     },
@@ -6991,8 +7386,8 @@
       "name": "Paragone",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 57606,
-      "hash": "4ea0f0ca",
+      "bytes": 59501,
+      "hash": "42661bd0",
       "files": [
         {
           "path": "preview.png",
@@ -7001,8 +7396,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 30495,
-          "hash": "0806100e9df9d5f6"
+          "bytes": 32390,
+          "hash": "ed20d5e4ec469afc"
         }
       ]
     },
@@ -7011,8 +7406,8 @@
       "name": "Phantom X",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 478082,
-      "hash": "0dcc5a17",
+      "bytes": 479971,
+      "hash": "8630c3bf",
       "files": [
         {
           "path": "preview.png",
@@ -7076,8 +7471,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 31667,
-          "hash": "f953eb118d4454eb"
+          "bytes": 33556,
+          "hash": "32b2cfd3fb183843"
         }
       ]
     },
@@ -7086,8 +7481,8 @@
       "name": "Pink Animated",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 2600196,
-      "hash": "141b27c2",
+      "bytes": 2602091,
+      "hash": "2bc25410",
       "files": [
         {
           "path": "preview.png",
@@ -7101,8 +7496,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 30614,
-          "hash": "fb80ad4e18aa009b"
+          "bytes": 32509,
+          "hash": "638e073ba532cbdb"
         }
       ]
     },
@@ -7111,8 +7506,8 @@
       "name": "Player Options Classic",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 422026,
-      "hash": "327bdf90",
+      "bytes": 422417,
+      "hash": "7c7a8711",
       "files": [
         {
           "path": "fonts/KaushanScript-Regular.ttf",
@@ -7131,8 +7526,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 16759,
-          "hash": "fc66a1d748aa157f"
+          "bytes": 17150,
+          "hash": "ecc26bb8fbf4c678"
         }
       ]
     },
@@ -7141,8 +7536,8 @@
       "name": "Rebound",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 343076,
-      "hash": "e5f722b4",
+      "bytes": 344965,
+      "hash": "4ebf2776",
       "files": [
         {
           "path": "preview.png",
@@ -7196,8 +7591,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 31308,
-          "hash": "3bd0334ac86cf07e"
+          "bytes": 33197,
+          "hash": "69a94eaf0e3203f0"
         }
       ]
     },
@@ -7206,8 +7601,8 @@
       "name": "Rockstar Admin Tool",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 3466773,
-      "hash": "05a60f6e",
+      "bytes": 3468668,
+      "hash": "eb87ec54",
       "files": [
         {
           "path": "preview.png",
@@ -7221,8 +7616,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 30610,
-          "hash": "2726f640c7442910"
+          "bytes": 32505,
+          "hash": "5bc2807a37550392"
         }
       ]
     },
@@ -7231,8 +7626,8 @@
       "name": "Rockstar Admin Tools",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 319412,
-      "hash": "fc23101d",
+      "bytes": 321301,
+      "hash": "7a07aeaf",
       "files": [
         {
           "path": "preview.png",
@@ -7351,8 +7746,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 37373,
-          "hash": "49868c7664febc2d"
+          "bytes": 39262,
+          "hash": "b2b70e68817bbcbf"
         }
       ]
     },
@@ -7361,8 +7756,8 @@
       "name": "Roses",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 9325862,
-      "hash": "0aef3ebb",
+      "bytes": 9327757,
+      "hash": "1ac9268d",
       "files": [
         {
           "path": "preview.png",
@@ -7656,8 +8051,33 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 42958,
-          "hash": "68cdd6b657827475"
+          "bytes": 44853,
+          "hash": "1f5543f60d0a1c2b"
+        }
+      ]
+    },
+    {
+      "id": "SFR",
+      "name": "SFR",
+      "entry": "theme.lua",
+      "preview": "preview.png",
+      "bytes": 236658,
+      "hash": "74955436",
+      "files": [
+        {
+          "path": "preview.png",
+          "bytes": 153520,
+          "hash": "178790a010c48642"
+        },
+        {
+          "path": "textures/background.png",
+          "bytes": 42446,
+          "hash": "84b6c3d1724be033"
+        },
+        {
+          "path": "theme.lua",
+          "bytes": 40692,
+          "hash": "4476ff9e6145a3e7"
         }
       ]
     },
@@ -7666,8 +8086,8 @@
       "name": "SPXC3",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 3958745,
-      "hash": "ef3e9132",
+      "bytes": 3960638,
+      "hash": "96eb0257",
       "files": [
         {
           "path": "preview.png",
@@ -7681,8 +8101,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 30529,
-          "hash": "c9a99ca97815170f"
+          "bytes": 32422,
+          "hash": "f50fd3e9ad66b484"
         }
       ]
     },
@@ -7691,8 +8111,8 @@
       "name": "Sensitive Content",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 91568,
-      "hash": "6a3e8f89",
+      "bytes": 93463,
+      "hash": "ada8540f",
       "files": [
         {
           "path": "preview.png",
@@ -7706,8 +8126,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 30597,
-          "hash": "ac310cfe0d04f7d7"
+          "bytes": 32492,
+          "hash": "de590d8a83280489"
         }
       ]
     },
@@ -7716,8 +8136,8 @@
       "name": "Shunguang Motion",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 4229630,
-      "hash": "5101c22d",
+      "bytes": 4230021,
+      "hash": "d82ae342",
       "files": [
         {
           "path": "fonts/fa-solid-900.ttf",
@@ -7741,8 +8161,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 16962,
-          "hash": "8a741c865d70c369"
+          "bytes": 17353,
+          "hash": "d628511709effa46"
         }
       ]
     },
@@ -7751,8 +8171,8 @@
       "name": "Signal-77",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 353096,
-      "hash": "20426139",
+      "bytes": 353743,
+      "hash": "be8c471a",
       "files": [
         {
           "path": "preview.png",
@@ -7761,8 +8181,33 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 73967,
-          "hash": "873415d99d8008d7"
+          "bytes": 74614,
+          "hash": "0a41c598f156d13c"
+        }
+      ]
+    },
+    {
+      "id": "Soviet",
+      "name": "Soviet",
+      "entry": "theme.lua",
+      "preview": "preview.png",
+      "bytes": 237054,
+      "hash": "353c21f0",
+      "files": [
+        {
+          "path": "preview.png",
+          "bytes": 138662,
+          "hash": "8c83e2a8d07848b6"
+        },
+        {
+          "path": "textures/background.png",
+          "bytes": 57688,
+          "hash": "172846150f39c959"
+        },
+        {
+          "path": "theme.lua",
+          "bytes": 40704,
+          "hash": "6c12b4588485186f"
         }
       ]
     },
@@ -7771,8 +8216,8 @@
       "name": "Space",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 184394,
-      "hash": "a0417072",
+      "bytes": 186288,
+      "hash": "46297806",
       "files": [
         {
           "path": "preview.png",
@@ -7786,8 +8231,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 30569,
-          "hash": "3405503cbcc00b41"
+          "bytes": 32463,
+          "hash": "a52ea5e13ee687c1"
         }
       ]
     },
@@ -7796,8 +8241,8 @@
       "name": "Spotify",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 311045,
-      "hash": "36bf5393",
+      "bytes": 312940,
+      "hash": "0a51e623",
       "files": [
         {
           "path": "preview.png",
@@ -7811,8 +8256,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 30561,
-          "hash": "f06917e89151af56"
+          "bytes": 32456,
+          "hash": "91bd4550e93960fc"
         }
       ]
     },
@@ -7821,8 +8266,8 @@
       "name": "Stand",
       "entry": "stand.lua",
       "preview": "Preview.png",
-      "bytes": 364672,
-      "hash": "ca52c941",
+      "bytes": 364262,
+      "hash": "eec78a0e",
       "files": [
         {
           "path": "Preview.png",
@@ -7851,8 +8296,113 @@
         },
         {
           "path": "stand.lua",
-          "bytes": 28759,
-          "hash": "1d5579273c78989a"
+          "bytes": 28349,
+          "hash": "59cd3c1446b0b14d"
+        }
+      ]
+    },
+    {
+      "id": "Stand 3310",
+      "name": "Stand 3310",
+      "entry": "theme.lua",
+      "preview": "preview.png",
+      "bytes": 2561819,
+      "hash": "45bb4469",
+      "files": [
+        {
+          "path": "preview.png",
+          "bytes": 191150,
+          "hash": "1f912b3fe7d498f8"
+        },
+        {
+          "path": "textures/frame.png",
+          "bytes": 2329942,
+          "hash": "b5d1bdee056c574c"
+        },
+        {
+          "path": "theme.lua",
+          "bytes": 40727,
+          "hash": "f8303422c84e479a"
+        }
+      ]
+    },
+    {
+      "id": "Stand Fridge",
+      "name": "Stand Fridge",
+      "entry": "theme.lua",
+      "preview": "preview.png",
+      "bytes": 228582,
+      "hash": "b231b11a",
+      "files": [
+        {
+          "path": "preview.png",
+          "bytes": 73120,
+          "hash": "455d0f434541657b"
+        },
+        {
+          "path": "textures/frame.png",
+          "bytes": 114712,
+          "hash": "4e977e6c9d6409f5"
+        },
+        {
+          "path": "theme.lua",
+          "bytes": 40750,
+          "hash": "9e2dace65e4f2c45"
+        }
+      ]
+    },
+    {
+      "id": "Stand Watch",
+      "name": "Stand Watch",
+      "entry": "theme.lua",
+      "preview": "preview.png",
+      "bytes": 454699,
+      "hash": "41c98192",
+      "files": [
+        {
+          "path": "preview.png",
+          "bytes": 118429,
+          "hash": "e1dae6155e55f8ee"
+        },
+        {
+          "path": "textures/background.jpg",
+          "bytes": 140232,
+          "hash": "9a9b793f452dba08"
+        },
+        {
+          "path": "textures/frame.png",
+          "bytes": 155215,
+          "hash": "ecd4884af117ea2f"
+        },
+        {
+          "path": "theme.lua",
+          "bytes": 40823,
+          "hash": "b1e515203a587ed7"
+        }
+      ]
+    },
+    {
+      "id": "Standipity",
+      "name": "Standipity",
+      "entry": "theme.lua",
+      "preview": "preview.png",
+      "bytes": 285984,
+      "hash": "9f1140a6",
+      "files": [
+        {
+          "path": "preview.png",
+          "bytes": 39533,
+          "hash": "d79c46efeca9471d"
+        },
+        {
+          "path": "textures/badge.png",
+          "bytes": 205734,
+          "hash": "1f94939e680e8164"
+        },
+        {
+          "path": "theme.lua",
+          "bytes": 40717,
+          "hash": "6a69345f4a9da4a8"
         }
       ]
     },
@@ -7861,8 +8411,8 @@
       "name": "Standsense",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 128127,
-      "hash": "5c95e0f8",
+      "bytes": 130020,
+      "hash": "8cf5faa9",
       "files": [
         {
           "path": "preview.png",
@@ -7976,8 +8526,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 34313,
-          "hash": "22d53115ad93a9e7"
+          "bytes": 36206,
+          "hash": "e125ec32a68630a4"
         }
       ]
     },
@@ -7986,8 +8536,8 @@
       "name": "Standxo",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 210742,
-      "hash": "a086cad0",
+      "bytes": 212637,
+      "hash": "5236fce0",
       "files": [
         {
           "path": "preview.png",
@@ -8096,8 +8646,28 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 34095,
-          "hash": "6551181f31851348"
+          "bytes": 35990,
+          "hash": "232868c487456a58"
+        }
+      ]
+    },
+    {
+      "id": "Stanggy",
+      "name": "Stanggy",
+      "entry": "theme.lua",
+      "preview": "preview.png",
+      "bytes": 68132,
+      "hash": "993bee67",
+      "files": [
+        {
+          "path": "preview.png",
+          "bytes": 27488,
+          "hash": "5a16fcf1dfe4b391"
+        },
+        {
+          "path": "theme.lua",
+          "bytes": 40644,
+          "hash": "e7968d855cbfb7f9"
         }
       ]
     },
@@ -8106,8 +8676,8 @@
       "name": "Stoners",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 1529421,
-      "hash": "5868bfc4",
+      "bytes": 1531310,
+      "hash": "38a97dec",
       "files": [
         {
           "path": "preview.png",
@@ -8221,8 +8791,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 33173,
-          "hash": "c3608972caa04be4"
+          "bytes": 35062,
+          "hash": "024a3536eb87b9ac"
         }
       ]
     },
@@ -8231,8 +8801,8 @@
       "name": "Sunset",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 1341866,
-      "hash": "9062774a",
+      "bytes": 1343761,
+      "hash": "3f7249b0",
       "files": [
         {
           "path": "preview.png",
@@ -8246,8 +8816,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 30567,
-          "hash": "9affe5ed1dd11230"
+          "bytes": 32462,
+          "hash": "9770dacfc29ccd0a"
         }
       ]
     },
@@ -8256,8 +8826,8 @@
       "name": "Superior V",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 185396,
-      "hash": "e58e10d1",
+      "bytes": 187285,
+      "hash": "ca404959",
       "files": [
         {
           "path": "preview.png",
@@ -8511,8 +9081,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 41103,
-          "hash": "20cc49eb924f0277"
+          "bytes": 42992,
+          "hash": "2a0a375a1dc9993f"
         }
       ]
     },
@@ -8521,8 +9091,8 @@
       "name": "Team Psycos",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 174227,
-      "hash": "37ff1ca4",
+      "bytes": 174618,
+      "hash": "5069539d",
       "files": [
         {
           "path": "fonts/RussoOne-Regular.ttf",
@@ -8541,8 +9111,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 16230,
-          "hash": "b294cfdf9cfdb62e"
+          "bytes": 16621,
+          "hash": "497644d1eb2af1db"
         }
       ]
     },
@@ -8551,8 +9121,8 @@
       "name": "Terminal",
       "entry": "terminal.lua",
       "preview": "preview.png",
-      "bytes": 262452,
-      "hash": "ca41d9b4",
+      "bytes": 263059,
+      "hash": "448fc1d7",
       "files": [
         {
           "path": "preview.png",
@@ -8566,8 +9136,8 @@
         },
         {
           "path": "terminal.lua",
-          "bytes": 46895,
-          "hash": "9a41a4546b70c1b6"
+          "bytes": 47502,
+          "hash": "990e5cf6ae64a159"
         }
       ]
     },
@@ -8576,8 +9146,8 @@
       "name": "The Purge",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 193302,
-      "hash": "28e07454",
+      "bytes": 195197,
+      "hash": "01b4b8f6",
       "files": [
         {
           "path": "preview.png",
@@ -8631,8 +9201,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 31558,
-          "hash": "799300206764c218"
+          "bytes": 33453,
+          "hash": "21ef8be3cf27911a"
         }
       ]
     },
@@ -8641,8 +9211,8 @@
       "name": "Trooper",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 497934,
-      "hash": "9b4fb959",
+      "bytes": 499827,
+      "hash": "e87bc67b",
       "files": [
         {
           "path": "preview.png",
@@ -8781,8 +9351,163 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 34828,
-          "hash": "206f774c884a835e"
+          "bytes": 36721,
+          "hash": "fd1574fccd452152"
+        }
+      ]
+    },
+    {
+      "id": "Watch Dogs 2",
+      "name": "Watch Dogs 2",
+      "entry": "theme.lua",
+      "preview": "preview.png",
+      "bytes": 4246896,
+      "hash": "4ded311d",
+      "files": [
+        {
+          "path": "preview.png",
+          "bytes": 248915,
+          "hash": "f8219f78e8f82651"
+        },
+        {
+          "path": "textures/badge.gif",
+          "bytes": 3675065,
+          "hash": "2c1f975d3e47da96"
+        },
+        {
+          "path": "textures/header.png",
+          "bytes": 267427,
+          "hash": "fcd6508eeb95d359"
+        },
+        {
+          "path": "textures/list_icon.png",
+          "bytes": 393,
+          "hash": "d82cac460f75b7d7"
+        },
+        {
+          "path": "textures/toggle_off.png",
+          "bytes": 869,
+          "hash": "fc07c403d8742b2e"
+        },
+        {
+          "path": "textures/toggle_on.png",
+          "bytes": 731,
+          "hash": "7b55640d6e9cb8c8"
+        },
+        {
+          "path": "textures/ui_theme_debug.png",
+          "bytes": 1133,
+          "hash": "1ce7cf8f375048cc"
+        },
+        {
+          "path": "textures/ui_theme_keyboard.png",
+          "bytes": 868,
+          "hash": "97817dc6841b05cb"
+        },
+        {
+          "path": "textures/ui_theme_list.png",
+          "bytes": 393,
+          "hash": "d82cac460f75b7d7"
+        },
+        {
+          "path": "textures/ui_theme_online.png",
+          "bytes": 1740,
+          "hash": "4bd674d6641f8359"
+        },
+        {
+          "path": "textures/ui_theme_protection.png",
+          "bytes": 1797,
+          "hash": "21d2480f5593f3c2"
+        },
+        {
+          "path": "textures/ui_theme_recovery.png",
+          "bytes": 1008,
+          "hash": "aa0d691ec7ac8c6a"
+        },
+        {
+          "path": "textures/ui_theme_scripts.png",
+          "bytes": 727,
+          "hash": "ad701bd45c42c8cb"
+        },
+        {
+          "path": "textures/ui_theme_search.png",
+          "bytes": 1403,
+          "hash": "578f89da2672b2f8"
+        },
+        {
+          "path": "textures/ui_theme_self.png",
+          "bytes": 1381,
+          "hash": "4322c8a2acb6fdb7"
+        },
+        {
+          "path": "textures/ui_theme_settings.png",
+          "bytes": 2146,
+          "hash": "5e1ac3a6c1f31471"
+        },
+        {
+          "path": "textures/ui_theme_teleport.png",
+          "bytes": 996,
+          "hash": "83d472aabe38e09a"
+        },
+        {
+          "path": "textures/ui_theme_toggle_off.png",
+          "bytes": 869,
+          "hash": "fc07c403d8742b2e"
+        },
+        {
+          "path": "textures/ui_theme_toggle_on.png",
+          "bytes": 731,
+          "hash": "7b55640d6e9cb8c8"
+        },
+        {
+          "path": "textures/ui_theme_vehicle.png",
+          "bytes": 884,
+          "hash": "3adabfc3ebff0b05"
+        },
+        {
+          "path": "textures/ui_theme_weapon.png",
+          "bytes": 1115,
+          "hash": "0821e8f29a2b5665"
+        },
+        {
+          "path": "textures/ui_theme_world.png",
+          "bytes": 1412,
+          "hash": "046e01f4ec5ea31d"
+        },
+        {
+          "path": "theme.lua",
+          "bytes": 34893,
+          "hash": "af9cb7c7b44220b3"
+        }
+      ]
+    },
+    {
+      "id": "Wii",
+      "name": "Wii",
+      "entry": "theme.lua",
+      "preview": "preview.png",
+      "bytes": 256673,
+      "hash": "473c2557",
+      "files": [
+        {
+          "path": "preview.png",
+          "bytes": 60596,
+          "hash": "dd0062eccb92ea19"
+        },
+        {
+          "path": "textures/background.png",
+          "bytes": 147589,
+          "hash": "ed19cdf4aff8983e"
+        },
+        {
+          "path": "textures/frame.png",
+          "bytes": 7713,
+          "hash": "f4d9e66629899f5f"
+        },
+        {
+          "path": "theme.lua",
+          "bytes": 40775,
+          "hash": "20009d7ef2d33927"
         }
       ]
     },
@@ -8791,8 +9516,8 @@
       "name": "Windows11",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 169970,
-      "hash": "541d707a",
+      "bytes": 171859,
+      "hash": "17176218",
       "files": [
         {
           "path": "preview.png",
@@ -8861,8 +9586,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 31828,
-          "hash": "a67685504c553c64"
+          "bytes": 33717,
+          "hash": "854ff8bbd3890a4a"
         }
       ]
     },
@@ -8871,8 +9596,8 @@
       "name": "Windows98",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 2057576,
-      "hash": "35a71cbc",
+      "bytes": 2059471,
+      "hash": "df0bc166",
       "files": [
         {
           "path": "preview.png",
@@ -9021,8 +9746,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 35306,
-          "hash": "b59eb475e2cb660c"
+          "bytes": 37201,
+          "hash": "c7a67720615126d6"
         }
       ]
     },
@@ -9031,8 +9756,8 @@
       "name": "X-Force",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 328118,
-      "hash": "c16a478a",
+      "bytes": 330007,
+      "hash": "9f326a9c",
       "files": [
         {
           "path": "preview.png",
@@ -9086,8 +9811,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 31313,
-          "hash": "bd694365a05a421a"
+          "bytes": 33202,
+          "hash": "28095a1f6a9acfec"
         }
       ]
     },
@@ -9096,8 +9821,8 @@
       "name": "XCheats",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 286258,
-      "hash": "aa0a100a",
+      "bytes": 288147,
+      "hash": "ab614c1c",
       "files": [
         {
           "path": "preview.png",
@@ -9161,8 +9886,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 31628,
-          "hash": "aa00e25d5d975c94"
+          "bytes": 33517,
+          "hash": "75382714f2e93256"
         }
       ]
     },
@@ -9171,8 +9896,8 @@
       "name": "Youtube",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 745095,
-      "hash": "4ff207c0",
+      "bytes": 746990,
+      "hash": "ca2ca37a",
       "files": [
         {
           "path": "preview.png",
@@ -9416,8 +10141,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 40407,
-          "hash": "ba8f80461c06ea81"
+          "bytes": 42302,
+          "hash": "45ddf7142918cd65"
         }
       ]
     },
@@ -9426,8 +10151,8 @@
       "name": "Zanium",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 711389,
-      "hash": "f1cb55a7",
+      "bytes": 713280,
+      "hash": "0a7e3c4d",
       "files": [
         {
           "path": "preview.png",
@@ -9446,8 +10171,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 30573,
-          "hash": "7090ac4ad12d4059"
+          "bytes": 32464,
+          "hash": "e650636f9f29d4a3"
         }
       ]
     },
@@ -9456,8 +10181,8 @@
       "name": "Zenitsu",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 491795,
-      "hash": "2b2610ec",
+      "bytes": 493690,
+      "hash": "6bc978b6",
       "files": [
         {
           "path": "preview.png",
@@ -9471,8 +10196,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 30587,
-          "hash": "a8307046693701d5"
+          "bytes": 32482,
+          "hash": "64e97a446a382fcd"
         }
       ]
     },
@@ -9481,8 +10206,8 @@
       "name": "Zeus",
       "entry": "theme.lua",
       "preview": "preview.png",
-      "bytes": 4395348,
-      "hash": "5646c800",
+      "bytes": 4397241,
+      "hash": "2f81c0a8",
       "files": [
         {
           "path": "preview.png",
@@ -9726,8 +10451,8 @@
         },
         {
           "path": "theme.lua",
-          "bytes": 40137,
-          "hash": "73b84878a51fc557"
+          "bytes": 42030,
+          "hash": "9313ea85a548cb6d"
         }
       ]
     },
@@ -9736,13 +10461,13 @@
       "name": "brutalist",
       "entry": "brutalist.lua",
       "preview": "preview.png",
-      "bytes": 158218,
-      "hash": "b8cd0690",
+      "bytes": 158825,
+      "hash": "52ccf61b",
       "files": [
         {
           "path": "brutalist.lua",
-          "bytes": 40604,
-          "hash": "618484c20363d0ff"
+          "bytes": 41211,
+          "hash": "321fbef6d85c4e1e"
         },
         {
           "path": "preview.png",
@@ -9761,13 +10486,13 @@
       "name": "hazard",
       "entry": "hazard.lua",
       "preview": "preview.png",
-      "bytes": 244897,
-      "hash": "4b2535cf",
+      "bytes": 245504,
+      "hash": "4f37530a",
       "files": [
         {
           "path": "hazard.lua",
-          "bytes": 41569,
-          "hash": "d2bf4384e58b77bb"
+          "bytes": 42176,
+          "hash": "35fe245d0f5bece0"
         },
         {
           "path": "preview.png",
@@ -9782,12 +10507,197 @@
       ]
     },
     {
+      "id": "iPad",
+      "name": "iPad",
+      "entry": "theme.lua",
+      "preview": "preview.png",
+      "bytes": 578920,
+      "hash": "ba3ab17e",
+      "files": [
+        {
+          "path": "preview.png",
+          "bytes": 86119,
+          "hash": "b1721904db109b4d"
+        },
+        {
+          "path": "textures/background.jpg",
+          "bytes": 283287,
+          "hash": "2be6a472f65ed75e"
+        },
+        {
+          "path": "textures/frame.png",
+          "bytes": 168735,
+          "hash": "406d1e4ca796b5a5"
+        },
+        {
+          "path": "theme.lua",
+          "bytes": 40779,
+          "hash": "c76bbec25a42fa66"
+        }
+      ]
+    },
+    {
+      "id": "iPhone",
+      "name": "iPhone",
+      "entry": "theme.lua",
+      "preview": "preview.png",
+      "bytes": 1126793,
+      "hash": "81083e36",
+      "files": [
+        {
+          "path": "preview.png",
+          "bytes": 125223,
+          "hash": "8397a1d9b6943dcb"
+        },
+        {
+          "path": "textures/background.jpg",
+          "bytes": 126209,
+          "hash": "dbb887f42672cb2d"
+        },
+        {
+          "path": "textures/frame.png",
+          "bytes": 834571,
+          "hash": "c9d63deb6fa3602f"
+        },
+        {
+          "path": "theme.lua",
+          "bytes": 40790,
+          "hash": "0e7a03fe4f6ab431"
+        }
+      ]
+    },
+    {
+      "id": "pxred",
+      "name": "pxred",
+      "entry": "theme.lua",
+      "preview": "preview.png",
+      "bytes": 1054837,
+      "hash": "3a09a199",
+      "files": [
+        {
+          "path": "preview.png",
+          "bytes": 172115,
+          "hash": "2bfc01f8ba4ddb6e"
+        },
+        {
+          "path": "textures/footer.png",
+          "bytes": 7598,
+          "hash": "203beb387aa5b0b9"
+        },
+        {
+          "path": "textures/header.gif",
+          "bytes": 726578,
+          "hash": "d7a77f08b855c3bd"
+        },
+        {
+          "path": "textures/list_icon.png",
+          "bytes": 1460,
+          "hash": "b61683ffd2788da7"
+        },
+        {
+          "path": "textures/toggle_off.png",
+          "bytes": 8142,
+          "hash": "a99fc5d21654bfb1"
+        },
+        {
+          "path": "textures/toggle_on.png",
+          "bytes": 7779,
+          "hash": "96fff444029d4a0e"
+        },
+        {
+          "path": "textures/ui_theme_debug.png",
+          "bytes": 5853,
+          "hash": "e111fcd4d4d58f3d"
+        },
+        {
+          "path": "textures/ui_theme_keyboard.png",
+          "bytes": 5214,
+          "hash": "8be0b5739dbafaa6"
+        },
+        {
+          "path": "textures/ui_theme_list.png",
+          "bytes": 1460,
+          "hash": "b61683ffd2788da7"
+        },
+        {
+          "path": "textures/ui_theme_online.png",
+          "bytes": 10351,
+          "hash": "8a5ad74d3d2351a8"
+        },
+        {
+          "path": "textures/ui_theme_protection.png",
+          "bytes": 5735,
+          "hash": "4ca3014e49c936ae"
+        },
+        {
+          "path": "textures/ui_theme_recovery.png",
+          "bytes": 5692,
+          "hash": "2c5cb3dae323f6f4"
+        },
+        {
+          "path": "textures/ui_theme_scripts.png",
+          "bytes": 5678,
+          "hash": "fc5639f97e9bcd8c"
+        },
+        {
+          "path": "textures/ui_theme_search.png",
+          "bytes": 5707,
+          "hash": "16041f4280b93c78"
+        },
+        {
+          "path": "textures/ui_theme_self.png",
+          "bytes": 5544,
+          "hash": "59eaaea29e16a147"
+        },
+        {
+          "path": "textures/ui_theme_settings.png",
+          "bytes": 5743,
+          "hash": "7bda2aea8308c31b"
+        },
+        {
+          "path": "textures/ui_theme_teleport.png",
+          "bytes": 5734,
+          "hash": "86c17dd2adf33858"
+        },
+        {
+          "path": "textures/ui_theme_toggle_off.png",
+          "bytes": 8142,
+          "hash": "a99fc5d21654bfb1"
+        },
+        {
+          "path": "textures/ui_theme_toggle_on.png",
+          "bytes": 7779,
+          "hash": "96fff444029d4a0e"
+        },
+        {
+          "path": "textures/ui_theme_vehicle.png",
+          "bytes": 6181,
+          "hash": "8491c7b0c607eaea"
+        },
+        {
+          "path": "textures/ui_theme_weapon.png",
+          "bytes": 5977,
+          "hash": "51bb88bd5e595393"
+        },
+        {
+          "path": "textures/ui_theme_world.png",
+          "bytes": 5797,
+          "hash": "b97145af9376d8b7"
+        },
+        {
+          "path": "theme.lua",
+          "bytes": 34578,
+          "hash": "4c21e68fc6a28e5c"
+        }
+      ]
+    },
+    {
       "id": "spotlight",
       "name": "spotlight",
       "entry": "spotlight.lua",
       "preview": "preview.png",
-      "bytes": 198674,
-      "hash": "676a9d8a",
+      "bytes": 199281,
+      "hash": "f76653c3",
       "files": [
         {
           "path": "preview.png",
@@ -9801,8 +10711,8 @@
         },
         {
           "path": "spotlight.lua",
-          "bytes": 40990,
-          "hash": "b6116d7af97d5f45"
+          "bytes": 41597,
+          "hash": "f7d0f7bb4bb1d2ea"
         }
       ]
     }

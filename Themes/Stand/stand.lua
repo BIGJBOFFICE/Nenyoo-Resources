@@ -76,35 +76,23 @@ local l = {
     text_off_y   = 0,
 }
 
--- Sidebar tabs — the real top-level pages, read from Home rather than hardcoded.
--- This used to be a fixed list of three ({Online, Weapons, Settings}), so the sidebar
--- showed 3 of the 12 top-level pages and the other 9 were unreachable from it.
---
--- `page` is the submenu target's id hash, not its name: menu.navigate() accepts either,
--- but the hash keeps tab matching correct when the menu is translated.
+-- Sidebar tabs come from the native tab registry. That registry already applies entitlement gates,
+-- translations, dynamic-page refreshes, and stable page IDs; rebuilding a second list from Home made
+-- this theme drift from the menu and left stale or missing tabs after a page-tree update.
 local tabs = {}
-local tabs_at = -1
 
 local function rebuild_tabs()
-    local list = items.page_items("Home")
-    if not list then return end
     local out = {}
-    for _, h in ipairs(list) do
-        local it = items.at(h)
-        if it and it.type == item_type.sub_menu and it.sub_menu and it.sub_menu ~= 0 then
-            out[#out + 1] = {label = it.name, page = it.sub_menu}
-        end
+    for i=0,menu.tab_count()-1 do
+        out[#out + 1] = {label=menu.tab_name(i), page=menu.tab_page_id(i), index=i}
     end
-    if #out > 0 then tabs = out end
+    tabs = out
 end
 
--- Cheap, but not worth doing every frame: the top-level page set only changes when a
--- theme reload or a dynamic tab (Scripts, DLC) rebuilds the tree.
 local function ensure_tabs()
-    local now = ctx.time()
-    if #tabs == 0 or tabs_at < 0 or now - tabs_at > 0.5 then
-        tabs_at = now
-        rebuild_tabs()
+    if #tabs ~= menu.tab_count() then rebuild_tabs(); return end
+    for i,t in ipairs(tabs) do
+        if t.page ~= menu.tab_page_id(i-1) or t.label ~= menu.tab_name(i-1) then rebuild_tabs(); return end
     end
 end
 
@@ -132,18 +120,8 @@ local function ease_out(t) t = clamp(t, 0, 1); return 1 - (1 - t)^2 end
 -- or more levels deep (Weapon > Inventory > ...) nothing on the current page still names
 -- its top-level ancestor. Remembering the last tab we positively identified keeps the
 -- highlight on the right tab all the way down instead of blanking it below depth one.
-local active_ti_sticky = 0
-
 local function active_tab_index()
-    local id = menu.page_id()
-    for i, t in ipairs(tabs) do
-        if id == t.page then active_ti_sticky = i; return i end
-    end
-    local parent = menu.page_parent()
-    for i, t in ipairs(tabs) do
-        if parent == t.label then active_ti_sticky = i; return i end
-    end
-    return active_ti_sticky
+    return menu.tab_active()+1
 end
 
 -- Draw widget on right side
@@ -434,7 +412,7 @@ function draw_menu()
     -- actually being built: redirecting to a nil page would strand the menu on a blank
     -- frame, and Home is the only page that can rebuild it.
     if page == "Home" then
-        if tabs[1] then menu.navigate(tabs[1].page) end
+        if tabs[1] then menu.switch_tab(0) end
         return
     end
     if page ~= last_page then last_page = page; scroll = 0; scroll_target = 0 end
@@ -484,8 +462,8 @@ function draw_menu()
         end
 
         -- Click sidebar tab
-        if hov and input.mouse_clicked(0) and menu.popup_mode() == 0 then
-            menu.navigate(t.page)
+        if hov and input.mouse_clicked(0) and menu.popup_mode() == 0 and not menu.overlay_active() then
+            menu.switch_tab(t.index)
         end
 
         local tc = is_active and c.sidebar_text_sel or c.sidebar_text
@@ -513,6 +491,7 @@ function draw_menu()
 
     local list_y = cy
     frame.list_y = list_y
+    menu.set_content_rect(cx, list_y, l.content_w, list_h)
 
     -- Scroll
     local scroll_max = math.max(0, content_h - list_h)
@@ -623,6 +602,13 @@ function handle_input()
     if pm == 2 then handle_color_picker(); return end
     if pm == 3 then handle_array_dropdown(); return end
     if pm == 4 then handle_hotkey_bind(); return end
+
+    local tab_count=menu.tab_count()
+    if tab_count>0 and input.key_just_pressed(VK.TAB) then
+        local dir=input.key_down(VK.SHIFT) and -1 or 1
+        menu.switch_tab((menu.tab_active()+dir+tab_count)%tab_count)
+        return
+    end
 
     if input.key_pressed(VK.UP) then menu.move_selection(-1) end
     if input.key_pressed(VK.DOWN) then menu.move_selection(1) end

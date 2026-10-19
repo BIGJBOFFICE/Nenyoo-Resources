@@ -295,7 +295,7 @@ local function draw_scrollbar(x, list_y, list_h, content_h)
     local fr = scroll_max > 0 and (scroll / scroll_max) or 0
     local thumb_y = list_y + fr * (list_h - thumb_h)
 
-    if not dragging_sb and input.mouse_clicked(0) and near then
+    if not dragging_sb and (not menu.overlay_active() and input.mouse_clicked(0)) and near then
         if my >= thumb_y and my <= thumb_y + thumb_h then
             dragging_sb = true; sb_grab = my - thumb_y
         else
@@ -536,7 +536,7 @@ function draw_menu()
         end
 
         -- mouse interaction
-        if hovered and input.mouse_clicked(0) and menu.popup_mode() == 0 and dragging_slider < 0 then
+        if hovered and (not menu.overlay_active() and input.mouse_clicked(0)) and menu.popup_mode() == 0 and dragging_slider < 0 then
             local handled = false
             local has_toggle = t == item_type.toggle or t == item_type.float_toggle
                 or t == item_type.int_toggle or t == item_type.array_toggle or t == item_type.loop_toggle
@@ -604,6 +604,14 @@ end
 -- Input
 ---------------------------------------------------------------------------
 function handle_input()
+    if menu.is_visible() and menu.popup_mode()==0 and not menu.is_text_editing() and not menu.overlay_active() then
+        local tab_count=menu.tab_count()
+        if tab_count>0 and input.key_just_pressed(VK.TAB) then
+            local dir=input.key_down(VK.SHIFT) and -1 or 1
+            menu.switch_tab((menu.tab_active()+dir+tab_count)%tab_count)
+            return
+        end
+    end
     if not menu.is_visible() then return end
     local pm = menu.popup_mode()
     if pm == 1 then handle_input_popup(); return end
@@ -759,7 +767,7 @@ function handle_array_dropdown()
         if input.key_pressed(VK.UP) and array_picker_idx > 0 then array_picker_idx = array_picker_idx - 1 end
         if input.key_just_pressed(VK.RETURN) then menu.set_value_index(sel, array_picker_idx); menu.set_popup_mode(0); return end
         local mx, my = input.mouse_x(), input.mouse_y()
-        if input.mouse_clicked(0) and elapsed > 0.15 then
+        if (not menu.overlay_active() and input.mouse_clicked(0)) and elapsed > 0.15 then
             local dw, dh_item = 210, 30
             local dx = frame.menu_x + l.menu_w - dw - l.pad_x
             local dy = (frame.popup_item_y or 300) + 3
@@ -851,7 +859,7 @@ function draw_color_picker()
         local tw = text.width(font.tagline, tabs[i])
         text.draw(font.tagline, tx, tab_y + (tab_h - text.height(font.tagline)) / 2,
             c.accent[1], c.accent[2], c.accent[3], active and 255 or 110, tabs[i])
-        if mx >= tx and mx <= tx + tw and my >= tab_y and my <= tab_y + tab_h and input.mouse_clicked(0) then cp_tab = i - 1 end
+        if mx >= tx and mx <= tx + tw and my >= tab_y and my <= tab_y + tab_h and (not menu.overlay_active() and input.mouse_clicked(0)) then cp_tab = i - 1 end
     end
 
     local content_y = tab_y + tab_h + 16
@@ -867,7 +875,7 @@ function draw_color_picker()
             if cp_palette_idx == i - 1 then
                 draw.rect_outline(cx - 2, cyy - 2, cx + cell + 2, cyy + cell + 2, c.accent[1], c.accent[2], c.accent[3], 255)
             end
-            if mx >= cx and mx <= cx + cell and my >= cyy and my <= cyy + cell and input.mouse_clicked(0) then cp_palette_idx = i - 1 end
+            if mx >= cx and mx <= cx + cell and my >= cyy and my <= cyy + cell and (not menu.overlay_active() and input.mouse_clicked(0)) then cp_palette_idx = i - 1 end
         end
         local pc = palette[cp_palette_idx + 1]
         if pc then
@@ -1248,7 +1256,7 @@ local function signal_draw_rail(x,y,w,h,now,scale)
         if focused then tc={103,216,255} end
         text.draw(font.item,x+12,row_y+(row_h-text.height(font.item))*0.5,
             tc[1],tc[2],tc[3],focused and 255 or 220,prefix..string.upper(name))
-        if hovered and input.mouse_clicked(0) and menu.popup_mode()==0 then signal_open_module(zero) end
+        if hovered and (not menu.overlay_active() and input.mouse_clicked(0)) and menu.popup_mode()==0 then signal_open_module(zero) end
         row_y=row_y+row_h
         if row_y+row_h>y+h-44 then break end
     end
@@ -1337,7 +1345,7 @@ local function signal_draw_item_rows(x,y,w,h,now,dt,scale)
                     if item.hotkey and item.hotkey~=0 then
                         draw_hotkey_badge(x+18+text.width(font.item,marker.." "..(item.name or "")),iy+(row_h-text.height(font.item))*0.5,item.hotkey,active,text.height(font.item))
                     end
-                    if hovered and input.mouse_clicked(0) and menu.popup_mode()==0 and signal_drag_slider<0 then
+                    if hovered and (not menu.overlay_active() and input.mouse_clicked(0)) and menu.popup_mode()==0 and signal_drag_slider<0 then
                         menu.set_selected(i)
                         signal_focus=1
                         if item.type==item_type.slider then
@@ -1491,7 +1499,7 @@ function handle_input()
         and signal_boot_started>=0 and now-signal_boot_started<3
     if booting then
         if input.key_just_pressed(VK.RETURN) or input.key_just_pressed(VK.SPACE)
-            or input.key_just_pressed(VK.ESCAPE) or input.mouse_clicked(0) then signal_boot_skipped=true end
+            or input.key_just_pressed(VK.ESCAPE) or (not menu.overlay_active() and input.mouse_clicked(0)) then signal_boot_skipped=true end
         return
     end
     local pm=menu.popup_mode()

@@ -48,17 +48,21 @@ ANIME_NEON_BACKGROUND = draw.load_image("Themes/Anime Neon/textures/anime_backgr
 
 -- ── Layout constants (defaults; live values come from Settings ▸ Theme, applied
 --    each frame at the top of draw_menu via reload_layout) ──
-local WIN_W      = 400
-local HDR_H      = 120     -- big "N" header
-local HDR_GAP    = -1      -- padding between header and subheader
-local SUB_H      = 34      -- subheader / breadcrumb strip
-local FOOT_H     = 40
-local ROW_H      = 38      -- per option row (HTML padding:14px 20px @16px)
-local VIS_ROWS   = 13      -- visible rows before scrolling (HTML max-height 336)
-local PAD_X      = 20
-local SCROLL_W   = 4
-local DESC_GAP   = 8
-local DESC_H     = 34
+-- These layout slots intentionally live on the theme environment rather than as eleven separate
+-- locals captured by draw_menu. LuaJIT 2.1 caps a closure at 60 upvalues; keeping them as locals made
+-- this otherwise-valid theme fail to compile once the richer row and search controls were added.
+-- The ANIME_NEON_ prefix prevents collisions with feature scripts sharing the Lua state.
+ANIME_NEON_WIN_W      = 400
+ANIME_NEON_HDR_H      = 120     -- big "N" header
+ANIME_NEON_HDR_GAP    = -1      -- padding between header and subheader
+ANIME_NEON_SUB_H      = 34      -- subheader / breadcrumb strip
+ANIME_NEON_FOOT_H     = 40
+ANIME_NEON_ROW_H      = 38      -- per option row (HTML padding:14px 20px @16px)
+ANIME_NEON_VIS_ROWS   = 13      -- visible rows before scrolling (HTML max-height 336)
+ANIME_NEON_PAD_X      = 20
+ANIME_NEON_SCROLL_W   = 4
+ANIME_NEON_DESC_GAP   = 8
+ANIME_NEON_DESC_H     = 34
 
 -- ── Palette (defaults; live values come from Settings ▸ Theme via reload_colors) ──
 local COL = {
@@ -492,8 +496,8 @@ end
 -- color args: pass the row's text color so icons/text invert with selection.
 local function draw_right(item, x, y, w, sel)
     local tp = item.type
-    local cy = y + ROW_H*0.5
-    local rx = x + w - PAD_X        -- right edge to lay out from
+    local cy = y + ANIME_NEON_ROW_H*0.5
+    local rx = x + w - ANIME_NEON_PAD_X        -- right edge to lay out from
     local tc = sel and COL.sel_txt or COL.dim
     -- inline hotkey capture: show "Press any key…" in place of the widget
     if hk_bind and hk_idx==item._idx then
@@ -589,8 +593,8 @@ local function draw_right(item, x, y, w, sel)
         local lx = rx-12-6-vw-6-12
         arrow("left", lx)
         local clicked_dir = 0
-        if clk(rx-27, y, rx+2, y+ROW_H) then clicked_dir = 1
-        elseif clk(lx-4, y, lx+24, y+ROW_H) then clicked_dir = -1 end
+        if clk(rx-27, y, rx+2, y+ANIME_NEON_ROW_H) then clicked_dir = 1
+        elseif clk(lx-4, y, lx+24, y+ANIME_NEON_ROW_H) then clicked_dir = -1 end
         if clicked_dir ~= 0 and item.value_count and item.value_count > 0 then
             local vi = ((item.value_index or 0) + clicked_dir) % item.value_count
             if vi < 0 then vi = vi + item.value_count end
@@ -612,14 +616,14 @@ local function draw_cpick(wx, wy, ww, wh)
     local item = menu.get_item(cpick_idx)
     if not item then cpick=false; return end
     local SV_W,SV_H,HUE_W,ALPHA_H,PADP = 150,120,16,12,8
-    local HEAD_H, FOOT_H = 24, 18
+    local HEAD_H, ANIME_NEON_FOOT_H = 24, 18
     local PW = CPICK_W
-    local PH = HEAD_H+SV_H+ALPHA_H+PADP*4+FOOT_H
+    local PH = HEAD_H+SV_H+ALPHA_H+PADP*4+ANIME_NEON_FOOT_H
     local screen_pad = 12
     local px = wx + ww + CPICK_GAP
     if px+PW > ctx.screen_w()-screen_pad then px = wx-PW-CPICK_GAP end
     px = clamp(px, screen_pad, ctx.screen_w()-PW-screen_pad)
-    local anchor_y = wy + cpick_idx*ROW_H - scroll + ROW_H*0.5
+    local anchor_y = wy + cpick_idx*ANIME_NEON_ROW_H - scroll + ANIME_NEON_ROW_H*0.5
     local py = clamp(anchor_y-PH*0.5, screen_pad, ctx.screen_h()-PH-screen_pad)
 
     draw.rect(px+3,py+4,px+PW+3,py+PH+4, 0,0,0,95, 7)
@@ -749,9 +753,9 @@ function draw_menu()
     -- pull live layout + fonts from Settings ▸ Theme (cheap; reassigns the
     -- file-scope locals so draw_right etc. see the updated values this frame)
     local l = reload_layout(); apply_fonts()
-    WIN_W=l.win_w; HDR_H=l.hdr_h; HDR_GAP=l.hdr_gap; SUB_H=l.sub_h; FOOT_H=l.foot_h
-    ROW_H=l.row_h; VIS_ROWS=l.vis_rows; PAD_X=l.pad_x; SCROLL_W=l.scroll_w
-    DESC_GAP=l.desc_gap; DESC_H=l.desc_h
+    ANIME_NEON_WIN_W=l.win_w; ANIME_NEON_HDR_H=l.hdr_h; ANIME_NEON_HDR_GAP=l.hdr_gap; ANIME_NEON_SUB_H=l.sub_h; ANIME_NEON_FOOT_H=l.foot_h
+    ANIME_NEON_ROW_H=l.row_h; ANIME_NEON_VIS_ROWS=l.vis_rows; ANIME_NEON_PAD_X=l.pad_x; ANIME_NEON_SCROLL_W=l.scroll_w
+    ANIME_NEON_DESC_GAP=l.desc_gap; ANIME_NEON_DESC_H=l.desc_h
 
     rebuild_feature_search()
     -- Keep this frame on one coherent data source if the header button opens/closes search midway
@@ -763,50 +767,50 @@ function draw_menu()
 
     -- box geometry (centered horizontally, upper third vertically)
     -- list shrinks to the actual item count so empty rows don't leave a gap
-    local rows_shown = math.max(1, math.min(count, VIS_ROWS))
-    local body_h = HDR_H + HDR_GAP + SUB_H + rows_shown*ROW_H + FOOT_H
+    local rows_shown = math.max(1, math.min(count, ANIME_NEON_VIS_ROWS))
+    local body_h = ANIME_NEON_HDR_H + ANIME_NEON_HDR_GAP + ANIME_NEON_SUB_H + rows_shown*ANIME_NEON_ROW_H + ANIME_NEON_FOOT_H
     -- anchor the top to a FULL page's height so the header stays put no matter the
     -- option count; the box still shrinks downward (no empty rows) on short pages
-    local ref_total_h = HDR_H + HDR_GAP + SUB_H + VIS_ROWS*ROW_H + FOOT_H + DESC_GAP + DESC_H
-    local group_w = cpick and (WIN_W+CPICK_GAP+CPICK_W) or WIN_W
+    local ref_total_h = ANIME_NEON_HDR_H + ANIME_NEON_HDR_GAP + ANIME_NEON_SUB_H + ANIME_NEON_VIS_ROWS*ANIME_NEON_ROW_H + ANIME_NEON_FOOT_H + ANIME_NEON_DESC_GAP + ANIME_NEON_DESC_H
+    local group_w = cpick and (ANIME_NEON_WIN_W+CPICK_GAP+CPICK_W) or ANIME_NEON_WIN_W
     local x = math.floor((ctx.screen_w()-group_w)/2)
     local y = math.floor((ctx.screen_h()-ref_total_h)/2)
 
     -- draggable by the header
-    local dox, doy = menu.drag_header(x, y, WIN_W, HDR_H)
+    local dox, doy = menu.drag_header(x, y, ANIME_NEON_WIN_W, ANIME_NEON_HDR_H)
     x = x + dox; y = y + doy
 
     -- ── Animated header artwork ──
-    draw.rect_gradient(x, y, x+WIN_W, y+HDR_H,
+    draw.rect_gradient(x, y, x+ANIME_NEON_WIN_W, y+ANIME_NEON_HDR_H,
         COL.hdr_l[1],COL.hdr_l[2],COL.hdr_l[3],alpha(COL.hdr_l),
         COL.hdr_r[1],COL.hdr_r[2],COL.hdr_r[3],alpha(COL.hdr_r),
         COL.hdr_r[1],COL.hdr_r[2],COL.hdr_r[3],alpha(COL.hdr_r),
         COL.hdr_l[1],COL.hdr_l[2],COL.hdr_l[3],alpha(COL.hdr_l))
     if ANIME_NEON_HEADER and ANIME_NEON_HEADER > 0 then
         local art_t = ctx.time()
-        local zoom_x = WIN_W * 0.018
-        local zoom_y = HDR_H * 0.035
+        local zoom_x = ANIME_NEON_WIN_W * 0.018
+        local zoom_y = ANIME_NEON_HDR_H * 0.035
         local drift_x = math.sin(art_t * 0.22) * 4
         local drift_y = math.cos(art_t * 0.17) * 1.5
-        draw.push_clip(x, y, x+WIN_W, y+HDR_H)
+        draw.push_clip(x, y, x+ANIME_NEON_WIN_W, y+ANIME_NEON_HDR_H)
         draw.image(ANIME_NEON_HEADER,
             x-zoom_x+drift_x, y-zoom_y+drift_y,
-            x+WIN_W+zoom_x+drift_x, y+HDR_H+zoom_y+drift_y)
-        draw.rect_gradient(x, y, x+WIN_W, y+HDR_H,
+            x+ANIME_NEON_WIN_W+zoom_x+drift_x, y+ANIME_NEON_HDR_H+zoom_y+drift_y)
+        draw.rect_gradient(x, y, x+ANIME_NEON_WIN_W, y+ANIME_NEON_HDR_H,
             3,5,16,90, 3,5,16,34, 3,5,16,34, 3,5,16,90)
 
         -- A slow violet/cyan light pass across the artwork.
-        local hx = x-90 + ((art_t*34) % (WIN_W+180))
-        draw.rect_gradient(hx-55, y, hx, y+HDR_H,
+        local hx = x-90 + ((art_t*34) % (ANIME_NEON_WIN_W+180))
+        draw.rect_gradient(hx-55, y, hx, y+ANIME_NEON_HDR_H,
             139,92,246,0, 139,92,246,34, 34,211,238,34, 34,211,238,0)
-        draw.rect_gradient(hx, y, hx+55, y+HDR_H,
+        draw.rect_gradient(hx, y, hx+55, y+ANIME_NEON_HDR_H,
             34,211,238,34, 34,211,238,0, 139,92,246,0, 139,92,246,34)
 
         -- Tiny drifting motes make the still illustration feel alive without
         -- competing with the character or the menu below it.
         for i=1,8 do
-            local px = x + ((i*67 + art_t*(5+i*0.7)) % WIN_W)
-            local py = y + ((i*29 + art_t*(2+i*0.25)) % HDR_H)
+            local px = x + ((i*67 + art_t*(5+i*0.7)) % ANIME_NEON_WIN_W)
+            local py = y + ((i*29 + art_t*(2+i*0.25)) % ANIME_NEON_HDR_H)
             local pa = 40 + math.floor((math.sin(art_t*1.3+i)*0.5+0.5)*75)
             local pr = (i % 3 == 0) and 1.4 or 0.8
             if i % 2 == 0 then
@@ -819,50 +823,50 @@ function draw_menu()
         -- Keep the wordmark on the quiet left side so the animated character
         -- remains unobstructed. It stays live text for a clean edge at any size.
         local brand = "NENYOO"
-        local brand_y = y + (HDR_H-text.height(font.tagline))*0.5
+        local brand_y = y + (ANIME_NEON_HDR_H-text.height(font.tagline))*0.5
         text.draw_spaced(font.tagline, x+25, brand_y+1, 34,211,238,105, brand, 2.2)
         text.draw_spaced(font.tagline, x+23, brand_y, 245,248,255,245, brand, 2.2)
         draw.pop_clip()
     end
     -- padding between header and subheader
-    if HDR_GAP > 0 then
-        draw.rect(x, y+HDR_H, x+WIN_W, y+HDR_H+HDR_GAP, COL.black[1],COL.black[2],COL.black[3],alpha(COL.black))
+    if ANIME_NEON_HDR_GAP > 0 then
+        draw.rect(x, y+ANIME_NEON_HDR_H, x+ANIME_NEON_WIN_W, y+ANIME_NEON_HDR_H+ANIME_NEON_HDR_GAP, COL.black[1],COL.black[2],COL.black[3],alpha(COL.black))
     end
 
     -- ── Subheader (breadcrumb + back) ──
-    local sy = y + HDR_H + HDR_GAP
-    draw.rect(x, sy, x+WIN_W, sy+SUB_H, COL.sub_bg[1],COL.sub_bg[2],COL.sub_bg[3],alpha(COL.sub_bg))
-    local title_x = x + PAD_X
+    local sy = y + ANIME_NEON_HDR_H + ANIME_NEON_HDR_GAP
+    draw.rect(x, sy, x+ANIME_NEON_WIN_W, sy+ANIME_NEON_SUB_H, COL.sub_bg[1],COL.sub_bg[2],COL.sub_bg[3],alpha(COL.sub_bg))
+    local title_x = x + ANIME_NEON_PAD_X
     local title = string.upper(menu.page_title() or "MENU")
     -- subtle glare sweep
-    local search_cy = sy + SUB_H*0.5
-    local search_icon_x = x + WIN_W - PAD_X - 16
+    local search_cy = sy + ANIME_NEON_SUB_H*0.5
+    local search_icon_x = x + ANIME_NEON_WIN_W - ANIME_NEON_PAD_X - 16
     if searching then
         icon_h("search", title_x, search_cy, 14, COL.sub_txt[1],COL.sub_txt[2],COL.sub_txt[3],alpha(COL.sub_txt))
         local shown = search_query ~= "" and search_query or "Search features…"
         if search_query ~= "" and math.floor(ctx.time()*2)%2 == 0 then shown = shown .. "|" end
         local sc = search_query ~= "" and COL.sub_txt or COL.foot_txt
-        draw.push_clip(title_x+22, sy, x+WIN_W-PAD_X-28, sy+SUB_H)
-        text.draw(font.breadcrumb, title_x+22, sy+(SUB_H-text.height(font.breadcrumb))*0.5,
+        draw.push_clip(title_x+22, sy, x+ANIME_NEON_WIN_W-ANIME_NEON_PAD_X-28, sy+ANIME_NEON_SUB_H)
+        text.draw(font.breadcrumb, title_x+22, sy+(ANIME_NEON_SUB_H-text.height(font.breadcrumb))*0.5,
             sc[1],sc[2],sc[3],alpha(sc), shown)
         draw.pop_clip()
         local close_text = "×"
-        text.draw(font.breadcrumb, search_icon_x, sy+(SUB_H-text.height(font.breadcrumb))*0.5,
+        text.draw(font.breadcrumb, search_icon_x, sy+(ANIME_NEON_SUB_H-text.height(font.breadcrumb))*0.5,
             COL.sub_txt[1],COL.sub_txt[2],COL.sub_txt[3],alpha(COL.sub_txt), close_text)
-        if clk(search_icon_x-8, sy, x+WIN_W, sy+SUB_H) then close_feature_search(true) end
+        if clk(search_icon_x-8, sy, x+ANIME_NEON_WIN_W, sy+ANIME_NEON_SUB_H) then close_feature_search(true) end
     else
-        text.draw_spaced(font.breadcrumb, title_x, sy+(SUB_H-text.height(font.breadcrumb))*0.5,
+        text.draw_spaced(font.breadcrumb, title_x, sy+(ANIME_NEON_SUB_H-text.height(font.breadcrumb))*0.5,
             COL.sub_txt[1],COL.sub_txt[2],COL.sub_txt[3],alpha(COL.sub_txt), title, 1.0)
-        local over_search = hit(search_icon_x-6, sy, x+WIN_W, sy+SUB_H)
+        local over_search = hit(search_icon_x-6, sy, x+ANIME_NEON_WIN_W, sy+ANIME_NEON_SUB_H)
         local c = over_search and COL.white or COL.sub_txt
         icon_h("search", search_icon_x, search_cy, 15, c[1],c[2],c[3],alpha(c))
-        if clk(search_icon_x-8, sy, x+WIN_W, sy+SUB_H) then open_feature_search() end
+        if clk(search_icon_x-8, sy, x+ANIME_NEON_WIN_W, sy+ANIME_NEON_SUB_H) then open_feature_search() end
     end
     if FX.glare then
         local gp = (ctx.time()*0.32) % 1.6
-        local gxc = x - WIN_W*0.5 + gp*WIN_W
-        draw.push_clip(x, sy, x+WIN_W, sy+SUB_H)
-        draw.rect_gradient(gxc-50, sy, gxc+50, sy+SUB_H,
+        local gxc = x - ANIME_NEON_WIN_W*0.5 + gp*ANIME_NEON_WIN_W
+        draw.push_clip(x, sy, x+ANIME_NEON_WIN_W, sy+ANIME_NEON_SUB_H)
+        draw.rect_gradient(gxc-50, sy, gxc+50, sy+ANIME_NEON_SUB_H,
             200,155,255,0, 200,155,255,40, 200,155,255,40, 200,155,255,0)
         draw.pop_clip()
     end
@@ -872,15 +876,15 @@ function draw_menu()
         if not searching and FX.hint and not hk_bind and hi and hi.type~=item_type.sub_menu and menu.page_can_hotkey() then
             local hint = (hi.hotkey and hi.hotkey~=0) and "[H] rebind  [Del] clear" or "[H] hotkey"
             text.draw(font.tiny, search_icon_x-12-text.width(font.tiny,hint),
-                sy+(SUB_H-text.height(font.tiny))*0.5,
+                sy+(ANIME_NEON_SUB_H-text.height(font.tiny))*0.5,
                 COL.foot_txt[1],COL.foot_txt[2],COL.foot_txt[3],alpha(COL.foot_txt), hint)
         end
     end
 
     -- purple → cyan gradient accent line under the breadcrumb (matches the header)
     do
-        local ly = sy + SUB_H - 2
-        draw.rect_gradient(x, ly, x+WIN_W, ly+2,
+        local ly = sy + ANIME_NEON_SUB_H - 2
+        draw.rect_gradient(x, ly, x+ANIME_NEON_WIN_W, ly+2,
             COL.hdr_l[1],COL.hdr_l[2],COL.hdr_l[3],alpha(COL.hdr_l),
             COL.hdr_r[1],COL.hdr_r[2],COL.hdr_r[3],alpha(COL.hdr_r),
             COL.hdr_r[1],COL.hdr_r[2],COL.hdr_r[3],alpha(COL.hdr_r),
@@ -888,39 +892,39 @@ function draw_menu()
     end
 
     -- ── Options list ──
-    local list_y = sy + SUB_H
-    local list_h = rows_shown*ROW_H
-    draw.rect(x, list_y, x+WIN_W, list_y+list_h, COL.black[1],COL.black[2],COL.black[3],alpha(COL.black))
+    local list_y = sy + ANIME_NEON_SUB_H
+    local list_h = rows_shown*ANIME_NEON_ROW_H
+    draw.rect(x, list_y, x+ANIME_NEON_WIN_W, list_y+list_h, COL.black[1],COL.black[2],COL.black[3],alpha(COL.black))
     if ANIME_NEON_BACKGROUND and ANIME_NEON_BACKGROUND > 0 then
         local bg_t = ctx.time()
-        local bg_zoom_x = WIN_W * 0.018
+        local bg_zoom_x = ANIME_NEON_WIN_W * 0.018
         local bg_zoom_y = list_h * 0.018
         local bg_drift_x = math.sin(bg_t*0.11) * 3
         local bg_drift_y = math.cos(bg_t*0.09) * 5
-        draw.push_clip(x, list_y, x+WIN_W, list_y+list_h)
+        draw.push_clip(x, list_y, x+ANIME_NEON_WIN_W, list_y+list_h)
         draw.image(ANIME_NEON_BACKGROUND,
             x-bg_zoom_x+bg_drift_x, list_y-bg_zoom_y+bg_drift_y,
-            x+WIN_W+bg_zoom_x+bg_drift_x, list_y+list_h+bg_zoom_y+bg_drift_y,
+            x+ANIME_NEON_WIN_W+bg_zoom_x+bg_drift_x, list_y+list_h+bg_zoom_y+bg_drift_y,
             0.72 + math.sin(bg_t*0.45)*0.035)
-        draw.rect(x, list_y, x+WIN_W, list_y+list_h, 2, 4, 14, 82)
+        draw.rect(x, list_y, x+ANIME_NEON_WIN_W, list_y+list_h, 2, 4, 14, 82)
 
         -- Dim scan-light travels down the panel behind the rows.
         local scan_y = list_y-70 + ((bg_t*24) % (list_h+140))
-        draw.rect_gradient(x, scan_y-32, x+WIN_W, scan_y,
+        draw.rect_gradient(x, scan_y-32, x+ANIME_NEON_WIN_W, scan_y,
             109,40,217,0, 34,211,238,0, 34,211,238,16, 109,40,217,16)
-        draw.rect_gradient(x, scan_y, x+WIN_W, scan_y+32,
+        draw.rect_gradient(x, scan_y, x+ANIME_NEON_WIN_W, scan_y+32,
             109,40,217,16, 34,211,238,16, 34,211,238,0, 109,40,217,0)
         draw.pop_clip()
     end
     -- Publish the list band so overlays that draw INSIDE the menu (the wardrobe's Advanced Editor)
     -- can cover exactly the rows and leave the header/breadcrumb/footer chrome showing.
-    menu.set_content_rect(x, list_y, WIN_W, list_h)
+    menu.set_content_rect(x, list_y, ANIME_NEON_WIN_W, list_h)
 
     -- scroll to keep selection visible
-    local content_h = count*ROW_H
+    local content_h = count*ANIME_NEON_ROW_H
     local scroll_max = math.max(0, content_h - list_h)
-    local sel_top = sel*ROW_H
-    local sel_bot = sel_top + ROW_H
+    local sel_top = sel*ANIME_NEON_ROW_H
+    local sel_bot = sel_top + ANIME_NEON_ROW_H
     if sel_top - scroll_t < 0 then scroll_t = sel_top
     elseif sel_bot - scroll_t > list_h then scroll_t = sel_bot - list_h end
     scroll_t = clamp(scroll_t, 0, scroll_max)
@@ -928,22 +932,22 @@ function draw_menu()
     if math.abs(scroll-scroll_t) < 0.5 then scroll = scroll_t end
 
     -- mouse wheel
-    if hit(x, list_y, x+WIN_W, list_y+list_h) and not cpick and not hk_bind and not menu.overlay_active() then
+    if hit(x, list_y, x+ANIME_NEON_WIN_W, list_y+list_h) and not cpick and not hk_bind and not menu.overlay_active() then
         local wh = input.mouse_wheel()
-        if wh ~= 0 then scroll_t = clamp(scroll_t - wh*ROW_H*1.5, 0, scroll_max) end
+        if wh ~= 0 then scroll_t = clamp(scroll_t - wh*ANIME_NEON_ROW_H*1.5, 0, scroll_max) end
     end
 
-    draw.push_clip(x+SCROLL_W, list_y, x+WIN_W, list_y+list_h)
+    draw.push_clip(x+ANIME_NEON_SCROLL_W, list_y, x+ANIME_NEON_WIN_W, list_y+list_h)
     if searching and count == 0 then
         local empty = search_query == "" and "Start typing to search features" or "No matching features"
-        text.draw_centered(font.item, x+PAD_X, list_y+(ROW_H-text.height(font.item))*0.5,
-            x+WIN_W-PAD_X, COL.foot_txt[1],COL.foot_txt[2],COL.foot_txt[3],alpha(COL.foot_txt), empty)
+        text.draw_centered(font.item, x+ANIME_NEON_PAD_X, list_y+(ANIME_NEON_ROW_H-text.height(font.item))*0.5,
+            x+ANIME_NEON_WIN_W-ANIME_NEON_PAD_X, COL.foot_txt[1],COL.foot_txt[2],COL.foot_txt[3],alpha(COL.foot_txt), empty)
     end
     for i=0,count-1 do
         -- Visibility first: only fetch the item (a C++ round-trip building a Lua table) for on-screen
         -- rows. On huge dynamic pages (e.g. 1000-row anim search) fetching all rows each frame tanks FPS.
-        local ry = list_y + i*ROW_H - scroll
-        if ry+ROW_H >= list_y and ry <= list_y+list_h then
+        local ry = list_y + i*ANIME_NEON_ROW_H - scroll
+        if ry+ANIME_NEON_ROW_H >= list_y and ry <= list_y+list_h then
             local item = searching and search_results[i+1] or menu.get_item(i)
             if item then
               item._idx = i
@@ -951,9 +955,9 @@ function draw_menu()
                 local item_name = type(item.name)=="string" and item.name or ""
                 local item_page = type(item.page)=="string" and item.page or ""
                 local is_sel = (i == sel)
-                local hov = hit(x+SCROLL_W, ry, x+WIN_W, ry+ROW_H)
+                local hov = hit(x+ANIME_NEON_SCROLL_W, ry, x+ANIME_NEON_WIN_W, ry+ANIME_NEON_ROW_H)
                 if is_sel or hov then
-                    draw.rect_gradient(x+SCROLL_W, ry, x+WIN_W, ry+ROW_H,
+                    draw.rect_gradient(x+ANIME_NEON_SCROLL_W, ry, x+ANIME_NEON_WIN_W, ry+ANIME_NEON_ROW_H,
                         COL.sel_l[1],COL.sel_l[2],COL.sel_l[3],alpha(COL.sel_l),
                         COL.sel_r[1],COL.sel_r[2],COL.sel_r[3],alpha(COL.sel_r),
                         COL.sel_r[1],COL.sel_r[2],COL.sel_r[3],alpha(COL.sel_r),
@@ -962,11 +966,11 @@ function draw_menu()
                 local tc = (is_sel or hov) and COL.sel_txt or COL.row_txt
                 local pc = (is_sel or hov) and COL.sel_txt or COL.dim
                 local pw = math.min(150, text.width(font.value, item_page))
-                draw.push_clip(x+PAD_X, ry, x+WIN_W-PAD_X-pw-12, ry+ROW_H)
-                text.draw(font.item, x+PAD_X, ry+(ROW_H-text.height(font.item))*0.5,
+                draw.push_clip(x+ANIME_NEON_PAD_X, ry, x+ANIME_NEON_WIN_W-ANIME_NEON_PAD_X-pw-12, ry+ANIME_NEON_ROW_H)
+                text.draw(font.item, x+ANIME_NEON_PAD_X, ry+(ANIME_NEON_ROW_H-text.height(font.item))*0.5,
                     tc[1],tc[2],tc[3],alpha(tc), item_name)
                 draw.pop_clip()
-                text.draw(font.value, x+WIN_W-PAD_X-pw, ry+(ROW_H-text.height(font.value))*0.5,
+                text.draw(font.value, x+ANIME_NEON_WIN_W-ANIME_NEON_PAD_X-pw, ry+(ANIME_NEON_ROW_H-text.height(font.value))*0.5,
                     pc[1],pc[2],pc[3],alpha(pc), item_page)
                 if hov and input.mouse_clicked(0) and not menu.overlay_active() then
                     search_sel = i
@@ -976,30 +980,30 @@ function draw_menu()
                 -- Section divider: purple accent bar + UPPERCASE label. No highlight, no right
                 -- widget, no click (nav skips headers). Wrapping dashes/spaces are stripped.
                 local label = (item.name or ""):gsub("^[%-%s]+",""):gsub("[%-%s]+$",""):upper()
-                local barw, barh = 3, ROW_H*0.5
-                local bx = x+PAD_X
-                draw.rect(bx, ry+(ROW_H-barh)*0.5, bx+barw, ry+(ROW_H+barh)*0.5,
+                local barw, barh = 3, ANIME_NEON_ROW_H*0.5
+                local bx = x+ANIME_NEON_PAD_X
+                draw.rect(bx, ry+(ANIME_NEON_ROW_H-barh)*0.5, bx+barw, ry+(ANIME_NEON_ROW_H+barh)*0.5,
                     COL.glow[1],COL.glow[2],COL.glow[3],alpha(COL.glow))
-                text.draw(font.item, bx+barw+8, ry+(ROW_H-text.height(font.item))*0.5,
+                text.draw(font.item, bx+barw+8, ry+(ANIME_NEON_ROW_H-text.height(font.item))*0.5,
                     COL.row_txt[1],COL.row_txt[2],COL.row_txt[3],alpha(COL.row_txt), label)
               else
                 local is_sel = (i==sel)
-                local hov = hit(x+SCROLL_W, ry, x+WIN_W, ry+ROW_H)
+                local hov = hit(x+ANIME_NEON_SCROLL_W, ry, x+ANIME_NEON_WIN_W, ry+ANIME_NEON_ROW_H)
                 if is_sel or hov then
                     -- subtle tinted-white gradient: faint purple → faint cyan (stays
                     -- light enough that the black row text/icons remain readable)
-                    draw.rect_gradient(x+SCROLL_W, ry, x+WIN_W, ry+ROW_H,
+                    draw.rect_gradient(x+ANIME_NEON_SCROLL_W, ry, x+ANIME_NEON_WIN_W, ry+ANIME_NEON_ROW_H,
                         COL.sel_l[1],COL.sel_l[2],COL.sel_l[3],alpha(COL.sel_l),
                         COL.sel_r[1],COL.sel_r[2],COL.sel_r[3],alpha(COL.sel_r),
                         COL.sel_r[1],COL.sel_r[2],COL.sel_r[3],alpha(COL.sel_r),
                         COL.sel_l[1],COL.sel_l[2],COL.sel_l[3],alpha(COL.sel_l))
                 end
                 -- Player rows carry info_type==1 + i_val==GTA player index: draw the mugshot portrait
-                -- at the left and indent the name. Other rows keep name_x = x+PAD_X (unchanged).
-                local name_x = x+PAD_X
+                -- at the left and indent the name. Other rows keep name_x = x+ANIME_NEON_PAD_X (unchanged).
+                local name_x = x+ANIME_NEON_PAD_X
                 if item.info_type == 1 then
-                    local mug = ROW_H - 6
-                    local mx0, my0 = x+PAD_X, ry+3
+                    local mug = ANIME_NEON_ROW_H - 6
+                    local mx0, my0 = x+ANIME_NEON_PAD_X, ry+3
                     if not players.draw_mugshot(item.i_val or -1, mx0, my0, mx0+mug, my0+mug) then
                         draw.rect(mx0, my0, mx0+mug, my0+mug, COL.row_txt[1],COL.row_txt[2],COL.row_txt[3],40)
                     end
@@ -1007,24 +1011,24 @@ function draw_menu()
                 elseif item.info_type == 6 or item.info_type == 7 or item.info_type == 8 or item.info_type == 9 then
                     -- Friend / incoming / sent / blocked rows: draw the Social Club avatar portrait
                     -- at the left (info_type selects the list), indent the name.
-                    local mug = ROW_H - 6
-                    local mx0, my0 = x+PAD_X, ry+3
+                    local mug = ANIME_NEON_ROW_H - 6
+                    local mx0, my0 = x+ANIME_NEON_PAD_X, ry+3
                     if not friends.draw_avatar(item.info_type, item.i_val or -1, mx0, my0, mx0+mug, my0+mug) then
                         draw.rect(mx0, my0, mx0+mug, my0+mug, COL.row_txt[1],COL.row_txt[2],COL.row_txt[3],40)
                     end
                     name_x = mx0 + mug + 8
                 elseif item.info_type == 40 then
                     -- Language rows: colour-band flag at the left, name indented.
-                    local fh = ROW_H - 14
+                    local fh = ANIME_NEON_ROW_H - 14
                     local fw = math.floor(fh * 1.6)
-                    local fx0, fy0 = x+PAD_X, ry+7
+                    local fx0, fy0 = x+ANIME_NEON_PAD_X, ry+7
                     local e = lang_entry(item.i_val)
                     if e then draw_flag(fx0, fy0, fw, fh, e)
                     else draw.rect(fx0, fy0, fx0+fw, fy0+fh, COL.row_txt[1],COL.row_txt[2],COL.row_txt[3],40, 3) end
                     name_x = fx0 + fw + 10
                 end
                 local tcol = (is_sel or hov) and COL.sel_txt or COL.row_txt
-                text.draw(font.item, name_x, ry+(ROW_H-text.height(font.item))*0.5,
+                text.draw(font.item, name_x, ry+(ANIME_NEON_ROW_H-text.height(font.item))*0.5,
                     tcol[1],tcol[2],tcol[3],alpha(tcol), item.name)
                 -- hotkey tag: keycap-style badge (white bg, dark text); inverts on the
                 -- selected/hovered row (which is white) so it stays readable
@@ -1036,7 +1040,7 @@ function draw_menu()
                     local tagw = kw + padx*2
                     local tagh = kh + pady*2
                     local bx   = name_x+text.width(font.item, item.name)+8
-                    local by   = ry + (ROW_H-tagh)*0.5
+                    local by   = ry + (ANIME_NEON_ROW_H-tagh)*0.5
                     local inv  = is_sel or hov
                     local bg   = inv and COL.sel_txt or COL.white
                     local fg   = inv and COL.sel_l or COL.black
@@ -1049,7 +1053,7 @@ function draw_menu()
                     local padx, pady = 6, 3
                     local kh   = text.height(font.tiny)
                     local tagh = kh + pady*2
-                    local by   = ry + (ROW_H-tagh)*0.5
+                    local by   = ry + (ANIME_NEON_ROW_H-tagh)*0.5
                     local hx   = name_x+text.width(font.item, item.name)+8
                     if item.hotkey and item.hotkey ~= 0 then
                         hx = hx + text.width(font.tiny, menu.vk_name(item.hotkey)) + padx*2 + 8
@@ -1084,7 +1088,7 @@ function draw_menu()
                         hx = hx + tagw + 3
                     end
                 end
-                local value_clicked = draw_right(item, x, ry, WIN_W, is_sel or hov)
+                local value_clicked = draw_right(item, x, ry, ANIME_NEON_WIN_W, is_sel or hov)
                 -- click selects, then acts
                 if hov and input.mouse_clicked(0) and not cpick and not hk_bind and not menu.overlay_active() then
                     menu.set_selected(i)
@@ -1120,7 +1124,7 @@ function draw_menu()
         local sr = scroll_max>0 and (scroll/scroll_max) or 0
         local ty = list_y+sr*maxtop
         -- vertical gradient: purple (top) -> cyan (bottom)
-        draw.rect_gradient(x, ty, x+SCROLL_W, ty+th,
+        draw.rect_gradient(x, ty, x+ANIME_NEON_SCROLL_W, ty+th,
             COL.hdr_l[1],COL.hdr_l[2],COL.hdr_l[3],alpha(COL.hdr_l),
             COL.hdr_l[1],COL.hdr_l[2],COL.hdr_l[3],alpha(COL.hdr_l),
             COL.hdr_r[1],COL.hdr_r[2],COL.hdr_r[3],alpha(COL.hdr_r),
@@ -1129,35 +1133,35 @@ function draw_menu()
 
     -- ── Footer ──
     local fy = list_y + list_h
-    draw.rect(x, fy, x+WIN_W, fy+FOOT_H, COL.black[1],COL.black[2],COL.black[3],alpha(COL.black))
+    draw.rect(x, fy, x+ANIME_NEON_WIN_W, fy+ANIME_NEON_FOOT_H, COL.black[1],COL.black[2],COL.black[3],alpha(COL.black))
     -- cyan → purple gradient accent line at the top of the footer (left cyan, right purple)
-    draw.rect_gradient(x, fy, x+WIN_W, fy+2,
+    draw.rect_gradient(x, fy, x+ANIME_NEON_WIN_W, fy+2,
         COL.hdr_r[1],COL.hdr_r[2],COL.hdr_r[3],alpha(COL.hdr_r),
         COL.hdr_l[1],COL.hdr_l[2],COL.hdr_l[3],alpha(COL.hdr_l),
         COL.hdr_l[1],COL.hdr_l[2],COL.hdr_l[3],alpha(COL.hdr_l),
         COL.hdr_r[1],COL.hdr_r[2],COL.hdr_r[3],alpha(COL.hdr_r))
-    local fcy = fy+FOOT_H*0.5
+    local fcy = fy+ANIME_NEON_FOOT_H*0.5
     local ver = (str.version and str.version ~= "") and str.version or "dev"
-    text.draw(font.small, x+PAD_X, fcy-text.height(font.small)*0.5,
+    text.draw(font.small, x+ANIME_NEON_PAD_X, fcy-text.height(font.small)*0.5,
         COL.foot_txt[1],COL.foot_txt[2],COL.foot_txt[3],alpha(COL.foot_txt), "v"..ver)
     -- center up/down nav (overlapping like the HTML)
-    local navx = x+WIN_W*0.5
+    local navx = x+ANIME_NEON_WIN_W*0.5
     local uw = icon_h("up", navx-7, fcy-7, 22, COL.white[1],COL.white[2],COL.white[3], hit(navx-16,fy,navx+16,fcy) and alpha(COL.white) or math.min(alpha(COL.white),170))
-    local dw = icon_h("down", navx-7, fcy+7, 22, COL.white[1],COL.white[2],COL.white[3], hit(navx-16,fcy,navx+16,fy+FOOT_H) and alpha(COL.white) or math.min(alpha(COL.white),170))
+    local dw = icon_h("down", navx-7, fcy+7, 22, COL.white[1],COL.white[2],COL.white[3], hit(navx-16,fcy,navx+16,fy+ANIME_NEON_FOOT_H) and alpha(COL.white) or math.min(alpha(COL.white),170))
     if clk(navx-16, fy, navx+16, fcy) then
         if searching then move_search_selection(-1) else menu.move_selection(-1) end
     end
-    if clk(navx-16, fcy, navx+16, fy+FOOT_H) then
+    if clk(navx-16, fcy, navx+16, fy+ANIME_NEON_FOOT_H) then
         if searching then move_search_selection(1) else menu.move_selection(1) end
     end
     -- counter
     local cnt = (count>0 and (sel+1) or 0).." / "..count
-    text.draw(font.small, x+WIN_W-PAD_X-text.width(font.small,cnt), fcy-text.height(font.small)*0.5,
+    text.draw(font.small, x+ANIME_NEON_WIN_W-ANIME_NEON_PAD_X-text.width(font.small,cnt), fcy-text.height(font.small)*0.5,
         COL.foot_txt[1],COL.foot_txt[2],COL.foot_txt[3],alpha(COL.foot_txt), cnt)
 
     -- ── Description box (detached, white left accent) — grows to fit wrapped text ──
     desc_alpha = lerp(desc_alpha, 1, clamp(ctx.delta()*10,0,1))
-    local dy = fy + FOOT_H + DESC_GAP
+    local dy = fy + ANIME_NEON_FOOT_H + ANIME_NEON_DESC_GAP
     local di = searching and search_results[sel+1] or menu.get_item(sel)
     local dtext
     if searching then
@@ -1176,7 +1180,7 @@ function draw_menu()
     else
         dtext = (di and di.desc and di.desc~="") and di.desc or (di and ("Adjust "..di.name..".") or "")
     end
-    local dmaxw = WIN_W - 54   -- leave room on the left for the info "i" glyph
+    local dmaxw = ANIME_NEON_WIN_W - 54   -- leave room on the left for the info "i" glyph
     local dlh   = text.height(font.desc) * 1.32
     -- count wrapped lines (greedy word wrap, mirrors the renderer's word wrapping)
     local dlines, dcur = 1, ""
@@ -1185,9 +1189,9 @@ function draw_menu()
         if text.width(font.desc, cand) > dmaxw and dcur~="" then dlines = dlines + 1; dcur = word
         else dcur = cand end
     end
-    local dvpad = math.max(4, (DESC_H - dlh)*0.5)
-    local desc_h = math.max(DESC_H, math.ceil(dlines*dlh + dvpad*2))
-    draw.rect(x, dy, x+WIN_W, dy+desc_h, COL.desc_bg[1],COL.desc_bg[2],COL.desc_bg[3],alpha(COL.desc_bg))
+    local dvpad = math.max(4, (ANIME_NEON_DESC_H - dlh)*0.5)
+    local desc_h = math.max(ANIME_NEON_DESC_H, math.ceil(dlines*dlh + dvpad*2))
+    draw.rect(x, dy, x+ANIME_NEON_WIN_W, dy+desc_h, COL.desc_bg[1],COL.desc_bg[2],COL.desc_bg[3],alpha(COL.desc_bg))
     -- thin left accent: vertical gradient (cyan top -> purple bottom)
     draw.rect_gradient(x, dy, x+2, dy+desc_h,
         COL.hdr_r[1],COL.hdr_r[2],COL.hdr_r[3],alpha(COL.hdr_r),
@@ -1205,13 +1209,13 @@ function draw_menu()
         draw.circle(icx, icy - r*0.46, 1.9, COL.black[1],COL.black[2],COL.black[3],ia)
         draw.rect(icx-1.4, icy - r*0.14, icx+1.4, icy + r*0.6, COL.black[1],COL.black[2],COL.black[3],ia)
     end
-    draw.push_clip(x+38, dy, x+WIN_W-12, dy+desc_h)
+    draw.push_clip(x+38, dy, x+ANIME_NEON_WIN_W-12, dy+desc_h)
     text.draw(font.desc, x+40, dy+dvpad,
         COL.desc_txt[1],COL.desc_txt[2],COL.desc_txt[3],a, dtext, dmaxw)
     draw.pop_clip()
 
     -- popups on top
-    draw_cpick(x, list_y, WIN_W, list_h)
+    draw_cpick(x, list_y, ANIME_NEON_WIN_W, list_h)
     proc_edit()
     menu.set_text_editing(edit_on or search_open)   -- suppress game/cam input while typing
 
@@ -1226,6 +1230,14 @@ end
 
 -- ════════════════════ INPUT ════════════════════
 function handle_input()
+    if menu.is_visible() and menu.popup_mode()==0 and not menu.is_text_editing() and not menu.overlay_active() then
+        local tab_count=menu.tab_count()
+        if tab_count>0 and input.key_just_pressed(VK.TAB) then
+            local dir=input.key_down(VK.SHIFT) and -1 or 1
+            menu.switch_tab((menu.tab_active()+dir+tab_count)%tab_count)
+            return
+        end
+    end
     if not menu.is_visible() then return end
     if search_open then return end     -- feature-search input is consumed by proc_feature_search
     if edit_on then return end           -- editor consumes keys in proc_edit

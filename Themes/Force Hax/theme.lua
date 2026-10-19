@@ -205,6 +205,8 @@ function draw_menu()
         total_h=logo_h+page_h+visible*row_h+footer_h
     end
     local x=math.floor((ctx.screen_w()-width)*0.5)
+    local drag_x,drag_y=menu.drag_header(x,y,width,logo_h)
+    x=x+drag_x;y=y+drag_y
     menu.set_content_rect(x,y+logo_h+page_h,width,visible*row_h)
 
     draw.rect(x,y,x+width,y+total_h,11,12,13,alpha)
@@ -279,6 +281,14 @@ function draw_menu()
 end
 
 function handle_input()
+    if menu.is_visible() and menu.popup_mode()==0 and not menu.is_text_editing() and not menu.overlay_active() then
+        local tab_count=menu.tab_count()
+        if tab_count>0 and input.key_just_pressed(VK.TAB) then
+            local dir=input.key_down(VK.SHIFT) and -1 or 1
+            menu.switch_tab((menu.tab_active()+dir+tab_count)%tab_count)
+            return
+        end
+    end
     if not menu.is_visible() or edit_on then return end
     if input.key_pressed(VK.DOWN) then menu.move_selection(1) end
     if input.key_pressed(VK.UP) then menu.move_selection(-1) end

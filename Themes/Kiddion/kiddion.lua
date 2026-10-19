@@ -181,6 +181,7 @@ function draw_menu()
     -- ── List ──
     local list_y = my + TITLE_H
     frame.list_y = list_y
+    menu.set_content_rect(mx, list_y, c.w, list_h)
 
     -- scroll to keep selection visible
     local scroll_max = math.max(0, content_h - list_h)
@@ -231,7 +232,7 @@ function draw_menu()
         draw.rect(mx, iy+c.ih-1, mx+c.w, iy+c.ih, 0,0,0,is_sel and 0 or 40)
 
         -- mouse interaction
-        if hovered and input.mouse_clicked(0) and menu.popup_mode()==0 and dragging_slider<0 then
+        if hovered and (not menu.overlay_active() and input.mouse_clicked(0)) and menu.popup_mode()==0 and dragging_slider<0 then
             local t=item.type
             local handled=false
             if t==item_type.toggle or t==item_type.float_toggle or t==item_type.int_toggle or t==item_type.array_toggle or t==item_type.loop_toggle then
@@ -273,6 +274,14 @@ end
 
 -- ══════════════════ INPUT ══════════════════
 function handle_input()
+    if menu.is_visible() and menu.popup_mode()==0 and not menu.is_text_editing() and not menu.overlay_active() then
+        local tab_count=menu.tab_count()
+        if tab_count>0 and input.key_just_pressed(VK.TAB) then
+            local dir=input.key_down(VK.SHIFT) and -1 or 1
+            menu.switch_tab((menu.tab_active()+dir+tab_count)%tab_count)
+            return
+        end
+    end
     if not menu.is_visible() then return end
     local pm = menu.popup_mode()
     if pm==1 then handle_input_popup(); return end

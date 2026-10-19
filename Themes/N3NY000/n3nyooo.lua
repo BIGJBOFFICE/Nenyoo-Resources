@@ -292,7 +292,7 @@ local function handle_array_dropdown()
         if input.key_pressed(VK.DOWN) and array_idx < item.value_count-1 then array_idx = array_idx + 1 end
         if input.key_pressed(VK.UP) and array_idx > 0 then array_idx = array_idx - 1 end
         if input.key_just_pressed(VK.RETURN) then menu.set_value_index(menu.selected_index(), array_idx); menu.set_popup_mode(0) end
-        if input.mouse_clicked(0) and elapsed > 0.15 then
+        if (not menu.overlay_active() and input.mouse_clicked(0)) and elapsed > 0.15 then
             local dx = frame.menu_x + l.menu_w - 220
             local dy = frame.popup_item_y or 300
             local mx, my = input.mouse_x(), input.mouse_y()
@@ -371,7 +371,7 @@ local function draw_color_picker()
         local cy = gy + row*(cell+gap)
         draw.rect(cx, cy, cx+cell, cy+cell, palette[i][1], palette[i][2], palette[i][3], 255, 4)
         if cp_idx == i-1 then draw.rect_outline(cx-2, cy-2, cx+cell+2, cy+cell+2, 255,255,255, 200, 4) end
-        if mx >= cx and mx <= cx+cell and my >= cy and my <= cy+cell and input.mouse_clicked(0) then cp_idx = i-1 end
+        if mx >= cx and mx <= cx+cell and my >= cy and my <= cy+cell and (not menu.overlay_active() and input.mouse_clicked(0)) then cp_idx = i-1 end
     end
 end
 
@@ -465,6 +465,7 @@ function draw_menu()
 
     local list_y = cy
     frame.list_y = list_y
+    menu.set_content_rect(mx, list_y, l.menu_w, list_h)
 
     -- Scroll
     local scroll_max = math.max(0, content_h - list_h)
@@ -511,7 +512,7 @@ function draw_menu()
         end
 
         -- Click
-        if hovered and input.mouse_clicked(0) and menu.popup_mode() == 0 then
+        if hovered and (not menu.overlay_active() and input.mouse_clicked(0)) and menu.popup_mode() == 0 then
             if is_sel then
                 if item.type == item_type.search then
                     menu.set_input_buffer(item.text or "")
@@ -620,6 +621,14 @@ end
 -- Input handler
 ---------------------------------------------------------------------------
 function handle_input()
+    if menu.is_visible() and menu.popup_mode()==0 and not menu.is_text_editing() and not menu.overlay_active() then
+        local tab_count=menu.tab_count()
+        if tab_count>0 and input.key_just_pressed(VK.TAB) then
+            local dir=input.key_down(VK.SHIFT) and -1 or 1
+            menu.switch_tab((menu.tab_active()+dir+tab_count)%tab_count)
+            return
+        end
+    end
     if not menu.is_visible() then return end
     local pm = menu.popup_mode()
     if pm == 1 then handle_input_popup(); return end

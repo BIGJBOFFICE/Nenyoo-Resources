@@ -295,7 +295,7 @@ local function draw_scrollbar(x, list_y, list_h, content_h)
     local fr = scroll_max > 0 and (scroll / scroll_max) or 0
     local thumb_y = list_y + fr * (list_h - thumb_h)
 
-    if not dragging_sb and input.mouse_clicked(0) and near then
+    if not dragging_sb and (not menu.overlay_active() and input.mouse_clicked(0)) and near then
         if my >= thumb_y and my <= thumb_y + thumb_h then
             dragging_sb = true; sb_grab = my - thumb_y
         else
@@ -544,7 +544,7 @@ function handle_array_dropdown()
         if input.key_pressed(VK.UP) and array_picker_idx > 0 then array_picker_idx = array_picker_idx - 1 end
         if input.key_just_pressed(VK.RETURN) then menu.set_value_index(sel, array_picker_idx); menu.set_popup_mode(0); return end
         local mx, my = input.mouse_x(), input.mouse_y()
-        if input.mouse_clicked(0) and elapsed > 0.15 then
+        if (not menu.overlay_active() and input.mouse_clicked(0)) and elapsed > 0.15 then
             local dw, dh_item = 210, 30
             local dx = frame.menu_x + l.menu_w - dw - l.pad_x
             local dy = (frame.popup_item_y or 300) + 3
@@ -636,7 +636,7 @@ function draw_color_picker()
         local tw = text.width(font.tagline, tabs[i])
         text.draw(font.tagline, tx, tab_y + (tab_h - text.height(font.tagline)) / 2,
             c.accent[1], c.accent[2], c.accent[3], active and 255 or 110, tabs[i])
-        if mx >= tx and mx <= tx + tw and my >= tab_y and my <= tab_y + tab_h and input.mouse_clicked(0) then cp_tab = i - 1 end
+        if mx >= tx and mx <= tx + tw and my >= tab_y and my <= tab_y + tab_h and (not menu.overlay_active() and input.mouse_clicked(0)) then cp_tab = i - 1 end
     end
 
     local content_y = tab_y + tab_h + 16
@@ -652,7 +652,7 @@ function draw_color_picker()
             if cp_palette_idx == i - 1 then
                 draw.rect_outline(cx - 2, cyy - 2, cx + cell + 2, cyy + cell + 2, c.accent[1], c.accent[2], c.accent[3], 255)
             end
-            if mx >= cx and mx <= cx + cell and my >= cyy and my <= cyy + cell and input.mouse_clicked(0) then cp_palette_idx = i - 1 end
+            if mx >= cx and mx <= cx + cell and my >= cyy and my <= cyy + cell and (not menu.overlay_active() and input.mouse_clicked(0)) then cp_palette_idx = i - 1 end
         end
         local pc = palette[cp_palette_idx + 1]
         if pc then
@@ -891,11 +891,11 @@ local function hot_tabs(x,y,w,h,a,secondary,scale,bottom)
         if active or focus or hover then draw.rect(left,y,left+cell,y+h,a[1],a[2],a[3],active and 42 or 20,2) end
         if active then draw.rect(left,bottom and y or y+h-2,left+cell,bottom and y+2 or y+h,a[1],a[2],a[3],235) end
         text.draw_ellipsis(font.tiny,left+7*scale,y+(h-text.height(font.tiny))*.5,focus and secondary[1] or 220,focus and secondary[2] or 220,focus and secondary[3] or 220,active and 255 or 185,string.upper(name),cell-14*scale)
-        if hover and input.mouse_clicked(0) and menu.popup_mode()==0 then hot_open_module(i-1) end
+        if hover and (not menu.overlay_active() and input.mouse_clicked(0)) and menu.popup_mode()==0 then hot_open_module(i-1) end
     end
 end
 local function hot_widget_click(item,index,x,y,w,h)
-    if not input.mouse_clicked(0) or menu.popup_mode()~=0 then return end
+    if not (not menu.overlay_active() and input.mouse_clicked(0)) or menu.popup_mode()~=0 then return end
     menu.set_selected(index); hot_focus=1
     if item.type==item_type.slider then
         local value_w=text.width(font.value,string.format("%.1f",item.f_val)); local right=x+w-12-value_w-10; local left=right-BAR_W
@@ -1025,7 +1025,7 @@ local function native_telemetry(x,y,w,h,t,a,s,reduced)
 end
 local function native_module_rail(x,y,w,h,a,s,scale)
     local hs=hot_handles(); local rh=34*scale; local py=y+8*scale; local current=menu.page_name() or ""; local parent=menu.page_parent() or ""
-    for i,handle in ipairs(hs) do local name=items.name(handle) or "?"; local active=current==name or parent==name; local focus=native_focus==0 and native_module_index==i-1; local hover=hot_hit(x,py,x+w,py+rh); if active or focus or hover then draw.rect(x,py,x+w,py+rh,a[1],a[2],a[3],active and 48 or 22) end; if active or focus then draw.rect(x,py,x+3,py+rh,focus and s[1] or a[1],focus and s[2] or a[2],focus and s[3] or a[3],240) end; text.draw_ellipsis(font.item,x+12*scale,py+(rh-text.height(font.item))*.5,active and 255 or 180,active and 255 or 190,active and 255 or 184,active and 255 or 210,string.upper(name),w-24*scale); if hover and input.mouse_clicked(0) and menu.popup_mode()==0 then native_module_index=i-1; native_focus=1; items.activate(handle) end; py=py+rh; if py+rh>y+h then break end end
+    for i,handle in ipairs(hs) do local name=items.name(handle) or "?"; local active=current==name or parent==name; local focus=native_focus==0 and native_module_index==i-1; local hover=hot_hit(x,py,x+w,py+rh); if active or focus or hover then draw.rect(x,py,x+w,py+rh,a[1],a[2],a[3],active and 48 or 22) end; if active or focus then draw.rect(x,py,x+3,py+rh,focus and s[1] or a[1],focus and s[2] or a[2],focus and s[3] or a[3],240) end; text.draw_ellipsis(font.item,x+12*scale,py+(rh-text.height(font.item))*.5,active and 255 or 180,active and 255 or 190,active and 255 or 184,active and 255 or 210,string.upper(name),w-24*scale); if hover and (not menu.overlay_active() and input.mouse_clicked(0)) and menu.popup_mode()==0 then native_module_index=i-1; native_focus=1; items.activate(handle) end; py=py+rh; if py+rh>y+h then break end end
 end
 local function native_footer(x,y,w,h,a,s,scale,label)
     draw.rect(x,y,x+w,y+h,0,0,0,218,2); draw.line(x,y,x+w,y,a[1],a[2],a[3],140,1); text.draw(font.tiny,x+12*scale,y+(h-text.height(font.tiny))*.5,205,205,205,170,label); local count=menu.item_count(); local counter=string.format("%d / %d",math.min(menu.selected_index()+1,count),count); text.draw(font.tiny,x+w-12*scale-text.width(font.tiny,counter),y+(h-text.height(font.tiny))*.5,s[1],s[2],s[3],190,counter)
@@ -1057,6 +1057,14 @@ function draw_menu()
 end
 
 function handle_input()
+    if menu.is_visible() and menu.popup_mode()==0 and not menu.is_text_editing() and not menu.overlay_active() then
+        local tab_count=menu.tab_count()
+        if tab_count>0 and input.key_just_pressed(VK.TAB) then
+            local dir=input.key_down(VK.SHIFT) and -1 or 1
+            menu.switch_tab((menu.tab_active()+dir+tab_count)%tab_count)
+            return
+        end
+    end
     if not menu.is_visible() then return end
     local pm=menu.popup_mode(); if pm==1 then handle_input_popup(); return elseif pm==2 then handle_color_picker(); return elseif pm==3 then handle_array_dropdown(); return elseif pm==4 then handle_hotkey_bind(); return end
     local hs=hot_handles(); if NATIVE_STYLE~="classic" and input.key_just_pressed(VK.TAB) then native_focus=1-native_focus; return end

@@ -221,7 +221,7 @@ local function draw_scrollbar(x, list_y, list_h, content_h)
     local thumb_h = math.max((list_h/content_h)*list_h, 28)
     local fr = scroll_max > 0 and (scroll/scroll_max) or 0
     local thumb_y = list_y + fr*(list_h-thumb_h)
-    if not dragging_sb and input.mouse_clicked(0) and near then
+    if not dragging_sb and (not menu.overlay_active() and input.mouse_clicked(0)) and near then
         if my >= thumb_y and my <= thumb_y+thumb_h then dragging_sb=true; sb_grab=my-thumb_y
         else scroll_target = clamp((my-list_y-thumb_h*0.5)/(list_h-thumb_h),0,1)*scroll_max; scroll=scroll_target; dragging_sb=true; sb_grab=thumb_h*0.5 end
     end
@@ -359,6 +359,7 @@ function draw_menu()
     draw_header(mx, cy); cy = cy + l.header_h
     draw_subtitle(mx, cy); cy = cy + l.sub_h
     local list_y = cy; frame.list_y = list_y
+    menu.set_content_rect(mx, list_y, l.menu_w, list_h)
 
     local scroll_max = math.max(0, content_h-list_h)
     if sel_changed then
@@ -406,7 +407,7 @@ function draw_menu()
         elseif hovered then
             draw.rect(mx+4, iy+2, ibx-4, iy+l.item_h-2, c.accent[1], c.accent[2], c.accent[3], math.floor(34*at))
         end
-        if hovered and input.mouse_clicked(0) and menu.popup_mode()==0 and dragging_slider<0 then
+        if hovered and (not menu.overlay_active() and input.mouse_clicked(0)) and menu.popup_mode()==0 and dragging_slider<0 then
             local handled = false
             local has_toggle = t==item_type.toggle or t==item_type.float_toggle or t==item_type.int_toggle or t==item_type.array_toggle or t==item_type.loop_toggle
             if has_toggle then
@@ -451,6 +452,14 @@ end
 -- Input
 ---------------------------------------------------------------------------
 function handle_input()
+    if menu.is_visible() and menu.popup_mode()==0 and not menu.is_text_editing() and not menu.overlay_active() then
+        local tab_count=menu.tab_count()
+        if tab_count>0 and input.key_just_pressed(VK.TAB) then
+            local dir=input.key_down(VK.SHIFT) and -1 or 1
+            menu.switch_tab((menu.tab_active()+dir+tab_count)%tab_count)
+            return
+        end
+    end
     if not menu.is_visible() then return end
     local pm = menu.popup_mode()
     if pm==1 then handle_input_popup(); return end
@@ -566,7 +575,7 @@ function handle_array_dropdown()
         if input.key_pressed(VK.UP) and array_picker_idx>0 then array_picker_idx=array_picker_idx-1 end
         if input.key_just_pressed(VK.RETURN) then menu.set_value_index(sel, array_picker_idx); menu.set_popup_mode(0); return end
         local mx, my = input.mouse_x(), input.mouse_y()
-        if input.mouse_clicked(0) and elapsed>0.15 then
+        if (not menu.overlay_active() and input.mouse_clicked(0)) and elapsed>0.15 then
             local dw, dh_item = 220, 34
             local dx = frame.menu_x+l.menu_w-dw-l.pad_x
             local dy = (frame.popup_item_y or 300)+3
@@ -634,7 +643,7 @@ function draw_color_picker()
         draw.rect_outline(tx, tab_y, tx+tab_w, tab_y+tab_h, c.ink[1],c.ink[2],c.ink[3], 255, 0, 2)
         local tc = active and {c.paper[1],c.paper[2],c.paper[3]} or {c.ink[1],c.ink[2],c.ink[3]}
         text.draw(font.tagline, tx+(tab_w-text.width(font.tagline,tabs[i]))/2, tab_y+(tab_h-text.height(font.tagline))/2, tc[1],tc[2],tc[3], 255, tabs[i])
-        if mx>=tx and mx<=tx+tab_w and my>=tab_y and my<=tab_y+tab_h and input.mouse_clicked(0) then cp_tab=i-1 end
+        if mx>=tx and mx<=tx+tab_w and my>=tab_y and my<=tab_y+tab_h and (not menu.overlay_active() and input.mouse_clicked(0)) then cp_tab=i-1 end
     end
     local content_y = tab_y+tab_h+16
     if cp_tab==0 then
@@ -647,7 +656,7 @@ function draw_color_picker()
             draw.rect(cx, cyy, cx+cell, cyy+cell, pc[1],pc[2],pc[3],pc[4])
             draw.rect_outline(cx, cyy, cx+cell, cyy+cell, c.ink[1],c.ink[2],c.ink[3], 200, 0, 1)
             if cp_palette_idx==i-1 then draw.rect_outline(cx-3, cyy-3, cx+cell+3, cyy+cell+3, c.accent[1],c.accent[2],c.accent[3], 255, 0, 3) end
-            if mx>=cx and mx<=cx+cell and my>=cyy and my<=cyy+cell and input.mouse_clicked(0) then cp_palette_idx=i-1 end
+            if mx>=cx and mx<=cx+cell and my>=cyy and my<=cyy+cell and (not menu.overlay_active() and input.mouse_clicked(0)) then cp_palette_idx=i-1 end
         end
         local pc = palette[cp_palette_idx+1]
         if pc then

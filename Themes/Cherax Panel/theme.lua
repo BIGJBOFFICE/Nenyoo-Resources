@@ -103,14 +103,9 @@ local SLIDER_H = 5
 local SCROLL_W = 4
 
 -- ── Categories ──
-local cats = {
-    {label="S", page="Self"}, {label="N", page="Network"},
-    {label="V", page="Vehicle"}, {label="W", page="Weapon"},
-    {label="X", page="VFX"}, {label="O", page="World"},
-    {label="M", page="Misc"}, {label="T", page="Teleport"},
-    {label="/", page="Scripts"}, {label="P", page="Spooner"},
-    {label="!", page="Protections"}, {label="*", page="Settings"},
-}
+-- Populated from the native tab registry. The old hardcoded list used obsolete page names (notably
+-- "Network") and could neither follow translated labels nor newly-added top-level pages.
+local cats = {}
 
 -- ── State ──
 local win_x, win_y
@@ -153,7 +148,7 @@ local function in_rect(x1, y1, x2, y2)
 end
 
 local function click_in(x1, y1, x2, y2)
-    return in_rect(x1, y1, x2, y2) and input.mouse_clicked(0)
+    return not menu.overlay_active() and in_rect(x1, y1, x2, y2) and input.mouse_clicked(0)
 end
 
 local function center_text(fnt, x1, x2, y, s, r, g, b, a)
@@ -204,11 +199,29 @@ local function get_depth()
 end
 
 -- ── Navigate to Category ──
+local function refresh_cats()
+    local count=menu.tab_count()
+    local stale=#cats~=count
+    if not stale then
+        for i=0,count-1 do
+            if cats[i+1].page~=menu.tab_page_id(i) or cats[i+1].name~=menu.tab_name(i) then stale=true;break end
+        end
+    end
+    if stale then
+        cats={}
+        for i=0,count-1 do
+            local name=menu.tab_name(i) or "?"
+            cats[#cats+1]={label=string.upper(string.sub(name,1,1)),name=name,page=menu.tab_page_id(i),index=i}
+        end
+    end
+    active_cat=menu.tab_active()
+end
+
 local function go_cat(idx)
+    if not cats[idx+1] then return end
     active_cat = idx
-    last_page = cats[idx + 1].page
-    while menu.page_parent() ~= "" do menu.go_back() end
-    menu.navigate(cats[idx + 1].page)
+    menu.switch_tab(cats[idx+1].index)
+    last_page = menu.page_name()
     rebuild_sub_tabs()
     scroll_tgt = 0
     scroll = 0
@@ -305,7 +318,7 @@ local function draw_cats(x, y, h)
         center_text(font.title,x,x+SIDE_W,iy+(ih-tth)*0.5,
             cat.label, c[1], c[2], c[3], c[4])
         if hov then
-            local label=cat.page
+            local label=cat.name
             local lw=text.width(font.small,label)+14
             draw.rect(x+SIDE_W+4,iy+(ih-22)*0.5,x+SIDE_W+4+lw,iy+(ih+22)*0.5,
                 12,4,20,235,3)
@@ -922,13 +935,10 @@ function draw_menu()
     if not menu.is_visible() then return end
 
     init_pos()
+    refresh_cats()
+    if #cats==0 then return end
     if last_page=="" then
-        local current=menu.page_name()
-        local parent=menu.page_parent()
-        for i,cat in ipairs(cats) do
-            if current==cat.page or parent==cat.page then go_cat(i-1);break end
-        end
-        if last_page=="" then go_cat(0) end
+        go_cat(math.max(0,menu.tab_active()))
     end
     local W = math.min(sf("Width",900),ctx.screen_w()-24)
     local H = math.min(sf("Height",620),ctx.screen_h()-24)
@@ -1054,6 +1064,13 @@ function handle_input()
     end
 
     if edit_active then return end
+
+    local tab_count=menu.tab_count()
+    if tab_count>0 and input.key_just_pressed(VK.TAB) then
+        local dir=input.key_down(VK.SHIFT) and -1 or 1
+        go_cat((menu.tab_active()+dir+tab_count)%tab_count)
+        return
+    end
 
     if input.key_just_pressed(VK.ESCAPE) then
         if cpick_open then
